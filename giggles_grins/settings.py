@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
+    'products',
 ]
 
 MIDDLEWARE = [
@@ -105,7 +106,7 @@ WSGI_APPLICATION = 'giggles_grins.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
+0
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
