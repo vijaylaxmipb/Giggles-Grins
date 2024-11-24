@@ -11,6 +11,17 @@ class Category(models.Model):
     def get_friendly_name(self):
         return self.friendly_name
 
+class Subcategory(models.Model):
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name="subcategories")
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
+    description = models.TextField(null=True, blank=True) 
+    def __str__(self):
+        return self.name
+
+    def get_friendly_name(self):
+        return self.friendly_name
+
 
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
@@ -24,3 +35,4 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
