@@ -3,9 +3,9 @@
         "model": "products.subcategory",
         "pk": 1,
         "fields": {
-            "category": 1,
-            "name": "Sweatshirts & Hoodies",
-            "friendly_name": "Hoodies",
+            "category": 2,
+            "name": "Sweatshirt & Hoodies",
+            "friendly_name": "Boys Sweatshirts",
             "description": "Warm and cozy options for boys."
         }
     },
@@ -13,7 +13,7 @@
         "model": "products.subcategory",
         "pk": 2,
         "fields": {
-            "category": 1,
+            "category": 2,
             "name": "Jeans",
             "friendly_name": "Boys' Jeans",
             "description": "Durable and trendy jeans for boys."
@@ -23,34 +23,32 @@
         "model": "products.subcategory",
         "pk": 3,
         "fields": {
-            "category": 1,
-            "name": "Jackets",
-            "friendly_name": "Boy Jackets",
-            "description": "Stylish jackets for boys."
+            "category": 3,
+            "name": "Frocks & Dresses",
+            "friendly_name": "Girls Dresses",
+            "description": "Beautiful dresses for girls."
         }
     },
     {
         "model": "products.subcategory",
         "pk": 4,
         "fields": {
-            "category": 2,
-            "name": "Dresses",
-            "friendly_name": "Girl Dresses",
-            "description": "Beautiful dresses for girls."
+            "category": 4,
+            "name": "Casual Shoes",
+            "friendly_name": "Footwear",
+            "description": "Comfortable and stylish footwear."
         }
     },
     {
         "model": "products.subcategory",
         "pk": 5,
         "fields": {
-            "category": 2,
-            "name": "Skirts",
-            "friendly_name": "Girl Skirts",
-            "description": "Trendy skirts for girls."
+            "category": 5,
+            "name": "Clearance",
+            "friendly_name": "Special Offers",
+            "description": "Discounted and clearance items."
         }
     }
 ]
-
-
 
 
