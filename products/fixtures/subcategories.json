@@ -1,0 +1,56 @@
+[
+    {
+        "model": "products.subcategory",
+        "pk": 1,
+        "fields": {
+            "category": 1,
+            "name": "Sweatshirts & Hoodies",
+            "friendly_name": "Hoodies",
+            "description": "Warm and cozy options for boys."
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 2,
+        "fields": {
+            "category": 1,
+            "name": "Jeans",
+            "friendly_name": "Boys' Jeans",
+            "description": "Durable and trendy jeans for boys."
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 3,
+        "fields": {
+            "category": 1,
+            "name": "Jackets",
+            "friendly_name": "Boy Jackets",
+            "description": "Stylish jackets for boys."
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 4,
+        "fields": {
+            "category": 2,
+            "name": "Dresses",
+            "friendly_name": "Girl Dresses",
+            "description": "Beautiful dresses for girls."
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 5,
+        "fields": {
+            "category": 2,
+            "name": "Skirts",
+            "friendly_name": "Girl Skirts",
+            "description": "Trendy skirts for girls."
+        }
+    }
+]
+
+
+
+
