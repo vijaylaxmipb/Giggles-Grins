@@ -1,408 +1,338 @@
 [
     {
-        "model": "products.product",
-        "pk": 1,
-        "fields": {
-            "category": 1,
-            "sku": "B001",
-            "name": "Boys Sweatshirt",
-            "description": "Cozy and comfortable sweatshirt for boys, perfect for winter.",
-            "price": 19.99,
-            "rating": 4.5,
-            "image_url": "https://via.placeholder.com/150",
-            "image": null
+        "model":"products.product",
+        "pk":1,
+        "fields":{
+            "category":1,
+            "sku":"P001",
+            "name":"Boys T-Shirt",
+            "description":"Comfortable cotton T-shirt for boys.",
+            "price":15.99,
+            "rating":4.5,
+            "image_url":"https:\/\/example.com\/images\/image1.jpg",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 2,
-        "fields": {
-            "category": 1,
-            "sku": "B002",
-            "name": "Boys Jeans",
-            "description": "Stylish and durable jeans for boys, made with high-quality denim.",
-            "price": 24.99,
-            "rating": 4.8,
-            "image_url": "https://via.placeholder.com/150",
-            "image": null
+        "model":"products.product",
+        "pk":2,
+        "fields":{
+            "category":null,
+            "sku":"P002",
+            "name":"Girls Skirt",
+            "description":"Trendy pink skirt for girls.",
+            "price":22.49,
+            "rating":4.8,
+            "image_url":"https:\/\/example.com\/images\/image2.jpg",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 3,
-        "fields": {
-            "category": 2,
-            "sku": "G001",
-            "name": "Girls Floral Dress",
-            "description": "Beautiful floral dress for girls, perfect for any occasion.",
-            "price": 29.99,
-            "rating": 4.7,
-            "image_url": "https://via.placeholder.com/150",
-            "image": null
+        "model":"products.product",
+        "pk":3,
+        "fields":{
+            "category":null,
+            "sku":"P003",
+            "name":"Casual Sneakers",
+            "description":"Durable sneakers for daily use.",
+            "price":34.99,
+            "rating":4.6,
+            "image_url":"https:\/\/example.com\/images\/image3.jpg",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 4,
-        "fields": {
-            "category": 2,
-            "sku": "G002",
-            "name": "Girls Skirt",
-            "description": "Trendy skirt for girls, available in various colors and sizes.",
-            "price": 15.99,
-            "rating": 4.4,
-            "image_url": "https://via.placeholder.com/150",
-            "image": null
+        "model":"products.product",
+        "pk":4,
+        "fields":{
+            "category":null,
+            "sku":"P004",
+            "name":"Boys Hat",
+            "description":"Classic red corduroy cap for boys, featuring a timeless design and a comfortable fit. Perfect for chilly days, adding a stylish touch to any casual outfit. Suitable for outdoor adventures or a walk in the park",
+            "price":15.99,
+            "rating":4.7,
+            "image_url":"https:\/\/example.com\/images\/1650093.jpg",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 5,
-        "fields": {
-            "category": 3,
-            "sku": "F001",
-            "name": "Casual Shoes",
-            "description": "Comfortable casual shoes suitable for both boys and girls.",
-            "price": 39.99,
-            "rating": 4.6,
-            "image_url": "https://via.placeholder.com/150",
-            "image": null
+        "model":"products.product",
+        "pk":5,
+        "fields":{
+            "category":null,
+            "sku":"P005",
+            "name":"Boys Shoe",
+            "description":"Stylish blue and white sneakers for boys, featuring vibrant orange laces for a pop of color. Designed with comfort and durability in mind, these shoes are perfect for active kids. Ideal for casual outings, sports, or everyday wear",
+            "price":20.99,
+            "rating":4.9,
+            "image_url":"https:\/\/example.com\/images\/4987527.webp",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 1,
-        "fields": {
-            "category": 1,
-            "sku": "P001",
-            "name": "Boys T-Shirt",
-            "description": "Comfortable cotton T-shirt for boys.",
-            "price": 15.99,
-            "rating": 4.5,
-            "image_url": "https://example.com/images/image1.jpg",
-            "image": null
+        "model":"products.product",
+        "pk":6,
+        "fields":{
+            "category":null,
+            "sku":"P006",
+            "name":"Boys' Graphic T-Shirt and Green Shorts Set",
+            "description":"Trendy boys' outfit featuring a light gray T-shirt with fun animal graphics and comfortable green shorts. Made from soft, breathable cotton fabric, this set is perfect for casual playdates or warm summer days. Designed for style and practicality, it ensures all-day comfort for active kids.",
+            "price":19.99,
+            "rating":5.0,
+            "image_url":"https:\/\/example.com\/images\/5693888.jpg",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 2,
-        "fields": {
-            "category": 2,
-            "sku": "P002",
-            "name": "Girls Skirt",
-            "description": "Trendy pink skirt for girls.",
-            "price": 22.49,
-            "rating": 4.8,
-            "image_url": "https://example.com/images/image2.jpg",
-            "image": null
+        "model":"products.product",
+        "pk":7,
+        "fields":{
+            "category":null,
+            "sku":"P007",
+            "name":"Girls' Pink Sleeveless Dress",
+            "description":"Charming pink sleeveless dress for girls, featuring a delicate scalloped hemline and a classic round neckline. Crafted from soft, lightweight fabric, this dress is perfect for special occasions or casual outings. Its elegant design ensures comfort and style for your little one.",
+            "price":20.99,
+            "rating":4.9,
+            "image_url":"https:\/\/example.com\/images\/5693889.webp",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 3,
-        "fields": {
-            "category": 3,
-            "sku": "P003",
-            "name": "Casual Sneakers",
-            "description": "Durable sneakers for daily use.",
-            "price": 34.99,
-            "rating": 4.6,
-            "image_url": "https://example.com/images/image3.jpg",
-            "image": null
+        "model":"products.product",
+        "pk":8,
+        "fields":{
+            "category":null,
+            "sku":"P008",
+            "name":"Girls' White Sandals",
+            "description":"Elegant white sandals for girls, featuring a T-strap design and a secure buckle closure for a comfortable fit. Perfect for pairing with dresses or casual outfits, these sandals are versatile for both formal events and everyday wear. Crafted with durable materials for lasting comfort and style.\n\n\n\n\n\n\n",
+            "price":15.99,
+            "rating":3.9,
+            "image_url":"https:\/\/example.com\/images\/9214905.webp",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 4,
-        "fields": {
-            "category": 4,
-            "sku": "P004",
-            "name": "Boys Hat",
-            "description": "Classic red corduroy cap for boys, featuring a timeless design and a comfortable fit. Perfect for chilly days, adding a stylish touch to any casual outfit. Suitable for outdoor adventures or a walk in the park",
-            "price": 15.99,
-            "rating": 4.7,
-            "image_url": "https://example.com/images/1650093.jpg",
-            "image": null
+        "model":"products.product",
+        "pk":9,
+        "fields":{
+            "category":null,
+            "sku":"P009",
+            "name":"Nike Red and Yellow Sneakers",
+            "description":"Bold and stylish red and yellow Nike sneakers, designed for both comfort and performance. Featuring a durable sole with excellent grip and a striking color combination, these sneakers are perfect for making a statement. Ideal for casual outings, sports, or everyday wear, blending functionality with modern design.",
+            "price":35.99,
+            "rating":5.0,
+            "image_url":"https:\/\/example.com\/images\/9214905.webp",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 5,
-        "fields": {
-            "category": 5,
-            "sku": "P005",
-            "name": "Boys Shoe",
-            "description": "Stylish blue and white sneakers for boys, featuring vibrant orange laces for a pop of color. Designed with comfort and durability in mind, these shoes are perfect for active kids. Ideal for casual outings, sports, or everyday wear",
-            "price": 20.99,
-            "rating": 4.9,
-            "image_url": "https://example.com/images/4987527.webp",
-            "image": null
+        "model":"products.product",
+        "pk":10,
+        "fields":{
+            "category":null,
+            "sku":"P010",
+            "name":"Baby Animal Print Socks",
+            "description":"Adorable baby socks featuring charming animal face designs in soft pastel colors. Made from breathable and stretchable fabric for maximum comfort and a snug fit. Perfect for keeping little feet warm and stylish, suitable for everyday use or as a thoughtful gift.",
+            "price":5.99,
+            "rating":4.8,
+            "image_url":"https:\/\/example.com\/images\/14195487.webp",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 6,
-        "fields": {
-            "category": 6,
-            "sku": "P006",
-            "name": "Boys' Graphic T-Shirt and Green Shorts Set",
-            "description": "Trendy boys' outfit featuring a light gray T-shirt with fun animal graphics and comfortable green shorts. Made from soft, breathable cotton fabric, this set is perfect for casual playdates or warm summer days. Designed for style and practicality, it ensures all-day comfort for active kids.",
-            "price": 19.99,
-            "rating": 5.0,
-            "image_url": "https://example.com/images/5693888.jpg",
-            "image": null
+        "model":"products.product",
+        "pk":11,
+        "fields":{
+            "category":null,
+            "sku":"P011",
+            "name":"Boys' Multicolor Pom-Pom Beanie",
+            "description":"Cozy and colorful beanie for boys, featuring a playful pom-pom and a fun embroidered design. Made from warm, soft knit material to keep little heads snug during cold weather. A stylish and practical accessory for outdoor adventures or casual outings.",
+            "price":6.99,
+            "rating":4.7,
+            "image_url":"https:\/\/example.com\/images\/14562577.webp",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 7,
-        "fields": {
-            "category": 7,
-            "sku": "P007",
-            "name": "Girls' Pink Sleeveless Dress",
-            "description": "Charming pink sleeveless dress for girls, featuring a delicate scalloped hemline and a classic round neckline. Crafted from soft, lightweight fabric, this dress is perfect for special occasions or casual outings. Its elegant design ensures comfort and style for your little one.",
-            "price": 20.99,
-            "rating": 4.9,
-            "image_url": "https://example.com/images/5693889.webp",
-            "image": null
+        "model":"products.product",
+        "pk":12,
+        "fields":{
+            "category":null,
+            "sku":"P012",
+            "name":"Baby Blue Booties",
+            "description":"Soft and adorable blue baby booties with a charming pattern, designed to keep tiny feet warm and cozy. Perfect for infants and a thoughtful baby shower gift.",
+            "price":9.99,
+            "rating":4.5,
+            "image_url":"https:\/\/example.com\/images\/15844906.webp",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 8,
-        "fields": {
-            "category": 8,
-            "sku": "P008",
-            "name": "Girls' White Sandals",
-            "description": "Elegant white sandals for girls, featuring a T-strap design and a secure buckle closure for a comfortable fit. Perfect for pairing with dresses or casual outfits, these sandals are versatile for both formal events and everyday wear. Crafted with durable materials for lasting comfort and style.\n\n\n\n\n\n\n",
-            "price": 15.99,
-            "rating": 3.9,
-            "image_url": "https://example.com/images/9214905.webp",
-            "image": null
+        "model":"products.product",
+        "pk":13,
+        "fields":{
+            "category":null,
+            "sku":"P013",
+            "name":"Floral Princess Dress",
+            "description":"Elegant floral dress for girls with puffed sleeves and a pink waistband, ideal for parties and special occasions. Made from soft, breathable fabric for comfort and style",
+            "price":21.99,
+            "rating":4.6,
+            "image_url":"https:\/\/example.com\/images\/19392287.webp",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 9,
-        "fields": {
-            "category": 9,
-            "sku": "P009",
-            "name": "Nike Red and Yellow Sneakers",
-            "description": "Bold and stylish red and yellow Nike sneakers, designed for both comfort and performance. Featuring a durable sole with excellent grip and a striking color combination, these sneakers are perfect for making a statement. Ideal for casual outings, sports, or everyday wear, blending functionality with modern design.",
-            "price": 35.99,
-            "rating": 5.0,
-            "image_url": "https://example.com/images/9214905.webp",
-            "image": null
+        "model":"products.product",
+        "pk":14,
+        "fields":{
+            "category":null,
+            "sku":"P014",
+            "name":"Ruffled Skirt and Striped Shirt Set",
+            "description":"Cute pink and white outfit for toddlers featuring a striped collared shirt and a ruffled skirt. Perfect for playful days or summer outings, blending comfort with a touch of charm.\n\n\n\n\n\n\n",
+            "price":22.9,
+            "rating":4.8,
+            "image_url":"https:\/\/example.com\/images\/29469069.webp",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 10,
-        "fields": {
-            "category": 10,
-            "sku": "P010",
-            "name": "Baby Animal Print Socks",
-            "description": "Adorable baby socks featuring charming animal face designs in soft pastel colors. Made from breathable and stretchable fabric for maximum comfort and a snug fit. Perfect for keeping little feet warm and stylish, suitable for everyday use or as a thoughtful gift.",
-            "price": 5.99,
-            "rating": 4.8,
-            "image_url": "https://example.com/images/14195487.webp",
-            "image": null
+        "model":"products.product",
+        "pk":15,
+        "fields":{
+            "category":null,
+            "sku":"P015",
+            "name":"Vibrant Kids' Socks Pack",
+            "description":"A set of colorful and comfortable socks for kids, perfect for everyday wear. Made with soft, breathable fabric to keep tiny feet cozy.",
+            "price":6.99,
+            "rating":4.2,
+            "image_url":"https:\/\/example.com\/images\/96965489.jpg",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 11,
-        "fields": {
-            "category": 11,
-            "sku": "P011",
-            "name": "Boys' Multicolor Pom-Pom Beanie",
-            "description": "Cozy and colorful beanie for boys, featuring a playful pom-pom and a fun embroidered design. Made from warm, soft knit material to keep little heads snug during cold weather. A stylish and practical accessory for outdoor adventures or casual outings.",
-            "price": 6.99,
-            "rating": 4.7,
-            "image_url": "https://example.com/images/14562577.webp",
-            "image": null
+        "model":"products.product",
+        "pk":16,
+        "fields":{
+            "category":null,
+            "sku":"P016",
+            "name":"Cool Summer Kids' Hat and Sunglasses Set",
+            "description":"Stylish summer essentials for kids, including a trendy hat and UV-protective sunglasses. Perfect for outdoor fun and keeping cool.",
+            "price":12.99,
+            "rating":4.4,
+            "image_url":"https:\/\/example.com\/images\/175622348.jpg",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 12,
-        "fields": {
-            "category": 12,
-            "sku": "P012",
-            "name": "Baby Blue Booties",
-            "description": "Soft and adorable blue baby booties with a charming pattern, designed to keep tiny feet warm and cozy. Perfect for infants and a thoughtful baby shower gift.",
-            "price": 9.99,
-            "rating": 4.5,
-            "image_url": "https://example.com/images/15844906.webp",
-            "image": null
+        "model":"products.product",
+        "pk":17,
+        "fields":{
+            "category":null,
+            "sku":"P017",
+            "name":"Kids' Fun Jewelry and Nail Art Kit",
+            "description":"A creative kit for kids to explore their fashion sense, featuring colorful beads for bracelets and vibrant nail colors for fun styling.",
+            "price":12.99,
+            "rating":4.6,
+            "image_url":"https:\/\/example.com\/images\/4877453jpg",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 13,
-        "fields": {
-            "category": 13,
-            "sku": "P013",
-            "name": "Floral Princess Dress",
-            "description": "Elegant floral dress for girls with puffed sleeves and a pink waistband, ideal for parties and special occasions. Made from soft, breathable fabric for comfort and style",
-            "price": 21.99,
-            "rating": 4.6,
-            "image_url": "https://example.com/images/19392287.webp",
-            "image": null
+        "model":"products.product",
+        "pk":18,
+        "fields":{
+            "category":null,
+            "sku":"P018",
+            "name":"Chic Blue Leopard Print Dress",
+            "description":"A stylish and lightweight blue leopard print dress for girls, designed for both casual outings and special occasions.",
+            "price":14.99,
+            "rating":4.7,
+            "image_url":"https:\/\/example.com\/images\/506317910.jpg",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 14,
-        "fields": {
-            "category": 14,
-            "sku": "P014",
-            "name": "Ruffled Skirt and Striped Shirt Set",
-            "description": "Cute pink and white outfit for toddlers featuring a striped collared shirt and a ruffled skirt. Perfect for playful days or summer outings, blending comfort with a touch of charm.\n\n\n\n\n\n\n",
-            "price": 22.9,
-            "rating": 4.8,
-            "image_url": "https://example.com/images/29469069.webp",
-            "image": null
+        "model":"products.product",
+        "pk":19,
+        "fields":{
+            "category":null,
+            "sku":"P019",
+            "name":"Corduroy Kids' Overalls",
+            "description":"Durable and adorable corduroy overalls available in vibrant red and soft pink, perfect for a playful and comfy outfit.",
+            "price":21.99,
+            "rating":4.3,
+            "image_url":"https:\/\/example.com\/images\/509138819.jpg",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 15,
-        "fields": {
-            "category": 15,
-            "sku": "P015",
-            "name": "Vibrant Kids' Socks Pack",
-            "description": "A set of colorful and comfortable socks for kids, perfect for everyday wear. Made with soft, breathable fabric to keep tiny feet cozy.",
-            "price": 6.99,
-            "rating": 4.2,
-            "image_url": "https://example.com/images/96965489.jpg",
-            "image": null
+        "model":"products.product",
+        "pk":20,
+        "fields":{
+            "category":null,
+            "sku":"P020",
+            "name":"Purple Canvas Sneakers",
+            "description":"Comfortable and stylish purple canvas sneakers for kids, perfect for everyday wear.",
+            "price":15.99,
+            "rating":4.6,
+            "image_url":"https:\/\/example.com\/images\/845769144.png",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 16,
-        "fields": {
-            "category": 16,
-            "sku": "P016",
-            "name": "Cool Summer Kids' Hat and Sunglasses Set",
-            "description": "Stylish summer essentials for kids, including a trendy hat and UV-protective sunglasses. Perfect for outdoor fun and keeping cool.",
-            "price": 12.99,
-            "rating": 4.4,
-            "image_url": "https://example.com/images/175622348.jpg",
-            "image": null
+        "model":"products.product",
+        "pk":21,
+        "fields":{
+            "category":null,
+            "sku":"P021",
+            "name":"Playful Striped Outfit",
+            "description":"Adorable striped outfit paired with a cap and sneakers, ideal for your child\u2019s playful moments.",
+            "price":21.99,
+            "rating":4.3,
+            "image_url":"https:\/\/example.com\/images\/524161848.png",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 17,
-        "fields": {
-            "category": 17,
-            "sku": "P017",
-            "name": "Kids' Fun Jewelry and Nail Art Kit",
-            "description": "A creative kit for kids to explore their fashion sense, featuring colorful beads for bracelets and vibrant nail colors for fun styling.",
-            "price": 12.99,
-            "rating": 4.6,
-            "image_url": "https://example.com/images/4877453jpg",
-            "image": null
+        "model":"products.product",
+        "pk":22,
+        "fields":{
+            "category":null,
+            "sku":"P022",
+            "name":"Denim Overall Set",
+            "description":"Classic denim overalls with a cozy sweater and pink shoes, a charming choice for casual outings.",
+            "price":22.99,
+            "rating":4.9,
+            "image_url":"https:\/\/example.com\/images\/641271594.png",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 18,
-        "fields": {
-            "category": 18,
-            "sku": "P018",
-            "name": "Chic Blue Leopard Print Dress",
-            "description": "A stylish and lightweight blue leopard print dress for girls, designed for both casual outings and special occasions.",
-            "price": 14.99,
-            "rating": 4.7,
-            "image_url": "https://example.com/images/506317910.jpg",
-            "image": null
+        "model":"products.product",
+        "pk":23,
+        "fields":{
+            "category":null,
+            "sku":"P023",
+            "name":"Bright Yellow Outfit",
+            "description":"Vibrant yellow top with dotted leggings, designed for both comfort and style for toddlers.\n",
+            "price":9.99,
+            "rating":4.8,
+            "image_url":"https:\/\/example.com\/images\/821967132.png",
+            "image":null
         }
     },
     {
-        "model": "products.product",
-        "pk": 19,
-        "fields": {
-            "category": 19,
-            "sku": "P019",
-            "name": "Corduroy Kids' Overalls",
-            "description": "Durable and adorable corduroy overalls available in vibrant red and soft pink, perfect for a playful and comfy outfit.",
-            "price": 21.99,
-            "rating": 4.3,
-            "image_url": "https://example.com/images/509138819.jpg",
-            "image": null
-        }
-    },
-    {
-        "model": "products.product",
-        "pk": 20,
-        "fields": {
-            "category": 20,
-            "sku": "P020",
-            "name": "Purple Canvas Sneakers",
-            "description": "Comfortable and stylish purple canvas sneakers for kids, perfect for everyday wear.",
-            "price": 15.99,
-            "rating": 4.6,
-            "image_url": "https://example.com/images/845769144.png",
-            "image": null
-        }
-    },
-    {
-        "model": "products.product",
-        "pk": 21,
-        "fields": {
-            "category": 21,
-            "sku": "P021",
-            "name": "Playful Striped Outfit",
-            "description": "Adorable striped outfit paired with a cap and sneakers, ideal for your child\u2019s playful moments.",
-            "price": 21.99,
-            "rating": 4.3,
-            "image_url": "https://example.com/images/524161848.png",
-            "image": null
-        }
-    },
-    {
-        "model": "products.product",
-        "pk": 22,
-        "fields": {
-            "category": 22,
-            "sku": "P022",
-            "name": "Denim Overall Set",
-            "description": "Classic denim overalls with a cozy sweater and pink shoes, a charming choice for casual outings.",
-            "price": 22.99,
-            "rating": 4.9,
-            "image_url": "https://example.com/images/641271594.png",
-            "image": null
-        }
-    },
-    {
-        "model": "products.product",
-        "pk": 23,
-        "fields": {
-            "category": 23,
-            "sku": "P023",
-            "name": "Bright Yellow Outfit",
-            "description": "Vibrant yellow top with dotted leggings, designed for both comfort and style for toddlers.\n",
-            "price": 9.99,
-            "rating": 4.8,
-            "image_url": "https://example.com/images/821967132.png",
-            "image": null
-        }
-    },
-    {
-        "model": "products.product",
-        "pk": 24,
-        "fields": {
-            "category": 24,
-            "sku": "P024",
-            "name": "Elegant White Baby Dress",
-            "description": "A soft and elegant white dress with pink trims, perfect for any special occasion.",
-            "price": 10.99,
-            "rating": 4.7,
-            "image_url": "https://example.com/images/845769144.png",
-            "image": null
+        "model":"products.product",
+        "pk":24,
+        "fields":{
+            "category":null,
+            "sku":"P024",
+            "name":"Elegant White Baby Dress",
+            "description":"A soft and elegant white dress with pink trims, perfect for any special occasion.",
+            "price":10.99,
+            "rating":4.7,
+            "image_url":"https:\/\/example.com\/images\/845769144.png",
+            "image":null
         }
     }
 ]
