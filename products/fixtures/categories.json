@@ -1,1 +1,47 @@
-[{"pk": 1, "model": "products.category", "fields": {"name": "activewear", "friendly_name": "Activewear"}}, {"pk": 2, "model": "products.category", "fields": {"name": "bed_bath", "friendly_name": "Bed & Bath"}}, {"pk": 3, "model": "products.category", "fields": {"name": "clearance", "friendly_name": "Clearance"}}, {"pk": 4, "model": "products.category", "fields": {"name": "deals", "friendly_name": "Deals"}}, {"pk": 5, "model": "products.category", "fields": {"name": "essentials", "friendly_name": "Essentials"}}, {"pk": 6, "model": "products.category", "fields": {"name": "jeans", "friendly_name": "Jeans"}}, {"pk": 7, "model": "products.category", "fields": {"name": "kitchen_dining", "friendly_name": "Kitchen & Dining"}}, {"pk": 8, "model": "products.category", "fields": {"name": "new_arrivals", "friendly_name": "New Arrivals"}}, {"pk": 9, "model": "products.category", "fields": {"name": "shirts", "friendly_name": "Shirts"}}]
+[
+    {
+        "model": "products.category",
+        "pk": 1,
+        "fields": {
+            "name": "All Products",
+            "friendly_name": "All Products",
+            "description": "Browse all available products in the store."
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 2,
+        "fields": {
+            "name": "Boy Fashion",
+            "friendly_name": "Boy Fashion",
+            "description": "Stylish and trendy clothing for boys."
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 3,
+        "fields": {
+            "name": "Girl Fashion",
+            "friendly_name": "Girl Fashion",
+            "description": "Elegant and fashionable clothing for girls."
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 4,
+        "fields": {
+            "name": "Footwear",
+            "friendly_name": "Footwear",
+            "description": "Durable and stylish footwear for all occasions."
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 5,
+        "fields": {
+            "name": "Special Offers",
+            "friendly_name": "Special Offers",
+            "description": "Exclusive deals and clearance items."
+        }
+    }
+]
