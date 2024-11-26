@@ -19,8 +19,59 @@
         </div>
     </div>
     <div class="row">
-        <div class="product-container col-10 offset-1">
-            <div class="row mt-1 mb-2"></div>
+        <div class="col-md-3">
+
+            <h5>Filter by Category</h5>
+
+            <ul class="list-group">
+
+                {% for category in all_categories %}
+
+                    <li class="list-group-item">
+
+                        <a href="?category={{ category.name }}">{{ category.friendly_name }}</a>
+
+                    </li>
+
+                {% endfor %}
+
+            </ul>
+
+
+
+            <h5 class="mt-4">Filter by Subcategory</h5>
+
+            <ul class="list-group">
+
+                {% for subcategory in all_subcategories %}
+
+                    <li class="list-group-item">
+
+                        <a href="?subcategory={{ subcategory.name }}">{{ subcategory.friendly_name }}</a>
+
+                    </li>
+
+                {% endfor %}
+
+            </ul>
+
+
+
+            <h5 class="mt-4">Search</h5>
+
+            <form method="get" action="{% url 'products' %}">
+
+                <input type="text" name="q" class="form-control mb-2" placeholder="Search..." value="{{ search_term }}">
+
+                <button type="submit" class="btn btn-primary btn-block">Search</button>
+
+            </form>
+
+        </div>
+
+        <!-- Product Grid -->
+
+        <div class="col-md-9">
             <div class="row">
                 {% for product in products %}
                     <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
