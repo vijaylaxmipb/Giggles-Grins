@@ -21,40 +21,30 @@
     <div class="row">
         <div class="col-md-3">
 
+            <!--Filter by Category -->
             <h5>Filter by Category</h5>
-
             <ul class="list-group">
-
+                <li class="list-group-item">
+                    <a href="{% url 'products' %}">All Products</a>
+                </li>
                 {% for category in all_categories %}
-
-                    <li class="list-group-item">
-
-                        <a href="?category={{ category.name }}">{{ category.friendly_name }}</a>
-
-                    </li>
-
+                    {% if category.name != "All Products" %}
+                        <li class="list-group-item">
+                            <a href="{% url 'products_by_category' category.name %}">{{ category.friendly_name }}</a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
-
             </ul>
 
-
-
+            <!-- Updated Filter by Subcategory -->
             <h5 class="mt-4">Filter by Subcategory</h5>
-
             <ul class="list-group">
-
                 {% for subcategory in all_subcategories %}
-
                     <li class="list-group-item">
-
-                        <a href="?subcategory={{ subcategory.name }}">{{ subcategory.friendly_name }}</a>
-
+                        <a href="{% url 'products_by_subcategory' subcategory.name %}">{{ subcategory.friendly_name }}</a>
                     </li>
-
                 {% endfor %}
-
             </ul>
-
 
 
             <h5 class="mt-4">Search</h5>
@@ -96,6 +86,10 @@
                         </div>
                     </div>
                 </div>
+            {% empty %}
+               <div class="col-12">
+                   <p class="text-center">No products found.</p>
+               </div>
             {% endfor %}
         </div>
     </div>
