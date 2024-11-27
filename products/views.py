@@ -12,9 +12,24 @@ def all_products(request):
     subcategories = Subcategory.objects.all()
     current_categories = None
     current_subcategories = None
+    sort = None
+    direction = None
     
 
     if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
+
         if 'category' in request.GET:
             current_categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=current_categories)
@@ -33,6 +48,8 @@ def all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+    current_sorting = f'{sort}_{direction}'
+
     context = {
         'products': products,
         'search_term': query,
@@ -40,6 +57,7 @@ def all_products(request):
         'all_subcategories': subcategories,
         'current_categories': current_categories,
         'current_subcategories': current_subcategories,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'products/products.html', context)
@@ -48,7 +66,6 @@ def products_by_category(request, category_name):
     """ View to display products filtered by category """
     try:
         category = Category.objects.get(name=category_name)
-        # Get all subcategories of the category
         subcategories = Subcategory.objects.filter(category=category)
         # Get products in the selected category or its subcategories
         products = Product.objects.filter(
@@ -56,7 +73,7 @@ def products_by_category(request, category_name):
         ) | Product.objects.filter(category__subcategories__in=subcategories)
 
         context = {
-            'products': products.distinct(),  # Use distinct to avoid duplicates
+            'products': products.distinct(), 
             'current_category': category,
         }
         return render(request, 'products/products.html', context)
