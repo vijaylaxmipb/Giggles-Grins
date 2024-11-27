@@ -334,5 +334,158 @@
             "image_url":"https:\/\/example.com\/images\/845769144.png",
             "image":null
         }
-    }
+    },
+    {
+        "model":"products.product",
+        "pk":25,
+        "fields":{
+            "category":null,
+            "sku":"P025",
+            "name":"Elegant White Baby Dress",
+            "description":"A soft and elegant white dress with pink trims, perfect for any special occasion.",
+            "price":10.99,
+            "rating":4.7,
+            "image_url":"https:\/\/example.com\/images\/845769144.png",
+            "image":null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 25,
+        "fields": {
+            "category": null,
+            "sku": "P025",
+            "name": "Striped Party Dress with Fringed Shoes",
+            "description": "Elegant striped party dress paired with stylish fringed shoes. Perfect for formal events, combining chic design with comfortable wear.",
+            "price": 35.99,
+            "rating": 4.8,
+            "image_url": "/media/-961856876-612x612.jpg",
+            "image": null
+        }
+    },{
+        "model": "products.product",
+        "pk": 26,
+        "fields": {
+            "category": null,
+            "sku": "P026",
+            "name": "Pink Baby Dress with Colorful Ruffles",
+            "description": "Adorable pink baby dress featuring colorful ruffles and a bow. Designed for comfort and cuteness, perfect for casual outings or photoshoots.",
+            "price": 18.99,
+            "rating": 4.7,
+            "image_url": "/media/959463310.jpg",
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 27,
+        "fields": {
+            "category": null,
+            "sku": "P027",
+            "name": "Striped Top with Red Skirt",
+            "description": "Trendy striped top paired with a bright red skirt. Perfect for casual gatherings or playdates, offering style and comfort for kids.",
+            "price": 19.99,
+            "rating": 4.6,
+            "image_url": "/media/845783054.jpg",
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 28,
+        "fields": {
+            "category": null,
+            "sku": "P028",
+            "name": "Polka Dot Shirt with Navy Shorts",
+            "description": "Chic polka dot shirt paired with navy shorts, offering a comfortable yet stylish look. Ideal for summer outings or special occasions.",
+            "price": 25.99,
+            "rating": 4.9,
+            "image_url": "/media/905296094.jpg",
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 29,
+        "fields": {
+            "category": null,
+            "sku": "P029",
+            "name": "White Party Outfit Set",
+            "description": "Sophisticated white party outfit with multiple T-shirt options. Designed for versatility, comfort, and a touch of elegance.",
+            "price": 29.99,
+            "rating": 4.8,
+            "image_url": "/media/1018404414.jpg",
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 30,
+        "fields": {
+            "category": null,
+            "sku": "P030",
+            "name": "Cozy Hoodie with Polka Dot Leggings",
+            "description": "Soft hoodie paired with polka dot leggings and warm booties. A perfect winter set designed for style and comfort.",
+            "price": 32.99,
+            "rating": 4.9,
+            "image_url": "/media/967058606.jpg",
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 31,
+        "fields": {
+            "category": null,
+            "sku": "P031",
+            "name": "Striped Red Polo with Denim Shorts",
+            "description": "Classic red striped polo shirt paired with ripped denim shorts. Perfect for an adventurous day out or casual gatherings.",
+            "price": 28.49,
+            "rating": 4.8,
+            "image_url": "/media/1143538395.jpg",
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 32,
+        "fields": {
+            "category": null,
+            "sku": "P032",
+            "name": "Striped Sweater with Knitted Booties",
+            "description": "Comfortable striped sweater set with warm knitted booties, ideal for cozy winter days. Designed for warmth and style.",
+            "price": 22.99,
+            "rating": 4.7,
+            "image_url": "/media/1311056077.jpg",
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 33,
+        "fields": {
+            "category": null,
+            "sku": "P033",
+            "name": "Striped Onesie with Baby Accessories",
+            "description": "Adorable striped onesie paired with matching accessories. Perfect for newborns, ensuring comfort and cuteness.",
+            "price": 15.99,
+            "rating": 4.8,
+            "image_url": "/media/1147275656.jpg",
+            "image": null
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 34,
+        "fields": {
+            "category": null,
+            "sku": "P034",
+            "name": "Peach Jumpsuit with Sneakers",
+            "description": "Stylish peach jumpsuit paired with trendy sneakers, ideal for playful summer adventures. A blend of practicality and style for active kids.",
+            "price": 26.99,
+            "rating": 4.9,
+            "image_url": "/media/1401525360.jpg",
+            "image": null
+        }
+    }     
 ]
