@@ -9,8 +9,7 @@
             "description":"Comfortable cotton T-shirt for boys.",
             "price":15.99,
             "rating":4.5,
-            "image_url":"https:\/\/example.com\/images\/image1.jpg",
-            "image":null
+            "image": "961856876-612x612.jpg"
         }
     },
     {
@@ -23,8 +22,7 @@
             "description":"Trendy pink skirt for girls.",
             "price":22.49,
             "rating":4.8,
-            "image_url":"https:\/\/example.com\/images\/image2.jpg",
-            "image":null
+            "image": "961856876-612x612.jpg"
         }
     },
     {
@@ -37,8 +35,7 @@
             "description":"Durable sneakers for daily use.",
             "price":34.99,
             "rating":4.6,
-            "image_url":"https:\/\/example.com\/images\/image3.jpg",
-            "image":null
+            "image": "pexels-photo-17825341.jpg"
         }
     },
     {
@@ -51,8 +48,7 @@
             "description":"Classic red corduroy cap for boys, featuring a timeless design and a comfortable fit. Perfect for chilly days, adding a stylish touch to any casual outfit. Suitable for outdoor adventures or a walk in the park",
             "price":15.99,
             "rating":4.7,
-            "image_url":"https:\/\/example.com\/images\/1650093.jpg",
-            "image":null
+            "image":"1650093.png"
         }
     },
     {
@@ -65,8 +61,7 @@
             "description":"Stylish blue and white sneakers for boys, featuring vibrant orange laces for a pop of color. Designed with comfort and durability in mind, these shoes are perfect for active kids. Ideal for casual outings, sports, or everyday wear",
             "price":20.99,
             "rating":4.9,
-            "image_url":"https:\/\/example.com\/images\/4987527.webp",
-            "image":null
+            "image":"4987527.png"
         }
     },
     {
@@ -79,8 +74,7 @@
             "description":"Trendy boys' outfit featuring a light gray T-shirt with fun animal graphics and comfortable green shorts. Made from soft, breathable cotton fabric, this set is perfect for casual playdates or warm summer days. Designed for style and practicality, it ensures all-day comfort for active kids.",
             "price":19.99,
             "rating":5.0,
-            "image_url":"https:\/\/example.com\/images\/5693888.jpg",
-            "image":null
+            "image":"5693888.png"
         }
     },
     {
@@ -93,8 +87,7 @@
             "description":"Charming pink sleeveless dress for girls, featuring a delicate scalloped hemline and a classic round neckline. Crafted from soft, lightweight fabric, this dress is perfect for special occasions or casual outings. Its elegant design ensures comfort and style for your little one.",
             "price":20.99,
             "rating":4.9,
-            "image_url":"https:\/\/example.com\/images\/5693889.webp",
-            "image":null
+            "image":"5693889.png"
         }
     },
     {
@@ -107,8 +100,7 @@
             "description":"Elegant white sandals for girls, featuring a T-strap design and a secure buckle closure for a comfortable fit. Perfect for pairing with dresses or casual outfits, these sandals are versatile for both formal events and everyday wear. Crafted with durable materials for lasting comfort and style.\n\n\n\n\n\n\n",
             "price":15.99,
             "rating":3.9,
-            "image_url":"https:\/\/example.com\/images\/9214905.webp",
-            "image":null
+            "image":"9214905.png"
         }
     },
     {
@@ -121,8 +113,7 @@
             "description":"Bold and stylish red and yellow Nike sneakers, designed for both comfort and performance. Featuring a durable sole with excellent grip and a striking color combination, these sneakers are perfect for making a statement. Ideal for casual outings, sports, or everyday wear, blending functionality with modern design.",
             "price":35.99,
             "rating":5.0,
-            "image_url":"https:\/\/example.com\/images\/9214905.webp",
-            "image":null
+            "image":"11924646.png"
         }
     },
     {
@@ -135,8 +126,7 @@
             "description":"Adorable baby socks featuring charming animal face designs in soft pastel colors. Made from breathable and stretchable fabric for maximum comfort and a snug fit. Perfect for keeping little feet warm and stylish, suitable for everyday use or as a thoughtful gift.",
             "price":5.99,
             "rating":4.8,
-            "image_url":"https:\/\/example.com\/images\/14195487.webp",
-            "image":null
+            "image":"14195487.png"
         }
     },
     {
@@ -149,8 +139,7 @@
             "description":"Cozy and colorful beanie for boys, featuring a playful pom-pom and a fun embroidered design. Made from warm, soft knit material to keep little heads snug during cold weather. A stylish and practical accessory for outdoor adventures or casual outings.",
             "price":6.99,
             "rating":4.7,
-            "image_url":"https:\/\/example.com\/images\/14562577.webp",
-            "image":null
+            "image":"14562577.png"
         }
     },
     {
@@ -163,8 +152,7 @@
             "description":"Soft and adorable blue baby booties with a charming pattern, designed to keep tiny feet warm and cozy. Perfect for infants and a thoughtful baby shower gift.",
             "price":9.99,
             "rating":4.5,
-            "image_url":"https:\/\/example.com\/images\/15844906.webp",
-            "image":null
+            "image":"15844906.png"
         }
     },
     {
@@ -177,8 +165,7 @@
             "description":"Elegant floral dress for girls with puffed sleeves and a pink waistband, ideal for parties and special occasions. Made from soft, breathable fabric for comfort and style",
             "price":21.99,
             "rating":4.6,
-            "image_url":"https:\/\/example.com\/images\/19392287.webp",
-            "image":null
+            "image":"19392287.png"
         }
     },
     {
@@ -191,8 +178,7 @@
             "description":"Cute pink and white outfit for toddlers featuring a striped collared shirt and a ruffled skirt. Perfect for playful days or summer outings, blending comfort with a touch of charm.\n\n\n\n\n\n\n",
             "price":22.9,
             "rating":4.8,
-            "image_url":"https:\/\/example.com\/images\/29469069.webp",
-            "image":null
+            "image":"29469069.png"
         }
     },
     {
@@ -205,8 +191,7 @@
             "description":"A set of colorful and comfortable socks for kids, perfect for everyday wear. Made with soft, breathable fabric to keep tiny feet cozy.",
             "price":6.99,
             "rating":4.2,
-            "image_url":"https:\/\/example.com\/images\/96965489.jpg",
-            "image":null
+            "image":"96965489.png"
         }
     },
     {
@@ -219,8 +204,7 @@
             "description":"Stylish summer essentials for kids, including a trendy hat and UV-protective sunglasses. Perfect for outdoor fun and keeping cool.",
             "price":12.99,
             "rating":4.4,
-            "image_url":"https:\/\/example.com\/images\/175622348.jpg",
-            "image":null
+            "image":"175622348.png"
         }
     },
     {
@@ -233,8 +217,7 @@
             "description":"A creative kit for kids to explore their fashion sense, featuring colorful beads for bracelets and vibrant nail colors for fun styling.",
             "price":12.99,
             "rating":4.6,
-            "image_url":"https:\/\/example.com\/images\/4877453jpg",
-            "image":null
+            "image":"487745338.png"
         }
     },
     {
@@ -247,8 +230,7 @@
             "description":"A stylish and lightweight blue leopard print dress for girls, designed for both casual outings and special occasions.",
             "price":14.99,
             "rating":4.7,
-            "image_url":"https:\/\/example.com\/images\/506317910.jpg",
-            "image":null
+            "image":"506317910.png"
         }
     },
     {
@@ -261,8 +243,7 @@
             "description":"Durable and adorable corduroy overalls available in vibrant red and soft pink, perfect for a playful and comfy outfit.",
             "price":21.99,
             "rating":4.3,
-            "image_url":"https:\/\/example.com\/images\/509138819.jpg",
-            "image":null
+            "image":"509138819.png"
         }
     },
     {
@@ -275,8 +256,7 @@
             "description":"Comfortable and stylish purple canvas sneakers for kids, perfect for everyday wear.",
             "price":15.99,
             "rating":4.6,
-            "image_url":"https:\/\/example.com\/images\/845769144.png",
-            "image":null
+            "image":"522628236.png"
         }
     },
     {
@@ -289,8 +269,7 @@
             "description":"Adorable striped outfit paired with a cap and sneakers, ideal for your child\u2019s playful moments.",
             "price":21.99,
             "rating":4.3,
-            "image_url":"https:\/\/example.com\/images\/524161848.png",
-            "image":null
+            "image":"524161848.png"
         }
     },
     {
@@ -303,8 +282,7 @@
             "description":"Classic denim overalls with a cozy sweater and pink shoes, a charming choice for casual outings.",
             "price":22.99,
             "rating":4.9,
-            "image_url":"https:\/\/example.com\/images\/641271594.png",
-            "image":null
+            "image":"641271594.png"
         }
     },
     {
@@ -317,8 +295,7 @@
             "description":"Vibrant yellow top with dotted leggings, designed for both comfort and style for toddlers.\n",
             "price":9.99,
             "rating":4.8,
-            "image_url":"https:\/\/example.com\/images\/821967132.png",
-            "image":null
+            "image":"821967132.png"
         }
     },
     {
@@ -331,8 +308,7 @@
             "description":"A soft and elegant white dress with pink trims, perfect for any special occasion.",
             "price":10.99,
             "rating":4.7,
-            "image_url":"https:\/\/example.com\/images\/845769144.png",
-            "image":null
+            "image":"845769144.png"
         }
     },
     {
@@ -345,8 +321,7 @@
             "description":"A soft and elegant white dress with pink trims, perfect for any special occasion.",
             "price":10.99,
             "rating":4.7,
-            "image_url":"https:\/\/example.com\/images\/845769144.png",
-            "image":null
+            "image": "961856876-612x612.jpg"
         }
     },
     {
@@ -359,10 +334,11 @@
             "description": "Elegant striped party dress paired with stylish fringed shoes. Perfect for formal events, combining chic design with comfortable wear.",
             "price": 35.99,
             "rating": 4.8,
-            "image_url": "/media/-961856876-612x612.jpg",
-            "image": null
+            "image": "961856876-612x612.jpg"
+        
         }
-    },{
+    },
+    {
         "model": "products.product",
         "pk": 26,
         "fields": {
@@ -372,8 +348,7 @@
             "description": "Adorable pink baby dress featuring colorful ruffles and a bow. Designed for comfort and cuteness, perfect for casual outings or photoshoots.",
             "price": 18.99,
             "rating": 4.7,
-            "image_url": "/media/959463310.jpg",
-            "image": null
+            "image": "959463310.jpg"
         }
     },
     {
@@ -386,8 +361,7 @@
             "description": "Trendy striped top paired with a bright red skirt. Perfect for casual gatherings or playdates, offering style and comfort for kids.",
             "price": 19.99,
             "rating": 4.6,
-            "image_url": "/media/845783054.jpg",
-            "image": null
+            "image": "845783054.jpg"
         }
     },
     {
@@ -400,8 +374,7 @@
             "description": "Chic polka dot shirt paired with navy shorts, offering a comfortable yet stylish look. Ideal for summer outings or special occasions.",
             "price": 25.99,
             "rating": 4.9,
-            "image_url": "/media/905296094.jpg",
-            "image": null
+            "image": "905296094.jpg"
         }
     },
     {
@@ -414,8 +387,7 @@
             "description": "Sophisticated white party outfit with multiple T-shirt options. Designed for versatility, comfort, and a touch of elegance.",
             "price": 29.99,
             "rating": 4.8,
-            "image_url": "/media/1018404414.jpg",
-            "image": null
+            "image": "1018404414.jpg"
         }
     },
     {
@@ -428,8 +400,7 @@
             "description": "Soft hoodie paired with polka dot leggings and warm booties. A perfect winter set designed for style and comfort.",
             "price": 32.99,
             "rating": 4.9,
-            "image_url": "/media/967058606.jpg",
-            "image": null
+            "image": "967058606.jpg"
         }
     },
     {
@@ -442,8 +413,7 @@
             "description": "Classic red striped polo shirt paired with ripped denim shorts. Perfect for an adventurous day out or casual gatherings.",
             "price": 28.49,
             "rating": 4.8,
-            "image_url": "/media/1143538395.jpg",
-            "image": null
+            "image": "1143538395.jpg"
         }
     },
     {
@@ -456,8 +426,7 @@
             "description": "Comfortable striped sweater set with warm knitted booties, ideal for cozy winter days. Designed for warmth and style.",
             "price": 22.99,
             "rating": 4.7,
-            "image_url": "/media/1311056077.jpg",
-            "image": null
+            "image": "1311056077.jpg"
         }
     },
     {
@@ -470,8 +439,7 @@
             "description": "Adorable striped onesie paired with matching accessories. Perfect for newborns, ensuring comfort and cuteness.",
             "price": 15.99,
             "rating": 4.8,
-            "image_url": "/media/1147275656.jpg",
-            "image": null
+            "image": "1147275656.jpg"
         }
     },
     {
@@ -484,8 +452,7 @@
             "description": "Stylish peach jumpsuit paired with trendy sneakers, ideal for playful summer adventures. A blend of practicality and style for active kids.",
             "price": 26.99,
             "rating": 4.9,
-            "image_url": "/media/1401525360.jpg",
-            "image": null
+            "image": "1401525360.jpg"
         }
     }     
 ]

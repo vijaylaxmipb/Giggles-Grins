@@ -26,9 +26,19 @@
             "description": "Elegant and fashionable clothing for girls."
         }
     },
+
     {
         "model": "products.category",
         "pk": 4,
+        "fields": {
+            "name": "Baby Fashion",
+            "friendly_name": "Baby Fashion",
+            "description": "Cozy onesies to charming dresses and tiny footwear, our collection combines practicality with style. Perfect for any occasion."
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 5,
         "fields": {
             "name": "Footwear",
             "friendly_name": "Footwear",
@@ -37,7 +47,7 @@
     },
     {
         "model": "products.category",
-        "pk": 5,
+        "pk": 6,
         "fields": {
             "name": "Special Offers",
             "friendly_name": "Special Offers",
