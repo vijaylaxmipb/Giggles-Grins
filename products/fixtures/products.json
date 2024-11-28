@@ -9,7 +9,7 @@
             "description":"Comfortable cotton T-shirt for boys.",
             "price":15.99,
             "rating":4.5,
-            "image": "961856876-612x612.jpg"
+            "image": "1212677226.jpg"
         }
     },
     {
@@ -22,7 +22,7 @@
             "description":"Trendy pink skirt for girls.",
             "price":22.49,
             "rating":4.8,
-            "image": "961856876-612x612.jpg"
+            "image": "girl_skirt.jpg"
         }
     },
     {
@@ -35,7 +35,7 @@
             "description":"Durable sneakers for daily use.",
             "price":34.99,
             "rating":4.6,
-            "image": "pexels-photo-17825341.jpg"
+            "image": "871577412.jpg"
         }
     },
     {
@@ -45,10 +45,10 @@
             "category":null,
             "sku":"P004",
             "name":"Boys Hat",
-            "description":"Classic red corduroy cap for boys, featuring a timeless design and a comfortable fit. Perfect for chilly days, adding a stylish touch to any casual outfit. Suitable for outdoor adventures or a walk in the park",
+            "description":"Classic red corduroy hat for boys, featuring a timeless design and a comfortable fit. Perfect for chilly days, adding a stylish touch to any casual outfit. Suitable for outdoor adventures or a walk in the park",
             "price":15.99,
             "rating":4.7,
-            "image":"1650093.png"
+            "image":"827030550.png"
         }
     },
     {
@@ -454,5 +454,784 @@
             "rating": 4.9,
             "image": "1401525360.jpg"
         }
-    }     
+    },
+    {
+        "model": "products.product",
+        "pk": 35,
+        "fields": {
+            "category": null,
+            "sku": "P035",
+            "name": "Blue Printed Pajamas",
+            "description": "Soft and comfortable blue pajamas with playful prints, ideal for cozy winter nights.",
+            "price": 16.99,
+            "rating": 4.6,
+            "image": "90661275.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 36,
+        "fields": {
+            "category": null,
+            "sku": "P036",
+            "name": "Yellow Knitted Cardigan",
+            "description": "Warm and elegant yellow knitted cardigan for babies, crafted from high-quality wool.",
+            "price": 17.99,
+            "rating": 4.7,
+            "image": "98139392.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 37,
+        "fields": {
+            "category": null,
+            "sku": "P037",
+            "name": "Red Winter Jacket",
+            "description": "Bright red puffer jacket with a fur-lined hood, perfect for keeping children warm in cold weather.",
+            "price": 18.99,
+            "rating": 4.8,
+            "image": "123137325.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 38,
+        "fields": {
+            "category": null,
+            "sku": "P038",
+            "name": "Pink Floral Sneakers",
+            "description": "Stylish pink sneakers with floral designs, featuring Velcro straps for easy wear.",
+            "price": 19.99,
+            "rating": 4.9,
+            "image": "131914935.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 39,
+        "fields": {
+            "category": null,
+            "sku": "P039",
+            "name": "Cotton Ribbed Shirts",
+            "description": "Set of ribbed cotton shirts in green, white, and orange, comfortable for daily wear.",
+            "price": 20.99,
+            "rating": 4.5,
+            "image": "133203339.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 40,
+        "fields": {
+            "category": null,
+            "sku": "P040",
+            "name": "Brown Baby Loafers",
+            "description": "Adorable and soft brown loafers for babies, designed for ultimate comfort.",
+            "price": 21.99,
+            "rating": 4.6,
+            "image": "140425391.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 41,
+        "fields": {
+            "category": null,
+            "sku": "P041",
+            "name": "Purple Winter Coat",
+            "description": "Thick and cozy purple coat with faux fur trim, offering style and warmth for children.",
+            "price": 22.99,
+            "rating": 4.7,
+            "image": "146727926.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 42,
+        "fields": {
+            "category": null,
+            "sku": "P042",
+            "name": "Blue Baby Onesie",
+            "description": "Light blue sleeveless onesie for babies, made from breathable fabric for everyday comfort.",
+            "price": 23.99,
+            "rating": 4.8,
+            "image": "147941881.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 43,
+        "fields": {
+            "category": null,
+            "sku": "P043",
+            "name": "Black High-Top Sneakers",
+            "description": "Trendy black high-top sneakers with white laces, suitable for active kids.",
+            "price": 24.99,
+            "rating": 4.9,
+            "image": "157434344.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 44,
+        "fields": {
+            "category": null,
+            "sku": "P044",
+            "name": "Mesh Slip-On Shoes",
+            "description": "Breathable and lightweight slip-on shoes in navy, red, and gray, ideal for casual outings.",
+            "price": 25.99,
+            "rating": 4.5,
+            "image": "844137014.jpg"
+        }
+    },{
+        "model": "products.product",
+        "pk": 45,
+        "fields": {
+            "category": null,
+            "sku": "P045",
+            "name": "Brown Casual T-Shirt",
+            "description": "A lightweight brown T-shirt with a globe print, designed for everyday comfort.",
+            "price": 63.989999999999995,
+            "rating": 4.3,
+            "image": "157436131.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 46,
+        "fields": {
+            "category": null,
+            "sku": "P046",
+            "name": "Blue Tee with Jeans",
+            "description": "A casual blue T-shirt paired with denim jeans, perfect for play and casual outings.",
+            "price": 64.99,
+            "rating": 4.4,
+            "image": "160345241.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 47,
+        "fields": {
+            "category": null,
+            "sku": "P047",
+            "name": "Black and White Sneakers",
+            "description": "Classic black and white sneakers with laces, suitable for sporty and casual looks.",
+            "price": 65.99,
+            "rating": 4.5,
+            "image": "164742459.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 48,
+        "fields": {
+            "category": null,
+            "sku": "P048",
+            "name": "Brown Open-Toe Sandals",
+            "description": "Durable brown sandals with Velcro straps, ideal for active kids.",
+            "price": 66.99,
+            "rating": 4.6,
+            "image": "171250255.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 49,
+        "fields": {
+            "category": null,
+            "sku": "P049",
+            "name": "White Flower Sandals",
+            "description": "Cute white sandals with colorful flower designs, perfect for sunny days.",
+            "price": 67.99,
+            "rating": 4.7,
+            "image": "171251670.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 50,
+        "fields": {
+            "category": null,
+            "sku": "P050",
+            "name": "Pink Striped Pajamas",
+            "description": "Soft pink pajamas with striped patterns, made for cozy nights.",
+            "price": 68.99,
+            "rating": 4.3,
+            "image": "172661610.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 51,
+        "fields": {
+            "category": null,
+            "sku": "P051",
+            "name": "Pink Athletic Shoes",
+            "description": "Sporty pink shoes with heart accents, comfortable for all-day wear.",
+            "price": 69.99,
+            "rating": 4.4,
+            "image": "172767965].jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 52,
+        "fields": {
+            "category": null,
+            "sku": "P052",
+            "name": "Colorful Sporty Sneakers",
+            "description": "Multi-colored sporty sneakers with vibrant designs, perfect for active kids.",
+            "price": 70.99,
+            "rating": 4.5,
+            "image": "177725477.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 53,
+        "fields": {
+            "category": null,
+            "sku": "P053",
+            "name": "Light Blue Winter Coat",
+            "description": "Thick light blue winter coat with faux fur, offering style and warmth.",
+            "price": 71.99,
+            "rating": 4.6,
+            "image": "182188051.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 54,
+        "fields": {
+            "category": null,
+            "sku": "P054",
+            "name": "White Baby Onesie",
+            "description": "Simple and soft white onesie for babies, made from premium cotton.",
+            "price": 72.99,
+            "rating": 4.7,
+            "image": "184103518.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 55,
+        "fields": {
+            "category": null,
+            "sku": "P055",
+            "name": "Pink Bow Party Dress",
+            "description": "Elegant white and pink dress with a large decorative bow, perfect for special occasions.",
+            "price": 75.99,
+            "rating": 4.2,
+            "image": "187870674.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 56,
+        "fields": {
+            "category": null,
+            "sku": "P056",
+            "name": "Blue and Yellow Onesie",
+            "description": "Soft and cozy blue and yellow onesie for babies, designed for comfort during playtime or naps.",
+            "price": 76.99,
+            "rating": 4.3,
+            "image": "453194929.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 57,
+        "fields": {
+            "category": null,
+            "sku": "P057",
+            "name": "Teal Hooded Sweatshirt",
+            "description": "Trendy teal hoodie with a zip-up design, offering style and warmth for kids.",
+            "price": 77.99,
+            "rating": 4.4,
+            "image": "459211961.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 58,
+        "fields": {
+            "category": null,
+            "sku": "P058",
+            "name": "White Basic T-Shirt",
+            "description": "Classic white T-shirt made from premium cotton, perfect for casual wear.",
+            "price": 78.99,
+            "rating": 4.5,
+            "image": "465113506.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 59,
+        "fields": {
+            "category": null,
+            "sku": "P059",
+            "name": "Baby Onesie Pack",
+            "description": "Set of three pastel onesies in blue, pink, and yellow, ideal for newborns.",
+            "price": 79.99,
+            "rating": 4.6,
+            "image": "469556087.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 60,
+        "fields": {
+            "category": null,
+            "sku": "P060",
+            "name": "Purple Leopard Pajamas",
+            "description": "Comfortable purple pajamas with a leopard print, perfect for bedtime.",
+            "price": 80.99,
+            "rating": 4.2,
+            "image": "491380925.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 61,
+        "fields": {
+            "category": null,
+            "sku": "P061",
+            "name": "Traditional Kids Attire",
+            "description": "Beautiful traditional outfit with intricate embroidery, ideal for festive occasions.",
+            "price": 81.99,
+            "rating": 4.3,
+            "image": "497616304.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 62,
+        "fields": {
+            "category": null,
+            "sku": "P062",
+            "name": "Plaid Pajama Set",
+            "description": "Soft blue plaid pajama set, designed for cozy and restful nights.",
+            "price": 82.99,
+            "rating": 4.4,
+            "image": "498924529.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 63,
+        "fields": {
+            "category": null,
+            "sku": "P063",
+            "name": "Polka Dot Pajama Set",
+            "description": "Adorable lavender polka dot pajama set for kids, blending comfort and cuteness.",
+            "price": 83.99,
+            "rating": 4.5,
+            "image": "504397135.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 64,
+        "fields": {
+            "category": null,
+            "sku": "P064",
+            "name": "Tiger Face Baby Socks",
+            "description": "Cute baby socks with tiger faces, made with soft and breathable material.",
+            "price": 84.99,
+            "rating": 4.6,
+            "image": "504417578.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 65,
+        "fields": {
+            "category": null,
+            "sku": "P065",
+            "name": "Knitted Baby Socks",
+            "description": "Handmade knitted baby socks in various colors, soft and warm for little feet.",
+            "price": 90.99,
+            "rating": 4.1,
+            "image": "2164430830.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 66,
+        "fields": {
+            "category": null,
+            "sku": "P066",
+            "name": "Black Patent Shoes",
+            "description": "Elegant black patent shoes with a buckle strap, perfect for formal occasions.",
+            "price": 91.99,
+            "rating": 4.2,
+            "image": "2167033267.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 67,
+        "fields": {
+            "category": null,
+            "sku": "P067",
+            "name": "Dual-Tone Sandals",
+            "description": "Stylish dual-tone sandals with perforated design, comfortable and trendy.",
+            "price": 92.99,
+            "rating": 4.3,
+            "image": "2178059164.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 68,
+        "fields": {
+            "category": null,
+            "sku": "P068",
+            "name": "Casual Black T-Shirt",
+            "description": "Basic black T-shirt with a pocket, ideal for everyday wear.",
+            "price": 93.99,
+            "rating": 4.4,
+            "image": "1691367782367.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 69,
+        "fields": {
+            "category": null,
+            "sku": "P069",
+            "name": "Sporty White Sneakers",
+            "description": "Classic white sneakers with black accents, versatile for any outfit.",
+            "price": 94.99,
+            "rating": 4.5,
+            "image": "pexels-photo-17825341.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 70,
+        "fields": {
+            "category": null,
+            "sku": "P070",
+            "name": "Checkered Gingham Dress",
+            "description": "Adorable black and white checkered dress with a matching headband, great for outdoor events.",
+            "price": 95.99,
+            "rating": 4.1,
+            "image": "photo-933187.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 71,
+        "fields": {
+            "category": null,
+            "sku": "P071",
+            "name": "Colorful Fleece Jacket",
+            "description": "Vibrant fleece jacket with geometric patterns, designed for warmth and style.",
+            "price": 96.99,
+            "rating": 4.2,
+            "image": "sp-1220250375.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 72,
+        "fields": {
+            "category": null,
+            "sku": "P072",
+            "name": "Floral Summer Dress",
+            "description": "Lightweight floral dress with ruffles, perfect for warm weather.",
+            "price": 97.99,
+            "rating": 4.3,
+            "image": "sp-2155313494.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 73,
+        "fields": {
+            "category": null,
+            "sku": "P073",
+            "name": "Yellow Hoodie",
+            "description": "Bright yellow hoodie with a front pocket, offering comfort and style.",
+            "price": 98.99,
+            "rating": 4.4,
+            "image": "sp-2180076869.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 74,
+        "fields": {
+            "category": null,
+            "sku": "P074",
+            "name": "Tropical Outfit Set",
+            "description": "A tropical-themed outfit set with a printed jacket, denim shorts, and vibrant sneakers.",
+            "price": 99.99,
+            "rating": 4.5,
+            "image": "summer-clothes-for-boys.jpeg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 75,
+        "fields": {
+            "category": null,
+            "sku": "P075",
+            "name": "Purple Heart Sweater",
+            "description": "Cozy sweater with purple heart designs, ideal for chilly days.",
+            "price": 105.99,
+            "rating": 4.4,
+            "image": "1460493712.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 76,
+        "fields": {
+            "category": null,
+            "sku": "P076",
+            "name": "Tan Running Shoes",
+            "description": "Comfortable tan running shoes with orange and green accents, perfect for casual and athletic use.",
+            "price": 106.99,
+            "rating": 4.5,
+            "image": "1551107696.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 77,
+        "fields": {
+            "category": null,
+            "sku": "P077",
+            "name": "Red and Blue Winter Coats",
+            "description": "Puffer coats in bold red and navy blue, offering superior warmth for winter.",
+            "price": 107.99,
+            "rating": 4.6,
+            "image": "1702280817.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 78,
+        "fields": {
+            "category": null,
+            "sku": "P078",
+            "name": "Tropical Kids Outfit",
+            "description": "A vibrant floral top paired with denim shorts, completed with trendy sunglasses.",
+            "price": 108.99,
+            "rating": 4.7,
+            "image": "1803583349.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 79,
+        "fields": {
+            "category": null,
+            "sku": "P079",
+            "name": "Classic Navy Sweatshirt",
+            "description": "Simple and versatile navy sweatshirt, perfect for any casual outing.",
+            "price": 109.99,
+            "rating": 4.8,
+            "image": "1869797279.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 80,
+        "fields": {
+            "category": null,
+            "sku": "P080",
+            "name": "Beige Hooded Sweatshirt",
+            "description": "Soft and warm beige hoodie with a half-zip, suitable for all seasons.",
+            "price": 110.99,
+            "rating": 4.4,
+            "image": "1874644859.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 81,
+        "fields": {
+            "category": null,
+            "sku": "P081",
+            "name": "Lilac Sweater and Knit Hat Set",
+            "description": "Adorable lilac sweater paired with a knit hat, perfect for cozy days.",
+            "price": 111.99,
+            "rating": 4.5,
+            "image": "1932179236.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 82,
+        "fields": {
+            "category": null,
+            "sku": "P082",
+            "name": "Red Folded Sweatshirt",
+            "description": "Stylish red sweatshirt, neatly folded for gifting or storing.",
+            "price": 112.99,
+            "rating": 4.6,
+            "image": "2015639086.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 83,
+        "fields": {
+            "category": null,
+            "sku": "P083",
+            "name": "Blue Baby Onesie Set",
+            "description": "Pack of blue onesies with cute animal prints, soft and snug for babies.",
+            "price": 113.99,
+            "rating": 4.7,
+            "image": "2058338998.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 84,
+        "fields": {
+            "category": null,
+            "sku": "P084",
+            "name": "Neutral Baby Bodysuit Set",
+            "description": "Assorted neutral-colored bodysuits in soft fabrics, designed for ultimate comfort.",
+            "price": 114.99,
+            "rating": 4.8,
+            "image": "2071583926.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 85,
+        "fields": {
+            "category": null,
+            "sku": "P085",
+            "name": "Gold and Silver Heels",
+            "description": "Elegant gold and silver high heels with bow detailing, perfect for formal occasions.",
+            "price": 120.99000000000001,
+            "rating": 4.5,
+            "image": "844417482.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 86,
+        "fields": {
+            "category": null,
+            "sku": "P086",
+            "name": "Floral Canvas Sneakers",
+            "description": "Vibrant floral-printed canvas sneakers, offering style and comfort for kids.",
+            "price": 121.99000000000001,
+            "rating": 4.7,
+            "image": "844459644.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 87,
+        "fields": {
+            "category": null,
+            "sku": "P087",
+            "name": "Blue Tropical Pajama Set",
+            "description": "Relaxing pajama set with tropical prints, including blue pants and a comfy t-shirt.",
+            "price": 122.99000000000001,
+            "rating": 4.9,
+            "image": "845763196.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 88,
+        "fields": {
+            "category": null,
+            "sku": "P088",
+            "name": "Pink Floral Sleepwear",
+            "description": "Adorable pink floral-patterned sleepwear with a matching pair of pants.",
+            "price": 123.99000000000001,
+            "rating": 4.3,
+            "image": "845765966.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 89,
+        "fields": {
+            "category": null,
+            "sku": "P089",
+            "name": "White Floral Pajama Set",
+            "description": "Chic white pajama set adorned with floral prints, made from soft and breathable fabric.",
+            "price": 124.99000000000001,
+            "rating": 4.5,
+            "image": "891634976.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 90,
+        "fields": {
+            "category": null,
+            "sku": "P090",
+            "name": "Classic Black Nightwear",
+            "description": "Sophisticated black nightwear with white piping, providing a classy look.",
+            "price": 125.99000000000001,
+            "rating": 4.7,
+            "image": "905299944.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 91,
+        "fields": {
+            "category": null,
+            "sku": "P091",
+            "name": "Pastel Pink Dress",
+            "description": "Charming pastel pink dress with delicate lace trims, perfect for special occasions.",
+            "price": 126.99000000000001,
+            "rating": 4.9,
+            "image": "1389851902.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 92,
+        "fields": {
+            "category": null,
+            "sku": "P092",
+            "name": "Green Knit Baby Set",
+            "description": "Comfortable green knit baby set with a cute bunny pocket, paired with matching shoes.",
+            "price": 127.99000000000001,
+            "rating": 4.3,
+            "image": "1392092969.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 93,
+        "fields": {
+            "category": null,
+            "sku": "P093",
+            "name": "Green and White Baby Romper",
+            "description": "Stylish baby romper with a green and white color scheme, including a cozy sweater.",
+            "price": 128.99,
+            "rating": 4.5,
+            "image": "1401515458.jpg"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 94,
+        "fields": {
+            "category": null,
+            "sku": "P094",
+            "name": "Rainbow Striped Jacket",
+            "description": "Fun rainbow-striped jacket with a matching hat, perfect for a bright day out.",
+            "price": 129.99,
+            "rating": 4.7,
+            "image": "1401515581.jpg"
+        }
+    }
 ]
