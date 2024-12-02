@@ -8,12 +8,15 @@ class CategoryAdmin(admin.ModelAdmin):
         'friendly_name',
         'name',
     )
+    search_fields = ('name', 'friendly_name')
 
    
 
 @admin.register(Subcategory)
 class SubcategoryAdmin(admin.ModelAdmin):
     list_display = ('name', 'friendly_name', 'category')
+    search_fields = ('name', 'friendly_name')  
+    list_filter = ('category',) 
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
@@ -25,5 +28,7 @@ class ProductAdmin(admin.ModelAdmin):
         'rating',
         'image',
     )
+    list_filter = ('category', 'subcategory')  
+    search_fields = ('name', 'description', 'sku')
     ordering = ('sku',)
 

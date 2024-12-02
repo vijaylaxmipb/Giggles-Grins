@@ -13,15 +13,8 @@
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col text-center mt-3">
-            <h2 class="logo-font">Products</h2>
-            <hr class="w-50 mb-1">
-        </div>
-    </div>
-    <div class="row">
+        <!-- Filter Section -->
         <div class="col-md-3">
-
-            <!--Filter by Category -->
             <h5>Filter by Category</h5>
             <ul class="list-group">
                 <li class="list-group-item">
@@ -36,7 +29,6 @@
                 {% endfor %}
             </ul>
 
-            <!-- Updated Filter by Subcategory -->
             <h5 class="mt-4">Filter by Subcategory</h5>
             <ul class="list-group">
                 {% for subcategory in all_subcategories %}
@@ -46,21 +38,14 @@
                 {% endfor %}
             </ul>
 
-
             <h5 class="mt-4">Search</h5>
-
             <form method="get" action="{% url 'products' %}">
-
                 <input type="text" name="q" class="form-control mb-2" placeholder="Search..." value="{{ search_term }}">
-
                 <button type="submit" class="btn btn-primary btn-block">Search</button>
-
             </form>
-
         </div>
 
-        <!-- Product Grid -->
-
+        <!-- Products Section -->
         <div class="col-md-9">
             <div class="row">
                 {% for product in products %}
@@ -78,28 +63,34 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{ product.name }}</h5>
                                 <p class="card-text font-weight-bold">${{ product.price }}</p>
-                                {% if product.category %}
-                                     <p class="small mt-1 mb-0">
-                                         <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                         </a>
-                                     </p>
+                                {% if product.subcategory %}
+                                    <p class="small mt-1 mb-0">
+                                        <a class="text-muted" href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
+                                            <i class="fas fa-tag mr-1"></i>{{ product.subcategory.friendly_name }}
+                                        </a>
+                                    </p>
+                                {% elif product.category %}
+                                    <p class="small mt-1 mb-0">
+                                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                        </a>
+                                    </p>
                                 {% endif %}
                                 {% if product.rating %}
-                                <p class="card-text"><small class="text-muted">Rating: {{ product.rating }} / 5</small></p>
-                            {% else %}
-                                <p class="card-text"><small class="text-muted">No Rating</small></p>
-                            {% endif %}
+                                    <p class="card-text"><small class="text-muted">Rating: {{ product.rating }} / 5</small></p>
+                                {% else %}
+                                    <p class="card-text"><small class="text-muted">No Rating</small></p>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
-                </div>
-            {% empty %}
-               <div class="col-12">
-                   <p class="text-center">No products found.</p>
-               </div>
-            {% endfor %}
+                {% empty %}
+                    <div class="col-12">
+                        <p class="text-center">No products found.</p>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
-</div>
 </div>
 {% endblock %}

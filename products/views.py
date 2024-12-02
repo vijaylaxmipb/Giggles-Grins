@@ -23,6 +23,8 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
+            if sortkey == 'category':
+               sortkey = 'category__name'
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
@@ -32,12 +34,12 @@ def all_products(request):
 
         if 'category' in request.GET:
             current_categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=current_categories)
+            pproducts = products.filter(category__name__in=[cat.strip() for cat in current_categories])
             
 
         if 'subcategory' in request.GET:
             current_subcategories = request.GET['subcategory'].split(',')
-            products = products.filter(category__subcategories__name__in=current_subcategories)
+            products = products.filter(subcategory__name__in=[sub.strip() for sub in current_subcategories])
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -66,14 +68,10 @@ def products_by_category(request, category_name):
     """ View to display products filtered by category """
     try:
         category = Category.objects.get(name=category_name)
-        subcategories = Subcategory.objects.filter(category=category)
-        # Get products in the selected category or its subcategories
-        products = Product.objects.filter(
-            category=category
-        ) | Product.objects.filter(category__subcategories__in=subcategories)
+        products = Product.objects.filter(category=category)
 
         context = {
-            'products': products.distinct(), 
+            'products': products,
             'current_category': category,
         }
         return render(request, 'products/products.html', context)
@@ -96,7 +94,6 @@ def products_by_subcategory(request, subcategory_name):
         return render(request, 'products/products_by_subcategory.html', context)
 
     except Subcategory.DoesNotExist:
-        # Handle subcategory not existing
         messages.error(request, "The selected subcategory does not exist.")
         return redirect('products')
 

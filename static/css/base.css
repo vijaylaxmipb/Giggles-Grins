@@ -30,6 +30,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    text-align:justify;
 }
 
 .main-logo-link {
@@ -116,6 +117,12 @@ body {
     width: 100vw;
 }
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+
 .product-details {
     padding: 20px;
     background-color: #f9f9f9;
@@ -136,29 +143,99 @@ body {
     max-width: 100%;
     border-radius: 8px;
 }
+.navbar-toggler {
+    float: left;
+    margin-right: 0;
+}
 
+.collapse.navbar-collapse {
+    float: none;
+    text-align: right;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.nav-item.dropdown {
+    padding: 0 10px; 
+}
+
+.nav-link {
+    padding: 10px 15px; 
+}
+
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-item.dropdown {
+    margin-right: 15px; 
+}
+
+.navbar-nav .nav-link.dropdown-toggle {
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.dropdown-menu {
+    min-width: 200px; 
+}
+
+.nav-item a.nav-link {
+    font-size: 16px;
+    text-transform: uppercase; 
+}
+
+.sort-select-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 15px;
+}
+
+#sort-selector {
+    max-width: 200px; /* Adjust the dropdown width */
+}
 
 
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 100%;
+    .container {
+      max-width: 80%;
+    }
   }
-}
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .header-container {  
-        padding-top: 70px;
-    }
-}
+  
+  /* fixed top navbar only on medium and up */
+  @media (min-width: 992px) {
+      .fixed-top-desktop-only {
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 1030;
+      }
+  
+      .header-container {
+          padding-top: 164px;
+      }
+  }
+  
+  /* pad the top a bit when navbar is collapsed on mobile */
+  @media (max-width: 991px) {
+      .header-container {
+          padding-top: 116px;
+      }
+  
+      body {
+          height: calc(100vh - 116px);
+      }
+  }
