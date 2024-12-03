@@ -10,20 +10,19 @@ class CategoryAdmin(admin.ModelAdmin):
     )
     search_fields = ('name', 'friendly_name')
 
-   
-
 @admin.register(Subcategory)
 class SubcategoryAdmin(admin.ModelAdmin):
     list_display = ('name', 'friendly_name', 'category')
     search_fields = ('name', 'friendly_name')  
     list_filter = ('category',) 
+    
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
         'name',
-        'category',
+        'get_subcategory',
         'price',
         'rating',
         'image',
@@ -32,3 +31,6 @@ class ProductAdmin(admin.ModelAdmin):
     search_fields = ('name', 'description', 'sku')
     ordering = ('sku',)
 
+    def get_subcategory(self, obj):
+        return obj.subcategory.name if obj.subcategory else "-"
+    get_subcategory.short_description = 'Subcategory'  
