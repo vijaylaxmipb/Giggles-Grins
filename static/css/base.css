@@ -15,9 +15,8 @@ body {
 }
 
 .container {
-    margin-top: 100px; 
+    margin-top: 20px; 
 }
-
 
 /* from Bulma */
 .icon {
@@ -30,7 +29,12 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-    text-align:justify;
+    text-align:center;
+}
+
+h2.logo-font {
+    margin-top:1.5rem ;
+    text-align:center;
 }
 
 .main-logo-link {
@@ -201,7 +205,8 @@ a.category-badge > span.badge:hover {
 }
 
 #sort-selector {
-    max-width: 200px; /* Adjust the dropdown width */
+    max-width: 200px;
+    float: right;
 }
 
 

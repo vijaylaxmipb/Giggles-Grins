@@ -4,7 +4,9 @@
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
-            <div class="col"></div>
+            <div class="col">
+                <h1 class="my-4">Products</h1>
+            </div>
         </div>
     </div>
 {% endblock %}
@@ -15,26 +17,28 @@
     <div class="row">
         <!-- Filter Section -->
         <div class="col-md-3">
-            <h5>Filter by Category</h5>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <a href="{% url 'products' %}">All Products</a>
+            <!-- <h5>Filter by Category</h5>
+            <ul class="list-group mb-3">
+                <li class="list-group-item {% if not current_categories %}active{% endif %}">
+                    <a href="{% url 'products' %}" class="{% if not current_categories %}text-white{% endif %}">All Products</a>
                 </li>
                 {% for category in all_categories %}
-                    {% if category.name != "All Products" %}
-                        <li class="list-group-item">
-                            <a href="{% url 'products_by_category' category.name %}">{{ category.friendly_name }}</a>
-                        </li>
-                    {% endif %}
+                   <li class="list-group-item {% if category.name in current_categories %}active{% endif %}">
+                        <a href="{% url 'products' %}?category={{ category.name }}" class="{% if category.name in current_categories %}text-white{% endif %}">
+                             {{ category.friendly_name }}
+                        </a>
+                   </li>
                 {% endfor %}
-            </ul>
+            </ul> -->
 
             <h5 class="mt-4">Filter by Subcategory</h5>
-            <ul class="list-group">
+            <ul class="list-group mb-3">
                 {% for subcategory in all_subcategories %}
-                    <li class="list-group-item">
-                        <a href="{% url 'products_by_subcategory' subcategory.name %}">{{ subcategory.friendly_name }}</a>
-                    </li>
+                <li class="list-group-item {% if subcategory.name in current_subcategories %}active{% endif %}">
+                    <a href="{% url 'products' %}?subcategory={{ subcategory.name }}" class="{% if subcategory.name in current_subcategories %}text-white{% endif %}">
+                        {{ subcategory.name }}
+                    </a>
+                </li>
                 {% endfor %}
             </ul>
 
