@@ -5,9 +5,9 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+    background: url('/media/istockphoto-184346035-612x612.jpg') no-repeat center center fixed;
     background-size: cover;
-    /*height: calc(100vh - 164px);*/
+    background-color: #ADD8E6;
     color: #555;
     font-family: 'Lato';
     height: 100vh;
@@ -233,6 +233,17 @@ a.category-badge > span.badge:hover {
 
 .btt-link {
     cursor: pointer;
+}
+
+screenshot-container {
+    margin-top: -20px; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+
 }
 
 /* -------------------------------- Media Queries */
