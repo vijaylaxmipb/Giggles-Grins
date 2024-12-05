@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, Category, Subcategory
+from .models import Product, Category, Subcategory, Review
 from django.db.models.functions import Lower
+from .forms import ReviewForm
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -107,10 +108,27 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = product.reviews.all()
+    form = ReviewForm()
+
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.product = product
+            review.user = request.user
+            review.save()
+            messages.success(request, 'Your review has been submitted!')
+            return redirect('product_detail', product_id=product.id)
+        else:
+            messages.error(request, 'Failed to submit your review. Please check the form.')
+
 
     context = {
         'product': product,
         'current_categories': Category.objects.all(),
+        'reviews': reviews,
+        'form': form,
     }
 
     return render(request, 'products/product_detail.html', context)

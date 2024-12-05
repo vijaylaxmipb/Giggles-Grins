@@ -246,6 +246,20 @@ screenshot-container {
 
 }
 
+.review {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+.review p {
+    margin: 0;
+}
+.submit-review {
+    margin-top: 20px;
+}
+
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
