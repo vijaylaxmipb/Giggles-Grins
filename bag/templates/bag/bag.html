@@ -21,6 +21,26 @@
             </div>
         </div>
 
+        <!-- Toast Messages Block -->
+    {% if messages %}
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        {% for message in messages %}
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+                <div class="toast-header">
+                    <strong class="me-auto">
+                        {% if message.level == 25 %} Success {% elif message.level == 30 %} Warning {% elif message.level == 40 %} Error {% else %} Info {% endif %}
+                    </strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    {{ message }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <!-- End of Toast Messages Block -->
+
         <div class="row">
             <div class="col">
                 {% if bag_items %}
