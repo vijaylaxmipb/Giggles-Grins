@@ -31,14 +31,6 @@ CSRF_TRUSTED_ORIGINS = [
     'https://8000-vijaylaxmip-gigglesgrin-qgow4e0ojph.ws.codeinstitute-ide.net',  # Gitpod URL
 ]
 
-import logging
-
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='%(asctime)s %(levelname)s %(message)s',
-)
-
-
 
 # Application definition
 
@@ -93,6 +85,9 @@ TEMPLATES = [
         },
     },
 ]
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
