@@ -328,6 +328,31 @@ screenshot-container {
     overflow-y: auto;
 }
 
+.total-checkout-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    text-align: right; 
+    margin-top: 20px;
+}
+
+.total-checkout-wrapper p {
+    margin: 5px 0; 
+}
+
+.total-checkout-wrapper .btn {
+    margin-top: 10px;
+}
+.toast-container {
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    z-index: 1050; 
+    pointer-events: none; 
+    width: auto;
+    max-width: 300px; 
+}
 
 /* -------------------------------- Media Queries */
 
@@ -352,6 +377,13 @@ screenshot-container {
           padding-top: 164px;
       }
   }
+
+  @media (max-width: 768px) {
+    .total-checkout-wrapper {
+        text-align: center; 
+    }
+}
+
   
   /* pad the top a bit when navbar is collapsed on mobile */
   @media (max-width: 991px) {
