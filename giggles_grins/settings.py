@@ -50,6 +50,9 @@ INSTALLED_APPS = [
     'giggles_grins',
     'bag',
     'checkout',
+
+    # Other
+    'crispy_forms',
 ]
 
 
@@ -66,6 +69,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'giggles_grins.urls'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -81,10 +86,13 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'products.context_processors.categories_with_subcategories',
-                'bag.contexts.bag_contents',
-                
-                
+                'django.template.context_processors.media',
+                'bag.contexts.bag_contents',       
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
