@@ -18,7 +18,7 @@ def view_bag(request):
 
 def add_to_bag(request, item_id):
     """Add a quantity of the specified product to the shopping bag"""
-    product = Product.objects.get(pk=item_id)
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     size = None
@@ -106,7 +106,6 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
-
 
 def session_test(request):
     request.session['test'] = 'Session is working!'
