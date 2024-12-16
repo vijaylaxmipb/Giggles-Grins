@@ -51,9 +51,12 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'django_countries',
 
     # Other
     'crispy_forms',
+    'crispy_bootstrap4',  
+    'crispy_bootstrap5',
 ]
 
 
@@ -71,6 +74,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'giggles_grins.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACKS = ["bootstrap4", "bootstrap5"]
 
 TEMPLATES = [
     {
