@@ -204,6 +204,8 @@ a.category-badge > span.badge:hover {
 
 .dropdown-menu {
     min-width: 200px; 
+    display: block !important; 
+    position: relative;
 }
 
 .nav-item a.nav-link {

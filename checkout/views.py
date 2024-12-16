@@ -2,7 +2,8 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpR
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
-
+from django.http import JsonResponse
+from django.utils import timezone
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
@@ -52,7 +53,9 @@ def checkout(request):
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
             order.original_bag = json.dumps(bag)
+            order.date = timezone.now()
             order.save()
+            
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
