@@ -25,7 +25,6 @@ urlpatterns = [
     path('', include('home.urls')),
     path('bag/', include('bag.urls')),
     path('products/', include('products.urls')),
-    path('accounts/login/', auth_views.LoginView.as_view(), name='login'),
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
     
