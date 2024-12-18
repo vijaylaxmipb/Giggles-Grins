@@ -1,16 +1,48 @@
 {% extends "base.html" %}
+{% load static %} 
+
 {% block content %}
-<h1>{{ category.friendly_name }}</h1>
-{% if message %}
-    <p>{{ message }}</p>
-{% endif %}
-<ul>
-    {% for product in products %}
-        <li>
-            <h2>{{ product.name }}</h2>
-            <p>{{ product.description }}</p>
-            <p>Price: ${{ product.price }}</p>
-        </li>
-    {% endfor %}
-</ul>
+<div class="container mt-5">
+    <h2>Products in {{ current_subcategory.friendly_name }}</h2>
+    <div class="row">
+        {% for product in products %}
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="{% url 'product_detail' product.id %}">
+                        {% if product.image %}
+                            <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+                        {% else %}
+                            <img src="{% static 'images/noimage.png' %}" class="card-img-top" alt="{{ product.name }}">
+                        {% endif %}
+                    </a>
+                    <div class="card-body">
+                        <h5>{{ product.name }}</h5>
+                        <p>${{ product.price }}</p>
+
+                        <!-- Subcategory Display -->
+                        {% if product.subcategory %}
+                            <p class="small mt-1 mb-1">
+                                <a class="text-muted" href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
+                                    <i class="fas fa-tags mr-1"></i>{{ product.subcategory.friendly_name }}
+                                </a>
+                            </p>
+                        {% endif %}
+
+                        <!-- Category Display -->
+                        {% if product.category %}
+                            <p class="small mt-1 mb-1">
+                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                    <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                </a>
+                            </p>
+                        {% endif %}
+                        
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <p>No products found in this subcategory.</p>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
