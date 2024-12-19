@@ -29,12 +29,11 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-    text-align:center;
 }
 
 h2.logo-font {
     margin-top:1.5rem ;
-    text-align:center;
+    
 }
 
 .main-logo-link {
