@@ -22,19 +22,6 @@
                     <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                 </a>
             {% endfor %}
-            <!-- <h5>Filter by Category</h5>
-            <ul class="list-group mb-3">
-                <li class="list-group-item {% if not current_categories %}active{% endif %}">
-                    <a href="{% url 'products' %}" class="{% if not current_categories %}text-white{% endif %}">All Products</a>
-                </li>
-                {% for category in all_categories %}
-                   <li class="list-group-item {% if category.name in current_categories %}active{% endif %}">
-                        <a href="{% url 'products' %}?category={{ category.name }}" class="{% if category.name in current_categories %}text-white{% endif %}">
-                             {{ category.friendly_name }}
-                        </a>
-                   </li>
-                {% endfor %}
-            </ul> -->
 
             <h5 class="mt-4">Filter by Subcategory</h5>
             <ul class="list-group mb-3">
@@ -120,6 +107,12 @@
                                     <p class="card-text"><small class="text-muted">Rating: {{ product.rating }} / 5</small></p>
                                 {% else %}
                                     <p class="card-text"><small class="text-muted">No Rating</small></p>
+                                {% endif %}
+                                {% if request.user.is_superuser %}
+                                    <small class="ml-3">
+                                        <a href="{% url 'edit_product' product.id %}">Edit</a> | 
+                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                    </small>
                                 {% endif %}
                             </div>
                         </div>
