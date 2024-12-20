@@ -50,6 +50,10 @@ form.addEventListener('submit', function(ev) {
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
     // From using {% csrf_token %} in the form
     var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
+    var clientSecret = document.querySelector('input[name="client_secret"]').value;
+
+    console.log("Retrieved Client Secret:", clientSecret);  // Debugging 
+
     var postData = {
         'csrfmiddlewaretoken': csrfToken,
         'client_secret': clientSecret,
@@ -71,6 +75,7 @@ form.addEventListener('submit', function(ev) {
                         city: $.trim(form.town_or_city.value),
                         country: $.trim(form.country.value),
                         state: $.trim(form.county.value),
+                        postal_code: $.trim(form.postcode.value)
                     }
                 }
             },
@@ -84,10 +89,12 @@ form.addEventListener('submit', function(ev) {
                     country: $.trim(form.country.value),
                     postal_code: $.trim(form.postcode.value),
                     state: $.trim(form.county.value),
+                    postal_code: $.trim(form.postcode.value)
                 }
             },
     }).then(function(result) {
         if (result.error) {
+            console.log("Error:", result.error.message);
             var errorDiv = document.getElementById('card-errors');
             var html = `
                 <span class="icon" role="alert">
@@ -101,6 +108,7 @@ form.addEventListener('submit', function(ev) {
             $('#submit-button').attr('disabled', false);
         } else {
             if (result.paymentIntent.status === 'succeeded') {
+                console.log("Payment succeeded");  // Debugging
                 form.submit();
             }
         }
