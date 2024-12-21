@@ -24,11 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ke26wmps7^)*(n$uu84o7t@9mfu)e%%64n_3#_3#qyvo4e$mp4S'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
-#ALLOWED_HOSTS = ['8000-vijaylaxmip-gigglesgrin-qgow4e0ojph.ws.codeinstitute-ide.net']
-ALLOWED_HOSTS = ['giggles-grins.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-vijaylaxmip-gigglesgrin-qgow4e0ojph.ws.codeinstitute-ide.net','giggles-grins-9b5ffdf8ecd6.herokuapp.com', 'localhost','127.0.0.1',]
+
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-vijaylaxmip-gigglesgrin-qgow4e0ojph.ws.codeinstitute-ide.net',  # Gitpod URL
