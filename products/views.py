@@ -42,7 +42,6 @@ def all_products(request):
         if 'category' in request.GET:
             current_categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=[cat.strip() for cat in current_categories])
-            products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
             
