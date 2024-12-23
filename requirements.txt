@@ -14,3 +14,4 @@ pytz==2024.2
 setuptools==75.6.0
 sqlparse==0.5.2
 stripe==11.3.0
+whitenoise==6.8.2
