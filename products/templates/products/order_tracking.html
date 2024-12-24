@@ -1,0 +1,20 @@
+<h2>Your Orders</h2>
+
+{% if orders %}
+    {% for order in orders %}
+        <div class="order-summary">
+            <p><strong>Order #{{ order.id }}</strong></p>
+            <p>Status: {{ order.get_status_display }}</p>
+            <p>Total Price: ${{ order.total_price }}</p>
+            <p>Order Date: {{ order.order_date }}</p>
+            <h4>Products in this order:</h4>
+            <ul>
+                {% for product in order.products.all %}
+                    <li>{{ product.name }} - ${{ product.price }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>You have no orders yet.</p>
+{% endif %}

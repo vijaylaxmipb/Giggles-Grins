@@ -7,6 +7,7 @@ from django.db.models.functions import Lower
 from .forms import ReviewForm
 from .forms import ProductForm
 from django.urls import reverse
+from .models import Order
 
 
 def all_products(request):
@@ -200,3 +201,10 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+
+@login_required
+def order_tracking(request):
+    orders = Order.objects.filter(user=request.user)
+    return render(request, 'orders/order_tracking.html', {'orders': orders})
