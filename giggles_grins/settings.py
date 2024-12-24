@@ -11,8 +11,13 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 import dj_database_url
+import environ
 from pathlib import Path
 from dotenv import load_dotenv
+
+env = environ.Env()
+environ.Env.read_env() 
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -30,6 +35,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # Load DEBUG from .env file, default to False if not set
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-vijaylaxmip-gigglesgrin-qgow4e0ojph.ws.codeinstitute-ide.net','giggles-grins-9b5ffdf8ecd6.herokuapp.com', 'localhost','127.0.0.1',]
 
@@ -209,22 +215,21 @@ if 'USE_AWS' in os.environ:
     }
 
     # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = 'giggles-grins'
-    AWS_S3_REGION_NAME = 'eu-west-1'
+    AWS_STORAGE_BUCKET_NAME = os.getenv('giggles-grin')
+    AWS_S3_REGION_NAME = os.getenv('eu-west-1')
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
     # Static and media files
-    STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
-    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
 
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
 
 
 # stripe
