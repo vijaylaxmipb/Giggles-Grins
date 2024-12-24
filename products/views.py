@@ -107,8 +107,6 @@ def products_by_subcategory(request, subcategory_name):
         return redirect('products')
 
 
-
-
 def product_detail(request, product_id):
     """ A view to show individual product details """
 
