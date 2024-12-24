@@ -355,6 +355,88 @@ screenshot-container {
     max-width: 300px; 
 }
 
+/* Styling for Order Tracking Page */
+.order-summary {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .order-summary h3 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .order-summary ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .order-summary li {
+    margin-bottom: 10px;
+  }
+  
+  .order-summary .status {
+    font-weight: bold;
+    color: #007bff;
+  }* Styling the order tracking page */
+  .order-tracking-container {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .order-summary {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .order-summary h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .order-summary p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .order-summary .status {
+    font-weight: bold;
+    color: #007bff;  /* You can change the color based on order status */
+  }
+  
+  .order-summary .order-products ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .order-summary .order-products li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .order-summary .order-products li:last-child {
+    border-bottom: none;
+  }
+  
+  .order-tracking-container .no-orders {
+    text-align: center;
+    font-size: 1.2em;
+    color: #888;
+  }
+  
+ 
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -465,6 +547,14 @@ screenshot-container {
     .total-checkout-wrapper {
         text-align: center; 
     }
+
+    .order-summary h3 {
+        font-size: 1.5em;
+      }
+    
+      .order-summary p {
+        font-size: 1em;
+      }
 }
 
   
