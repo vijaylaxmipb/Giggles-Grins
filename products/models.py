@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-
 class Category(models.Model):
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
@@ -57,3 +56,23 @@ class Review(models.Model):
         return f"Review for {self.product.name} by {self.user.username}"
 
 
+
+class Order(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    # Use the string 'Product' instead of importing directly
+    products = models.ManyToManyField('Product')
+    total_price = models.DecimalField(max_digits=10, decimal_places=2)
+    order_date = models.DateTimeField(auto_now_add=True)
+    status = models.CharField(
+        max_length=20,
+        choices=[
+            ('Pending', 'Pending'),
+            ('Processing', 'Processing'),
+            ('Shipped', 'Shipped'),
+            ('Delivered', 'Delivered'),
+        ],
+        default='Pending'
+    )
+
+    def __str__(self):
+        return f"Order #{self.id} by {self.user.username}"
