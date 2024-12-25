@@ -1,131 +1,149 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Giggles & Grins Project Portfolio
 
-Welcome Vijaylaxmi Biradar,
+![responsive-mockup]()
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<div align="center">
+Explore Giggles & Grins
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+</div> <div align="center">
 
-## Gitpod Reminders
+</div>
+🏠 Introduction
+<img alt="logo" src="github_assets/readme_images/docs-logo.png" width="300px">
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Introduction
 
-`python3 -m http.server`
+Welcome to Giggles & Grins, a dynamic platform focused on delivering top-tier experiences for families, offering a seamless way to purchase and manage products for their children. Giggles & Grins brings together an interactive interface for browsing, managing, and checking out child-friendly products, while providing the platform to share reviews and ratings.
 
-A blue button should appear to click: _Make Public_,
+### Objectives
 
-Another blue button should appear to click: _Open Browser_.
+- Offer a smooth e-commerce experience: A platform that allows parents to shop for kids' products effortlessly, providing an easy-to-navigate interface.
+  
+- Engage with user feedback: Through the integration of product ratings and reviews, users can share their experiences, helping others make informed decisions.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+- Admin panel for store management: An efficient back-end interface for managing products, prices, and user interactions, ensuring that store owners can update their offerings in real-time.
 
-A blue button should appear to click: _Make Public_,
+### Target Audience
 
-Another blue button should appear to click: _Open Browser_.
+- **Parents and Caregivers**: Families looking for safe and fun products for their children.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- **Shoppers in need of specific products**: Those interested in curated, reliable products that are specifically designed for kids.
 
-To log into the Heroku toolbelt CLI:
+- **E-commerce Enthusiasts**:  Users who want a simple and trustworthy platform to shop for children’s products.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Problem Being Solved
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+- **Limited Options for Parent-Friendly Shopping**: Giggles & Grins solves the problem of sorting through vast online stores by curating a focused range of child-friendly products.
 
-### Connecting your Mongo database
+- **Unclear Product Reviews**: The platform ensures reviews come from verified users, increasing trust and providing clearer insights for parents.
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
 
-------
+### Scope
 
-## Release History
+- **E-Commerce**: A robust shopping cart system, checkout processes, and account management features.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- **User Accounts:**: The ability to create accounts, track orders, and review products.
 
-**June 18, 2024,** Add Mongo back into template
+- **Admin Management:**: Real-time product and inventory management features for easy handling of sales and feedback.
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+![Line brake](github_assets/readme_images/color-line-break.png)
 
-**May 28 2024:** Fix Mongo and Links installs
 
-**April 26 2024:** Update node version to 16
+## 📜Table of Contents
 
-**September 20 2023:** Update Python version to 3.9.17.
+1. [Introduction](#introduction)
+    - [Objectives](#objectives)
+    - [Target Audience](#target-audience)
+    - [Problem Being Solved](#problem-being-solved)
+    - [Scope](#scope)
+2. [📈Business and Marketing Plan](#📈business-and-marketing-plan)
+    - [Introduction](#introduction-1)
+    - [Target Market](#target-market)
+    - [Revenue Model](#revenue-model)
+    - [Marketing Strategies](#marketing-strategies)
+    - [Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
+    - [Risks and Mitigation Strategies](#risks-and-mitigation-strategies)
+3. [🧑‍💻Development Plan](#🧑‍💻development-plan)
+    - [Introduction](#introduction-1)
+    - [Research and Initial Decisions](#research-and-initial-decisions)
+    - [Point System and Estimation](#point-system-and-estimation)
+    - [Timeline and Milestones](#timeline-and-milestones)
+    - [Methodologies](#methodologies)
+4. [🖌️UX/UI Design Plan](#🖌️uxui-design-plan)
+    - [The Strategy Plane](#the-strategy-plane)
+    - [The Scope Plane](#the-scope-plane)
+    - [The Structure Plane](#the-structure-plane)
+    - [The Skeleton Plane](#the-skeleton-plane)
+    - [The Surface Plane](#the-surface-plane)
+5. [⭐Features](#⭐features)
+6. [🌠Future Enhancements](#🌠future-enhancements)
+7. [🧮Testing](#🧮testing)
+8. [🤖Technologies Used](#🤖technologies-used)
+9. [⚙️Setup and Installation (GitHub and Heroku)](#⚙️setup-and-installation-github-and-heroku)
+10. [🎓Credits & Acknowledgements](#🎓credits--acknowledgements)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![Line brake](github_assets/readme_images/color-line-break.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+# 📈Business and Marketing Plan
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Introduction
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+The **Giggles & Grins** platform is designed to provide families with a wide selection of child-friendly products, ranging from clothes to toys, curated based on quality, safety, and fun. The business plan details how the platform would function, attract customers, and generate sustainable revenue.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Target Market
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- **Parents with young children**: Primarily targeting parents seeking products that cater to their children's needs.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- **Caregivers and child-oriented businesses**: Providing easy access for other caregivers and businesses in need of dependable products.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- **Gift-givers**: People looking for the ideal gifts for their young family members.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Revenue Model
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+1. **Product Sales:**Offering a commission-based revenue model for every sale made on the platform.
+2. **Advertisement and Sponsored Listings:** Generating revenue through ads and listing promotions for specific brands.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Marketing Strategies
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+1. **Social Media Campaigns:** Focusing on parent and child communities through ads, content marketing, and collaboration with influencers.
+2. **Referral Programs:** Encouraging users to refer others to gain points for discounts or other incentives.
+3. **Email Marketing:** Regular newsletters offering updates and promotions.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Key Performance Indicators (KPIs)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+1. **User Engagement:** Monitoring customer interaction with product reviews, ratings, and purchases.
+2. **Conversion Rate:** Measuring how many users make a purchase after browsing the site.
+3. **Customer Retention:** Analyzing repeat customers versus new visitors.
 
-------
+### Risks and Mitigation Strategies
 
-## FAQ about the uptime script
+1. **Competition from larger platforms:** Focus on unique selling points like child-specific products and trust-building features.
+2. **Supply Chain Issues:** Establishing multiple suppliers and ensuring product availability during peak seasons.
 
-**Why have you added this script?**
+![Line brake](github_assets/readme_images/color-line-break.png)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+[⬆️Back to top](<#📜table-of-contents>)
 
 ---
 
-Happy coding!
+# 🧑‍💻Development Plan
+
+### Introduction
+
+>**Giggles & Grins** was developed with a focus on user experience and efficient product management. The development plan outlines the stages and techniques used to bring the platform to life.
+
+### Research and Initial Decisions
+
+Before the development journey began, a comprehensive research plan was set into motion. This involved:
+The platform’s development began by researching what features were most useful for families shopping for children's products, and which features parents most frequently requested.
+
+### Point System and Estimation
+
+Each task within the development cycle was assigned a point value based on complexity and estimated time.
+
+- **Epic Points:** Each epic was assigned a certain number of points, indicating its overall complexity and estimated time requirement.
+
+- **User Stories Points:** Points were also allocated to individual user stories, helping in prioritizing and scheduling tasks.
+
+---
+

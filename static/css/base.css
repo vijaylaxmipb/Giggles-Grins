@@ -393,6 +393,48 @@ screenshot-container {
     text-align: center;
 }
 
+/* order_tracking.css */
+.order-tracking-container .container {
+    width: 80%;  
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-summary {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.order-summary h3 {
+    margin: 0 0 10px;
+}
+
+.status {
+    color: green;
+    font-weight: bold;
+}
+
+.order-products ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-products li {
+    margin: 5px 0;
+}
+
+.no-orders {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
