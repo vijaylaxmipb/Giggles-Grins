@@ -55,24 +55,11 @@ class Review(models.Model):
     def __str__(self):
         return f"Review for {self.product.name} by {self.user.username}"
 
-
-
 class Order(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    # Use the string 'Product' instead of importing directly
-    products = models.ManyToManyField('Product')
-    total_price = models.DecimalField(max_digits=10, decimal_places=2)
+    order_number = models.CharField(max_length=100, unique=True)
     order_date = models.DateTimeField(auto_now_add=True)
-    status = models.CharField(
-        max_length=20,
-        choices=[
-            ('Pending', 'Pending'),
-            ('Processing', 'Processing'),
-            ('Shipped', 'Shipped'),
-            ('Delivered', 'Delivered'),
-        ],
-        default='Pending'
-    )
+    total_price = models.DecimalField(max_digits=10, decimal_places=2)
+    # Add other fields as needed
 
     def __str__(self):
-        return f"Order #{self.id} by {self.user.username}"
+        return self.order_number
