@@ -1,0 +1,23 @@
+<div class="order-tracking-container">
+    <h2>Your Orders</h2>
+    {% if orders %}
+        {% for order in orders %}
+            <div class="order-summary">
+                <h3>Order #{{ order.order_number }} - Status: <span class="status">{{ order.get_status_display }}</span></h3>
+                <p>Total Price: ${{ order.grand_total }}</p>
+                <p>Order Date: {{ order.date }}</p>
+
+                <div class="order-products">
+                    <h4>Products in this order:</h4>
+                    <ul>
+                        {% for item in order.lineitems.all %}
+                            <li>{{ item.product.name }} x{{ item.quantity }} - ${{ item.lineitem_total }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>You have no orders yet.</p>
+    {% endif %}
+</div>

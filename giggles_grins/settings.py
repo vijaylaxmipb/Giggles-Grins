@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'orders',
     'django_countries',
 
     # Other
