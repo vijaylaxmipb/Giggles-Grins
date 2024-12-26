@@ -95,20 +95,17 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = ["bootstrap4", "bootstrap5"]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'templates', 'allauth'),
-        ],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',# required by allauth
+                'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'products.context_processors.categories_with_subcategories',
                 'django.template.context_processors.media',
-                'bag.contexts.bag_contents',       
+                'bag.contexts.bag_contents',   
             ],
             
             'builtins': [

@@ -28,6 +28,8 @@ urlpatterns = [
     path('products/', include('products.urls')),
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
-    path('order_tracking/', views.order_tracking, name='order_tracking'), 
+    path('order_tracking/', views.order_tracking, name='order_tracking'),
+
+    
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
