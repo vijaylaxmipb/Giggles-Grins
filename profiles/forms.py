@@ -32,3 +32,10 @@ class UserProfileForm(forms.ModelForm):
                 self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'
             self.fields[field].label = False
+
+    def clean_default_phone_number(self):
+        phone_number = self.cleaned_data.get('default_phone_number')
+        if phone_number in ['dtudtydty', 'dhdfhdhf', 'fsfsdfdsf']:
+            raise forms.ValidationError("Invalid phone number entered.")
+        return phone_number
+    
