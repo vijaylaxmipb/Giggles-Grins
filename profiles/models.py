@@ -4,9 +4,11 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 
 from django_countries.fields import CountryField
+import uuid
 
 
 class UserProfile(models.Model):
+
     """
     A user profile model for maintaining default
     delivery information and order history
@@ -33,5 +35,20 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
     # Existing users: just save the profile
     instance.userprofile.save()
-    
-    
+
+class Order(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="orders")
+    total_price = models.DecimalField(max_digits=10, decimal_places=2)
+    order_date = models.DateTimeField(auto_now_add=True)
+    status = models.CharField(max_length=20, default="Pending")
+
+    def __str__(self):
+        return f"Order #{self.id}"
+
+class OrderLineItem(models.Model):
+    order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name="lineitems")
+    product_name = models.CharField(max_length=255)
+    quantity = models.PositiveIntegerField(default=1)
+    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2)
+
+

@@ -5,7 +5,8 @@ from .models import UserProfile
 from .forms import UserProfileForm
 
 from checkout.models import Order
-
+from django.http import HttpResponse
+from orders.models import Order 
 
 @login_required
 def profile(request):
@@ -48,3 +49,24 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def download_invoice(request, order_id):
+    # Get the order by order ID
+    order = get_object_or_404(Order, id=order_id)
+
+    # Generate invoice content
+    invoice_content = f"""
+    Invoice for Order #{order.order_number}
+    Date: {order.order_date}
+    Total: ${order.total_price}
+
+    Items in the order:
+    """
+    for item in order.lineitems.all():  # Use related_name
+        invoice_content += f"\n- {item.product_name} x{item.quantity} - ${item.lineitem_total}"
+
+    # Create a downloadable text file
+    response = HttpResponse(invoice_content, content_type="text/plain")
+    response["Content-Disposition"] = f"attachment; filename=invoice_{order.order_number}.txt"
+    return response
