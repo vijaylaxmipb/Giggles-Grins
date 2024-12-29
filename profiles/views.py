@@ -4,9 +4,8 @@ from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
 from orders.models import Order, OrderLineItem
-from checkout.models import Order
 from django.http import HttpResponse
-from orders.models import Order 
+
 
 @login_required
 def profile(request):
@@ -22,7 +21,8 @@ def profile(request):
             messages.error(request, 'Update failed. Please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
-    orders = profile.orders.all()
+
+    orders = Order.objects.filter(user=request.user).order_by('-order_date')
 
     template = 'profiles/profile.html'
     context = {
@@ -33,9 +33,9 @@ def profile(request):
 
     return render(request, template, context)
 
-
+@login_required
 def order_history(request, order_id):
-    order = get_object_or_404(Order, id=order_id)
+    order = get_object_or_404(Order, id=order_id, user=request.user)
 
     messages.info(request, (
         f'This is a past confirmation for order number {order_number}. '
@@ -50,14 +50,14 @@ def order_history(request, order_id):
 
     return render(request, template, context)
 
-
+@login_required
 def download_invoice(request, order_id):
     # Get the order by order ID
     order = get_object_or_404(Order, id=order_id)
 
     # Generate invoice content
     invoice_content = f"""
-    Invoice for Order #{order.id}
+    Invoice for Order #{order.order_number}
     Date: {order.order_date}
     Total: ${order.total_price}
 
@@ -67,5 +67,5 @@ def download_invoice(request, order_id):
         invoice_content += f"\n- {item.product_name} x{item.quantity} - ${item.lineitem_total}"
 
     response = HttpResponse(invoice_content, content_type="text/plain")
-    response["Content-Disposition"] = f"attachment; filename=invoice_{order.id}.txt"
+    response["Content-Disposition"] = f"attachment; filename=invoice_{order.order_number}.txt"
     return response

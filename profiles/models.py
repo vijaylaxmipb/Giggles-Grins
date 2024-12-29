@@ -2,8 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-
 from django_countries.fields import CountryField
+from django.apps import apps
 
 
 class UserProfile(models.Model):
@@ -23,6 +23,13 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return self.user.username
+
+    def get_order_history(self):
+        """
+        Dynamically fetch the Order model and return the user's order history.
+        """
+        Order = apps.get_model('orders', 'Order')  
+        return Order.objects.filter(user=self.user)
 
 
 @receiver(post_save, sender=User)
