@@ -63,11 +63,9 @@
                             {% for order in orders %}
                                 <tr>
                                     <td>
-                                        <a href="{% url 'order_history' order.id %}" title="{{ order.id }}">
-                                            {{ order.id|truncatechars:6 }}
-                                        </a>
+                                        <a href="{% url 'order_history' order.id %}">{{ order.order_number }}</a>
                                     </td>
-                                    <td>{{ order.date }}</td>
+                                    <td>{{ order.order_date }}</td>
                                     <td>
                                         <ul class="list-unstyled">
                                             {% for item in order.lineitems.all %}
@@ -79,7 +77,7 @@
                                             {% endfor %}
                                         </ul>
                                     </td>
-                                    <td>${{ order.grand_total }}</td>
+                                    <td>${{ order.total_price }}</td>
                                     <td>
                                         <a href="{% url 'download_invoice' order.id %}" class="btn btn-outline-black">
                                             Download Invoice
@@ -89,7 +87,7 @@
                             {% empty %}
                                 <tr>
                                     <td colspan="5">
-                                        <p>No orders found.</p>
+                                        <p class="text-muted">No orders found.</p>
                                     </td>
                                 </tr>
                             {% endfor %}
