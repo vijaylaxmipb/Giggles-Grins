@@ -15,7 +15,7 @@ def all_products(request):
 
     products = Product.objects.all()
     query = None
-    categories = Category.objects.all()
+    categories = Category.objects.prefetch_related('subcategories').all()
     subcategories = Subcategory.objects.all()
     current_categories = None
     current_subcategories = None
@@ -43,13 +43,18 @@ def all_products(request):
         if 'category' in request.GET:
             current_categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=[cat.strip() for cat in current_categories])
-            categories = Category.objects.filter(name__in=categories)
-
-            
+            print(f"Filtered by categories: {current_categories}")
+            print(f"Products after category filter: {products.count()}")
+    
 
         if 'subcategory' in request.GET:
             current_subcategories = request.GET['subcategory'].split(',')
             products = products.filter(subcategory__name__in=[sub.strip() for sub in current_subcategories])
+            print(f"Filtered by subcategories: {current_subcategories}")
+            print(f"Products after subcategory filter: {products.count()}")
+
+        if 'special_offers' in request.GET:
+            products = products.filter(is_special_offer=True)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -95,7 +100,8 @@ def products_by_subcategory(request, subcategory_name):
     """ View to display products filtered by subcategory """
     try:
         subcategory = Subcategory.objects.get(name=subcategory_name)
-        products = Product.objects.filter(category__subcategories=subcategory)
+        products = Product.objects.filter(subcategory=subcategory)
+
 
         context = {
             'products': products,
@@ -200,4 +206,4 @@ def delete_product(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
-    return redirect(reverse('products'))
+    return redirect(reverse('products'))                                           
