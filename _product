@@ -1,0 +1,35 @@
+                       List of relations
+ Schema |             Name              | Type  |    Owner     
+--------+-------------------------------+-------+--------------
+ public | account_emailaddress          | table | neondb_owner
+ public | account_emailconfirmation     | table | neondb_owner
+ public | auth_group                    | table | neondb_owner
+ public | auth_group_permissions        | table | neondb_owner
+ public | auth_permission               | table | neondb_owner
+ public | auth_user                     | table | neondb_owner
+ public | auth_user_groups              | table | neondb_owner
+ public | auth_user_user_permissions    | table | neondb_owner
+ public | checkout_order                | table | neondb_owner
+ public | checkout_orderlineitem        | table | neondb_owner
+ public | django_admin_log              | table | neondb_owner
+ public | django_content_type           | table | neondb_owner
+ public | django_migrations             | table | neondb_owner
+ public | django_session                | table | neondb_owner
+ public | django_site                   | table | neondb_owner
+ public | orders_order                  | table | neondb_owner
+ public | orders_order_products         | table | neondb_owner
+ public | products_category             | table | neondb_owner
+ public | products_order                | table | neondb_owner
+ public | products_order_products       | table | neondb_owner
+ public | products_product              | table | neondb_owner
+ public | products_review               | table | neondb_owner
+ public | products_subcategory          | table | neondb_owner
+ public | profiles_order                | table | neondb_owner
+ public | profiles_orderlineitem        | table | neondb_owner
+ public | profiles_userprofile          | table | neondb_owner
+ public | socialaccount_socialaccount   | table | neondb_owner
+ public | socialaccount_socialapp       | table | neondb_owner
+ public | socialaccount_socialapp_sites | table | neondb_owner
+ public | socialaccount_socialtoken     | table | neondb_owner
+(30 rows)
+

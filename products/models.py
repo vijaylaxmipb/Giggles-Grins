@@ -40,6 +40,8 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(upload_to='product_images/', blank=True, null=True)
     has_sizes = models.BooleanField(default=True)
+    is_special_offer = models.BooleanField(default=False)  # Special offers flag
+
 
 
     def __str__(self):
