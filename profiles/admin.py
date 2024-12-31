@@ -1,8 +1,9 @@
 import importlib
 from django.contrib import admin
 
-Order = importlib.import_module('orders.models').Order
-OrderLineItem = importlib.import_module('orders.models').OrderLineItem
 
-admin.site.register(Order)
-admin.site.register(OrderLineItem)
+UserOrder = importlib.import_module('orders.models').UserOrder
+OrderDetail = importlib.import_module('orders.models').OrderDetail
+
+admin.site.register(UserOrder)
+admin.site.register(OrderDetail)
