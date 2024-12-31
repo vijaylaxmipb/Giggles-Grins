@@ -7,6 +7,7 @@ def order_tracking(request):
     """
     View to track orders for the logged-in user.
     """
-    Order = apps.get_model('orders', 'Order')  # Dynamically fetch the Order model
+    Order = apps.get_model('orders', 'UserOrder')  
     orders = Order.objects.filter(user=request.user).order_by('-order_date')  # Get user's orders
     return render(request, 'orders/order_tracking.html', {'orders': orders})
+    
