@@ -29,7 +29,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-    text-align: left;
+    
 }
 
 h2.logo-font {
@@ -435,6 +435,64 @@ h2 {
     color: #888;
 }
 
+/* Footer */
+footer {
+    background-color: #343a40; /* Dark background color */
+    color: #ffffff; /* White text color */
+    padding: 20px 0; /* Space inside the footer */
+    margin-top: 20px;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+footer ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+footer ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #d1d1d1; /* Slightly lighter color on hover */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer hr {
+    background-color: #ffffff; /* White line for separation */
+    height: 1px;
+    border: none;
+}
+
+footer .text-center p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #d1d1d1;
+}
+
+form .form-control {
+    margin-bottom: 15px;
+}
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -498,6 +556,7 @@ h2 {
 	color: #17a2b8; /* text-info */
 }
 
+
 /* Product Form */
 
 .btn-file {
@@ -526,63 +585,7 @@ h2 {
     border-radius: 0;
 }
 
-/* Footer */
-footer {
-    background-color: #343a40; /* Dark background color */
-    color: #ffffff; /* White text color */
-    padding: 20px 0; /* Space inside the footer */
-    margin-top: 20px;
-}
 
-footer h5 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-footer ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0;
-}
-
-footer ul li {
-    margin-bottom: 10px;
-}
-
-footer ul li a {
-    color: #ffffff; /* Link color */
-    text-decoration: none; /* Remove underline */
-}
-
-footer ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: #d1d1d1; /* Slightly lighter color on hover */
-}
-
-footer p {
-    margin: 0;
-}
-
-footer hr {
-    background-color: #ffffff; /* White line for separation */
-    height: 1px;
-    border: none;
-}
-
-footer .text-center p {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #d1d1d1;
-}
-
-form .form-control {
-    margin-bottom: 15px;
-}
-button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-}
 
   
   /* fixed top navbar only on medium and up */

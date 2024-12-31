@@ -1,6 +1,6 @@
 # Giggles & Grins Project Portfolio
 
-![responsive-mockup]()
+![responsive-mockup](/media/am_i_responsive.png)
 
 <div align="center">
 Explore Giggles & Grins
