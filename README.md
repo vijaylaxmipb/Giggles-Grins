@@ -246,3 +246,163 @@ Include options like "Mix and Match" for creating custom looks for kids.
 
 ### The Structure Plane
 
+This section provides the structural design of the Giggles & Grins platform, detailing how the functionalities and content will be organized to create an optimal user experience.
+
+#### Interaction Design
+- **Navigation**: Header includes links to Home, Categories (Baby, Boys, Girls, Footwear, Offers), My Account, and Cart.
+Footer includes Links to About Us, Contact Us, Terms & Conditions, Privacy Policy, and Social Media accounts.
+- **User Flows**: Smooth user journeys are designed from the landing page to checkout, with minimal clicks and optimized pathways. Users can go from browsing categories and products,add items to the cart,Proceed to guest checkout or register.
+- **Admin Users**: Log in to manage categories, products, reviews, and orders.Monitor sales data and customer activity.
+
+#### Information Architecture
+- **Content Grouping**: The website will have clearly marked sections for Baby Fashion, Boys’ Fashion, Girls’ Fashion, Footwear, Offers and admin functionalities. 
+- **Hierarchy**: A clear hierarchy will guide user attention towards primary actions like 'Add to Cart' and Checkout.
+- **Search and Filters**: An advanced search and filtering system will help users quickly find trips catergorised cloths,colour,price,Size.
+
+#### Page Layouts
+- **Home Page**: Features a hero image with a girl with shopping bags, headline & shop now button to proceed with the shopping.Also hold footer with links and branding.Sidebar filters for Age, Price, Size, and Color.
+
+- **Product Details Page:**: Product name, price, description, size guide, and customer reviews.
+Related Products carousel at the bottom.
+- **Cart Page**: Summary of selected items with images, quantity, price, and "Remove" option.
+"Continue Shopping" and "Proceed to Checkout" buttons.
+- **User Profile**: Includes sections for upcoming trips, favorite trips, trip reviews, and settings. Users can also edit their personal details here.
+- **Checkout Page:**: Step-by-step sections for billing details, shipping address, and payment.
+Order summary on the right.
+-**User Profile Page**:Tabs for Order History, Saved Items, and Account Settings.Tabs for Order History, Saved Items, and Account Settings.
+
+
+#### Data Structures
+
+- **Products**: Captures id,name,category,price,desciption,images,rating & details about each product'It also includes variables like size and parental ratings & review to offer a complete picture to potential customers.
+
+- **User**: Stores id, username, email, password, order_history, and saved_items for user account management.
+
+- **Cart**:Tracks user_id, product_id, and quantity for items added to the user's shopping cart.
+
+- **Order**:Includes order_id, user_id, products, total_price, and status for processing and tracking orders.
+
+- **Reviews**: Captures review_id, user_id, product_id, rating, and comment for user feedback on products.
+
+> These data structures are designed to offer a comprehensive, user-friendly platform for both trip management and customer interaction.
+
+
+#### Dynamic Elements
+
+- **Interactive Modals:**: Used for various user interactions including but not limited to sign-in, sign-up, forgot password, and confirming actions. They provide an overlay experience keeping the user on the same page.
+
+- **Live Price Update**: When users add additionl products to by clicking add button, the price dynamically updates on the page without requiring a reload, providing real-time feedback.Cart total adjusts dynamically with quantity changes.
+
+- **Admin-Generated Dates**: The admin can add/edit/delete the products & manage user reviews & feedback.
+
+> This approach to dynamic elements aims to create a more interactive and responsive user experience, without requiring full page reloads.
+
+#### User Pathways
+
+- **Guest Users**:
+  1. Land on the homepage, greeted by a hero image and Shop Now button.
+  2. Browse categories or use search bar.
+  3. Add items to cart and proceed to guest checkout.
+  4. Click to view product details, including sizes.
+
+- **Registered Users**:
+  1. Log in to access saved items and personalized offers.
+  2. Land on the homepage and Browse products.
+  3. Add items to cart and proceed to checkout.
+  4. Download Invoices after successful placement of order.
+  
+- **Admin Users**:
+  1. Log in to admin panel.
+  2. Manage product listings, user reviews, and customer queries.
+  3. Manage user accounts and roles.
+
+### The Skeleton Plane
+
+#### Wireframe Mock-ups
+
+Wireframes for key pages have been designed to visualize the layout and functionality of the platform. This helps in providing a clear roadmap for development and ensures that user experience is a focal point from the beginning.
+
+<details><summary><b>Homepage</b></summary>
+
+![Homepage Wireframe](/media/readme_imgs/Wireframe_home.png)
+
+</details>
+
+<details><summary><b>Products</b></summary>
+
+![Products Wireframe](/media/readme_imgs/Wireframe_Product.png)
+
+</details>
+
+<details><summary><b>Shopping Bag</b></summary>
+
+![Shopping Bag Wireframe](/media/readme_imgs/Wireframe_ShoppingBag.png)
+
+</details>
+
+<details><summary><b>Checkout</b></summary>
+
+![Checkout Wireframe](/media/readme_imgs/Wireframe_Checkout.png)
+
+</details>
+
+<details><summary><b>My Profile</b></summary>
+
+![My Profile Wireframe](/media/readme_imgs/Wireframe_myprofile.png)
+
+</details>
+
+<details><summary><b>Product Management</b></summary>
+
+![User Profile Wireframe](/media/readme_imgs/Wireframe_ProductManagement.PNG)
+
+</details>
+
+
+#### Database Schema
+
+The database schema was designed using [dbdiagram.io](https://dbdiagram.io), which provided an intuitive interface for creating and visualizing the database structure. This tool facilitated the definition of tables, relationships, and constraints, streamlining the database design process.
+
+![Database Schema]()
+
+#### Dynamic Elements
+
+- **Modals**: Used for user authentication, password recovery, action confirmations, and the checkout process.
+
+- **Nav Dropdowns**: Utilized for menu links and icons, enhancing navigation.
+
+#### User Pathways
+
+- **Guest Users**: Land on the homepage, can browse clothing and use filters for exploration
+  
+- **Registered Users**: Access additional features, like personalized settings.
+  
+- **Admin Users**: Manage backend functionalities such as products, orders, and customer accounts.
+
+### The Surface Plane
+
+#### Design
+
+>Mont Adventures aims to be visually engaging, user-friendly, and aligned with the adventurous nature of the platform. 
+
+ - Carefully chosen colors for readability and aesthetics.
+ - Consistent imagery to inspire and provide context to users.
+
+- **Light Blue (#ADD8E6)**: 
+  - Typically used for calm, clean backgrounds or secondary elements.Use for headers, banners, or subtle backgrounds.
+
+- **White (#FFFFFF):**: 
+  - Base color for backgrounds or to enhance contrast.Ideal for text-heavy areas to maximize readability.
+
+- **Onyx (#343A40):**: 
+  - A rich black shade that can work well for text or deep backgrounds.Combine with light blue or white for a sleek, modern contrast.
+
+- **Azure (#007BFF):**: 
+  - A bold, eye-catching accent color for CTAs (buttons, links).Use sparingly for call-to-action buttons or hyperlinks to draw attention.
+
+- **Rusty Red (#DC3545):**: 
+  - Alert or error indicators.Use for warnings, error messages, or highlights for urgency.
+
+![color-pallete](/media/readme_imgs/Color_pallet.png)
+
+#### Typography
