@@ -46,7 +46,7 @@ Welcome to Giggles & Grins, a dynamic platform focused on delivering top-tier ex
 
 - **Admin Management:**: Real-time product and inventory management features for easy handling of sales and feedback.
 
-![Line brake](github_assets/readme_images/color-line-break.png)
+![Line brake](/media/readme_imgs/line-break.png))
 
 
 ## 📜Table of Contents
@@ -406,3 +406,100 @@ The database schema was designed using [dbdiagram.io](https://dbdiagram.io), whi
 ![color-pallete](/media/readme_imgs/Color_pallet.png)
 
 #### Typography
+
+Lato is the primary typeface used in this project, chosen for its modernity and clean design.
+
+[Lato Font](https://fonts.google.com/specimen/Lato)
+
+### Features of Lato
+
+- **Characteristics**: Lato features a clean,its rounded corners give it a soft and friendly look.
+- **Versatility**: Lato features a clean, professional style that is both approachable and versatile.
+- **Readability**: Clear letterforms and spacing ensure great readability on all devices and screen sizes.
+- **Usage**: 
+
+### Usage in Mont Adventures
+
+In Giggles & Grins , Lato is used across various elements - from navigation menus and headers to content body and call-to-action buttons. Its consistent application throughout the platform provides a cohesive visual experience, supporting the overall branding and design ethos.
+
+The choice of Lato not only compliments the visual design but also contributes significantly to the platform's functionality and accessibility.
+
+---
+
+The selection of Lato as the primary font provides clarity and enhances usability,stands out with bold weights for impactful titles & regular weight ensures comfortable reading across content-heavy sections.Provide Medium or bold weights draw attention to action elements.
+
+#### Imagery
+
+> High-quality images are an integral part of the platform, designed to:
+ - Inspire Users: By showcasing stunning visuals of adventures and packages.
+ - Complement Content: Offering a visual preview that enhances textual details.
+
+#### UX/UI Consistency
+
+> A consistent design language is maintained throughout the site to provide a seamless user experience. This is achieved through the consistent use of colors, buttons, and layout structures.
+
+### Key Elements
+
+- **Color Harmony**: Onyx (#343A40) for text and navigation, warm golden (#f0b760) for buttons and highlights, and natural green (#379673) for interactive elements.
+- **Toast Notifications**: Provides immediate feedback for user actions.
+Examples include "Added to Cart" or "Booking Confirmed" messages.
+- **Responsive Design**: Ensures usability and consistency across devices of all screen sizes.
+
+#### Performance Optimization
+
+> Efforts are made to keep the site performance-optimized, ensuring quick load times and smooth interactivity, which is crucial for user retention.
+
+### Design Principles
+
+These are the underlying principles that guide the UX/UI design of the platform, ensuring an inclusive and efficient user experience.
+
+- **Responsiveness**: Adapts seamlessly to various screen sizes, ensuring a consistent experience across desktop, tablet, and mobile devices.
+- **Accessibility**: Focuses on creating a user-friendly and inclusive experience for all users.
+- **UX/UI Consistency**: Maintains uniform patterns and interaction styles across all pages.
+- **User Feedback Loops**: Includes notifications, confirmations, and error messages for clear user communication.
+- **Performance Optimization**: Focuses on speed and optimized user experience.
+
+> By adhering to these design principles, the aim is to create a platform that is not only visually appealing but also functional and inclusive for all users.
+
+![Line brake](/media/readme_imgs/line-break.png)
+
+[⬆️Back to top](<#📜table-of-contents>)
+
+---
+
+# ⭐Features
+
+### Home Page Features
+
+#### 🧭 Navigation
+
+- **Minimalist Navbar**: A clean, uncluttered design that provides intuitive navigation, ensuring users can easily find what they need without being overwhelmed.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Navbar Desktop View](github_assets/readme_images/features/home/navbar.png)
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Navbar Mobile View](github_assets/readme_images/features/home/mobile/m-navbar.png)
+</details>
+
+- **Search**: 
+    - **Search Drawer**: A unique search drawer that elegantly slides down from the top, presenting a focused search environment.
+    - **Real-Time Search Functionality**: As users type in their query, the search form dynamically updates and displays results in real time, enhancing user engagement.
+    - **Curated Trip Suggestions**: Along with the search results, the feature smartly showcases 3 random trips, offering users inspiration and discovery opportunities.
+    - **Responsive Design**: Optimized for both desktop and mobile views, ensuring a seamless and consistent search experience across all devices.
+
+<details><summary><b>Desktop View</b></summary>
+
+![search-open](github_assets/readme_images/features/home/search-open.png)
+![search-validation1](github_assets/readme_images/features/home/search-validation1.png)
+![search-validation2](github_assets/readme_images/features/home/search-validation2.png)
+![search-results](github_assets/readme_images/features/home/search-results.png)
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Mobile Search](github_assets/readme_images/features/home/mobile/m-search.png)
+</details>
