@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/sitemap.xml
