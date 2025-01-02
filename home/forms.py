@@ -1,10 +1,14 @@
 from django import forms
 
+
 class ContactForm(forms.Form):
-    name = forms.CharField(max_length=100, required=True, widget=forms.TextInput(attrs={
-        'placeholder': 'Your Name',
-        'class': 'form-control'
-    }))
+    name = forms.CharField(
+        max_length=100,
+        required=True,
+        widget=forms.TextInput(
+            attrs={
+                'placeholder': 'Your Name',
+                'class': 'form-control'}))
     email = forms.EmailField(required=True, widget=forms.EmailInput(attrs={
         'placeholder': 'Your Email',
         'class': 'form-control'

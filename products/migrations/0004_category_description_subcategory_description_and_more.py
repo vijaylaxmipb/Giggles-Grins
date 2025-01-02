@@ -7,48 +7,67 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('products', '0003_remove_category_description_product_subcategory_and_more'),
-    ]
+        ('products', '0003_remove_category_description_product_subcategory_and_more'), ]
 
     operations = [
         migrations.AddField(
             model_name='category',
             name='description',
-            field=models.TextField(blank=True, null=True),
+            field=models.TextField(
+                blank=True,
+                null=True),
         ),
         migrations.AddField(
             model_name='subcategory',
             name='description',
-            field=models.TextField(blank=True, null=True),
+            field=models.TextField(
+                blank=True,
+                null=True),
         ),
         migrations.AddField(
             model_name='subcategory',
             name='friendly_name',
-            field=models.CharField(blank=True, max_length=255, null=True),
+            field=models.CharField(
+                blank=True,
+                max_length=255,
+                null=True),
         ),
         migrations.AlterField(
             model_name='category',
             name='name',
-            field=models.CharField(max_length=254),
+            field=models.CharField(
+                max_length=254),
         ),
         migrations.AlterField(
             model_name='product',
             name='image',
-            field=models.ImageField(blank=True, null=True, upload_to='product_images/'),
+            field=models.ImageField(
+                blank=True,
+                null=True,
+                upload_to='product_images/'),
         ),
         migrations.AlterField(
             model_name='product',
             name='sku',
-            field=models.CharField(blank=True, max_length=254, null=True),
+            field=models.CharField(
+                blank=True,
+                max_length=254,
+                null=True),
         ),
         migrations.AlterField(
             model_name='product',
             name='subcategory',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='products', to='products.subcategory'),
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                related_name='products',
+                to='products.subcategory'),
         ),
         migrations.AlterField(
             model_name='subcategory',
             name='name',
-            field=models.CharField(max_length=254),
+            field=models.CharField(
+                max_length=254),
         ),
     ]

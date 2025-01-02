@@ -20,11 +20,27 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='OrderDetail',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('product_name', models.CharField(max_length=255)),
-                ('quantity', models.PositiveIntegerField(default=1)),
-                ('lineitem_total', models.DecimalField(decimal_places=2, max_digits=6)),
-                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='details', to='orders.userorder')),
+                ('id',
+                 models.BigAutoField(
+                     auto_created=True,
+                     primary_key=True,
+                     serialize=False,
+                     verbose_name='ID')),
+                ('product_name',
+                 models.CharField(
+                     max_length=255)),
+                ('quantity',
+                 models.PositiveIntegerField(
+                     default=1)),
+                ('lineitem_total',
+                 models.DecimalField(
+                     decimal_places=2,
+                     max_digits=6)),
+                ('order',
+                 models.ForeignKey(
+                     on_delete=django.db.models.deletion.CASCADE,
+                     related_name='details',
+                     to='orders.userorder')),
             ],
         ),
         migrations.DeleteModel(

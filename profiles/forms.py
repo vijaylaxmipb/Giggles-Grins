@@ -38,4 +38,3 @@ class UserProfileForm(forms.ModelForm):
         if phone_number in ['dtudtydty', 'dhdfhdhf', 'fsfsdfdsf']:
             raise forms.ValidationError("Invalid phone number entered.")
         return phone_number
-    

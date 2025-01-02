@@ -16,8 +16,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 env = environ.Env()
-environ.Env.read_env() 
-
+environ.Env.read_env()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,7 +36,12 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-vijaylaxmip-gigglesgrin-qgow4e0ojph.ws.codeinstitute-ide.net','giggles-grins-9b5ffdf8ecd6.herokuapp.com', 'localhost','127.0.0.1',]
+ALLOWED_HOSTS = [
+    '8000-vijaylaxmip-gigglesgrin-qgow4e0ojph.ws.codeinstitute-ide.net',
+    'giggles-grins-9b5ffdf8ecd6.herokuapp.com',
+    'localhost',
+    '127.0.0.1',
+]
 
 
 CSRF_TRUSTED_ORIGINS = [
@@ -69,9 +73,9 @@ INSTALLED_APPS = [
 
     # Other
     'crispy_forms',
-    'crispy_bootstrap4',  
+    'crispy_bootstrap4',
     'storages',
-    
+
 ]
 
 
@@ -97,18 +101,18 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
-        
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',  # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
-                'bag.contexts.bag_contents',   
+                'bag.contexts.bag_contents',
             ],
-            
+
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
                 'crispy_forms.templatetags.crispy_forms_field',
@@ -122,10 +126,10 @@ MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
-     'django.contrib.auth.backends.ModelBackend', 
+    'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
-   'allauth.account.auth_backends.AuthenticationBackend', 
+    'allauth.account.auth_backends.AuthenticationBackend',
 )
 SITE_ID = 1
 
@@ -155,10 +159,10 @@ else:
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
-            
-        
+
+
+        }
     }
-}
 
 
 # Password validation
@@ -202,9 +206,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),  # Path to your static files
 ]
 STATIC_ROOT = BASE_DIR / "staticfiles"
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
-
 
 
 MEDIA_URL = '/media/'
@@ -239,7 +242,6 @@ else:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-
 # stripe
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
@@ -251,7 +253,7 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'gigglesgrins@example.com'
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'
-SESSION_COOKIE_AGE = 1209600 
+SESSION_COOKIE_AGE = 1209600
 SESSION_SAVE_EVERY_REQUEST = True
 
 # Default primary key field type
@@ -270,5 +272,3 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-
-
