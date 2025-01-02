@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/accounts/login/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/bag/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Boy%20Fashion&amp;subcategory=Sweatshirt%20&amp;%20Huddies</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Boy%20Fashion&amp;subcategory=Jeans</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Boy%20Fashion&amp;subcategory=Shirt</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Boy%20Fashion&amp;subcategory=Jackets</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Boy%20Fashion&amp;subcategory=Sweatshirt%20&amp;%20Huddies,Jeans,Shirt,Jackets</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Girl%20Fashion&amp;subcategory=Dresses</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Girl%20Fashion&amp;subcategory=Jackets</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Girl%20Fashion&amp;subcategory=Nightwear</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Girl%20Fashion&amp;subcategory=Dresses,Jackets,Nightwear</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Baby%20Fashion&amp;subcategory=Socks%20&amp;%20Mittens</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Baby%20Fashion&amp;subcategory=Baby%20Wear</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Baby%20Fashion&amp;subcategory=Socks%20&amp;%20Mittens,Baby%20Onesies</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Footwear&amp;subcategory=Casual%20Shoes</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Footwear&amp;subcategory=Sneakers</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Footwear&amp;subcategory=Casual%20Shoes,Sneakers</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Special%20Offers&amp;subcategory=Clearance</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Special%20Offers&amp;subcategory=New%20Arrivals,Deals,Clearance</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/accounts/login/?next=/profile/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=Jeans</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=Sweatshirt</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=Skirt</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=Baby%20wear</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=Clearance</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=Nightwear</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=Jackets</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=Shirt</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=Sneakers</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=all%20Footwear</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=Socks%20&amp;%20Mittens</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=All%20clothing</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?subcategory=Dresses</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/65/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/10/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/15/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/11/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/64/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/58/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/68/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/12/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/23/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/24/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/81/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/80/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/66/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/62/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/16/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/17/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/87/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/59/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/63/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/83/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/89/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/69/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/18/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/33/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/4/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/1/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/90/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/8/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/20/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/35/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/49/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/36/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/37/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/26/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/50/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/93/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/27/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/79/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/38/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/51/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/6/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/85/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/99/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/5/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/7/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/39/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/60/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/21/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/19/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/13/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/86/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/40/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/61/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/2/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/14/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/32/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/41/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/22/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/67/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/97/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/84/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/82/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/88/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/42/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/45/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/98/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/43/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/46/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/95/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/75/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/28/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/70/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/47/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/44/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/56/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/91/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/34/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/92/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/57/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/72/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/31/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/29/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/94/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/74/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/30/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/96/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/3/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/9/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/25/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/71/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/76/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/77/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/48/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/52/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/53/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/54/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/55/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/73/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/78/</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/accounts/signup/?next=%2Fprofile%2F</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Baby%20Fashion</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=All%20Products</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Boy%20Fashion</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Footwear</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Girl%20Fashion</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/products/?category=Special%20Offers</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/accounts/login/?next=%2Fprofile%2F</loc>
+  <lastmod>2025-01-02T20:36:29+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
