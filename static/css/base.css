@@ -14,6 +14,25 @@ body {
     
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+
+}
+
+.logo-container::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('/media/shopping_bag.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .container {
     margin-top: 20px; 
 }
@@ -642,7 +661,7 @@ button[type="submit"] {
     }
 
     #delivery-banner h4 {
-        font-size: .9rem;
+        font-size: .95rem;
     }
 
     .btn.btn-outline-black.rounded-0,

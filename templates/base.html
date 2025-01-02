@@ -40,6 +40,16 @@
     {% endblock %}
 
     <title>Giggles & Grins {% block extra_title %}{% endblock %}</title>
+    <!-- Favicon Links -->
+    <link rel="icon" href="{% static 'images/favicon/favicon.ico' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'images/favicon/favicon.ico' %}" type="image/x-icon">
+
+    <!-- Optional Links for Better Device Support -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/favicon/site.webmanifest' %}">
+
 </head>
 <body>
     
@@ -48,7 +58,9 @@
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                    <div class="logo-container">
                     <h2 class="logo-font text-black my-0"><strong>Giggles & </strong>Grins</h2>
+                    </div>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
