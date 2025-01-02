@@ -18,26 +18,40 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='product',
             name='subcategory',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='products.subcategory'),
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                to='products.subcategory'),
         ),
         migrations.AlterField(
             model_name='category',
             name='name',
-            field=models.CharField(max_length=254, unique=True),
+            field=models.CharField(
+                max_length=254,
+                unique=True),
         ),
         migrations.AlterField(
             model_name='product',
             name='image',
-            field=models.ImageField(blank=True, null=True, upload_to='products/'),
+            field=models.ImageField(
+                blank=True,
+                null=True,
+                upload_to='products/'),
         ),
         migrations.AlterField(
             model_name='subcategory',
             name='category',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='subcategories', to='products.category'),
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name='subcategories',
+                to='products.category'),
         ),
         migrations.AlterField(
             model_name='subcategory',
             name='name',
-            field=models.CharField(max_length=254, unique=True),
+            field=models.CharField(
+                max_length=254,
+                unique=True),
         ),
     ]

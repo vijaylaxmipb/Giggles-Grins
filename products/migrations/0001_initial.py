@@ -39,7 +39,11 @@ class Migration(migrations.Migration):
                 ('rating', models.DecimalField(blank=True, decimal_places=2, max_digits=6, null=True)),
                 ('image_url', models.URLField(blank=True, max_length=1024, null=True)),
                 ('image', models.ImageField(blank=True, null=True, upload_to='product_images/')),
-                ('category', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='products.category')),
+                ('category', models.ForeignKey(
+                    blank=True,
+                    null=True,
+                    on_delete=django.db.models.deletion.SET_NULL,
+                    to='products.category')),
             ],
         ),
     ]

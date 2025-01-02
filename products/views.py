@@ -2,12 +2,11 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from .models import Product, Category, Subcategory, Review
+from .models import Product, Category, Subcategory
 from django.db.models.functions import Lower
 from .forms import ReviewForm
 from .forms import ProductForm
 from django.urls import reverse
-from .models import Order
 
 
 def all_products(request):
@@ -21,7 +20,6 @@ def all_products(request):
     current_subcategories = None
     sort = None
     direction = None
-    
 
     if request.GET:
         if 'sort' in request.GET:
@@ -32,7 +30,6 @@ def all_products(request):
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
                 sortkey = 'category__name'
-           
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
@@ -42,14 +39,17 @@ def all_products(request):
 
         if 'category' in request.GET:
             current_categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=[cat.strip() for cat in current_categories])
+            products = products.filter(
+                category__name__in=[
+                    cat.strip() for cat in current_categories])
             print(f"Filtered by categories: {current_categories}")
             print(f"Products after category filter: {products.count()}")
-    
 
         if 'subcategory' in request.GET:
             current_subcategories = request.GET['subcategory'].split(',')
-            products = products.filter(subcategory__name__in=[sub.strip() for sub in current_subcategories])
+            products = products.filter(
+                subcategory__name__in=[
+                    sub.strip() for sub in current_subcategories])
             print(f"Filtered by subcategories: {current_subcategories}")
             print(f"Products after subcategory filter: {products.count()}")
 
@@ -59,10 +59,13 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You didn't enter any search criteria!")
                 return redirect('products')
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(
+                name__icontains=query) | Q(
+                description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -78,6 +81,7 @@ def all_products(request):
     }
 
     return render(request, 'products/products.html', context)
+
 
 def products_by_category(request, category_name):
     """ View to display products filtered by category """
@@ -102,12 +106,14 @@ def products_by_subcategory(request, subcategory_name):
         subcategory = Subcategory.objects.get(name=subcategory_name)
         products = Product.objects.filter(subcategory=subcategory)
 
-
         context = {
             'products': products,
             'current_subcategory': subcategory,
         }
-        return render(request, 'products/products_by_subcategory.html', context)
+        return render(
+            request,
+            'products/products_by_subcategory.html',
+            context)
 
     except Subcategory.DoesNotExist:
         messages.error(request, "The selected subcategory does not exist.")
@@ -131,8 +137,9 @@ def product_detail(request, product_id):
             messages.success(request, 'Your review has been submitted!')
             return redirect('product_detail', product_id=product.id)
         else:
-            messages.error(request, 'Failed to submit your review. Please check the form.')
-
+            messages.error(
+                request,
+                'Failed to submit your review. Please check the form.')
 
     context = {
         'product': product,
@@ -142,6 +149,7 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
 
 @login_required
 def add_product(request):
@@ -158,7 +166,9 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('add_product'))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
     template = 'products/add_product.html'
@@ -167,6 +177,7 @@ def add_product(request):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_product(request, product_id):
@@ -183,7 +194,9 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to update product. Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -196,14 +209,15 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home')) 
+        return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
-    return redirect(reverse('products'))                                           
+    return redirect(reverse('products'))

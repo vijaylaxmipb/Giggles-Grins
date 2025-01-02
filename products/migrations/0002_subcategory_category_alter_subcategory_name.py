@@ -14,11 +14,16 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='subcategory',
             name='category',
-            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, related_name='subcategories', to='products.category'),
+            field=models.ForeignKey(
+                default=1,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name='subcategories',
+                to='products.category'),
         ),
         migrations.AlterField(
             model_name='subcategory',
             name='name',
-            field=models.CharField(max_length=254),
+            field=models.CharField(
+                max_length=254),
         ),
     ]

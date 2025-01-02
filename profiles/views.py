@@ -3,17 +3,14 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
 from .forms import UserProfileForm
-from orders.models import UserOrder, OrderDetail
 from django.http import HttpResponse
 from checkout.models import Order
-
 
 
 @login_required
 def profile(request):
     """ Display the user's profile. """
     profile = get_object_or_404(UserProfile, user=request.user)
-    
 
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
@@ -21,13 +18,13 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile updated successfully')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
+            messages.error(
+                request, 'Update failed. Please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
 
-    #orders = UserOrder.objects.filter(user=request.user).order_by('-order_date')
+    # orders = UserOrder.objects.filter(user=request.user).order_by('-order_date')
     orders = profile.orders.all().order_by('-date')
-    
 
     template = 'profiles/profile.html'
     context = {
@@ -37,11 +34,14 @@ def profile(request):
     }
 
     return render(request, template, context)
-    
+
 
 @login_required
 def order_history(request, order_number):
-    order = get_object_or_404(Order, order_number=order_number, user_profile__user=request.user)
+    order = get_object_or_404(
+        Order,
+        order_number=order_number,
+        user_profile__user=request.user)
     messages.info(request, (
         f'This is a past confirmation for order number {order.order_number}. '
         'A confirmation email was sent on the order date.'
@@ -58,7 +58,10 @@ def order_history(request, order_number):
 
 @login_required
 def download_invoice(request, order_number):
-    order = get_object_or_404(Order, order_number=order_number, user_profile__user=request.user)
+    order = get_object_or_404(
+        Order,
+        order_number=order_number,
+        user_profile__user=request.user)
 
     invoice_content = f"""
     ===========================
@@ -95,5 +98,6 @@ def download_invoice(request, order_number):
     """
 
     response = HttpResponse(invoice_content, content_type="text/plain")
-    response["Content-Disposition"] = f"attachment; filename=invoice_{order.order_number}.txt"
+    response["Content-Disposition"] = f"attachment; filename=invoice_{
+        order.order_number}.txt"
     return response
