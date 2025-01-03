@@ -477,29 +477,127 @@ These are the underlying principles that guide the UX/UI design of the platform,
 
 <details><summary><b>Desktop View</b></summary>
 
-![Navbar Desktop View](github_assets/readme_images/features/home/navbar.png)
-</details>
-
-<details><summary><b>Mobile View</b></summary>
-
-![Navbar Mobile View](github_assets/readme_images/features/home/mobile/m-navbar.png)
+![Navbar Desktop View](/media/readme_imgs/Navbar_view.png)
 </details>
 
 - **Search**: 
-    - **Search Drawer**: A unique search drawer that elegantly slides down from the top, presenting a focused search environment.
+    - **Quick Search Bar**:The search bar allows users to find products with ease, offering real-time search suggestions as they type.
     - **Real-Time Search Functionality**: As users type in their query, the search form dynamically updates and displays results in real time, enhancing user engagement.
-    - **Curated Trip Suggestions**: Along with the search results, the feature smartly showcases 3 random trips, offering users inspiration and discovery opportunities.
+    - **Mobile-Friendly**:The search functionality works flawlessly across all screen sizes.
     - **Responsive Design**: Optimized for both desktop and mobile views, ensuring a seamless and consistent search experience across all devices.
 
 <details><summary><b>Desktop View</b></summary>
 
-![search-open](github_assets/readme_images/features/home/search-open.png)
-![search-validation1](github_assets/readme_images/features/home/search-validation1.png)
-![search-validation2](github_assets/readme_images/features/home/search-validation2.png)
-![search-results](github_assets/readme_images/features/home/search-results.png)
+![search-open](/media/readme_imgs/Navbar_view.png)
+![search-validation1](/media/readme_imgs/Navbar_view_search_validation1.png)
+![search-validation2](/media/readme_imgs/Navbar_view_search_validation2.png)
+
 </details>
+
+#### 🌟 Hero Section
+
+- **Captivating Fullscreen Image**: The hero section features a striking fullscreen image that immediately grabs the visitor's attention. This visual centerpiece is designed to make a strong first impression and engage users from the moment they arrive on the page.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Hero Section Desktop View](github_assets/readme_images/features/home/hero-section.png)
+</details>
+
+- **Responsive Design for Different Devices**: Acknowledging the diversity of devices used to access the site, the hero image is optimized separately for desktop and mobile. This ensures that the image looks great and loads quickly on any screen size, providing an optimal user experience.
 
 <details><summary><b>Mobile View</b></summary>
 
-![Mobile Search](github_assets/readme_images/features/home/mobile/m-search.png)
+![Hero Section Mobile View](github_assets/readme_images/features/home/mobile/m-hero-section.png)
+</details>
+
+- **Sticky Heading with Call-to-Action**: As users scroll, a sticky heading with a compelling call-to-action (CTA) button remains in view. This design choice keeps the key message and action prompt accessible, encouraging user engagement and conversion throughout their navigation of the site.
+
+
+#### 📘 About Section
+
+- **Brand Overview and Mission**: The About Section serves as a gateway for visitors to delve into the essence of the brand. It thoughtfully presents an overview of the brand's values and mission, offering insight into what drives the company and its commitment to customers.
+
+<details><summary><b>Desktop View</b></summary>
+
+![About Section Desktop View](github_assets/readme_images/features/home/about-section.png)
+</details>
+
+- **Engagement and Connection**: Crafted to engage, this section not only informs but also connects with visitors. It's an opportunity to narrate the brand's story in a way that resonates with the audience, encouraging a deeper understanding and a stronger emotional connection with the brand.
+
+<details><summary><b>Mobile View</b></summary>
+
+![About Section Mobile View](github_assets/readme_images/features/home/mobile/m-about-section.png)
+</details>
+
+- **Responsive and Interactive Design**: Keeping with the theme of accessibility, the About Section is designed to be fully responsive. Whether accessed via desktop or mobile, the section maintains its aesthetic appeal and readability, ensuring a consistent user experience across all devices.
+
+
+#### 🌍 Location Carousel
+
+- **Browse by Destinations**: The Location Carousel allows users to explore various travel destinations based on the number of available trips. This feature provides a quick and intuitive way for users to identify destinations of interest.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Location Carousel Desktop View](github_assets/readme_images/features/home/location-carousel.png)
+</details>
+
+- **Interactive Trip Filtering**: Each card in the carousel is clickable and acts as a filter. By selecting a location, users can easily filter the trips available in that specific area, making the trip selection process straightforward and user-friendly.
+
+<details><summary><b>Mobile View</b></summary>
+
+![Location Carousel Mobile View](github_assets/readme_images/features/home/mobile/m-location-carousel.png)
+</details>
+
+#### 🌟 Hero Section
+
+- **Captivating Fullscreen Image**: The hero section features a striking fullscreen image that immediately grabs the visitor's attention. This visual centerpiece is designed to make a strong first impression and engage users from the moment they arrive on the page.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Hero Section Desktop View](github_assets/readme_images/features/home/hero-section.png)
+</details>
+
+- **Responsive Design for Different Devices**: Acknowledging the diversity of devices used to access the site, the hero image is optimized separately for desktop and mobile. This ensures that the image looks great and loads quickly on any screen size, providing an optimal user experience.
+
+<details><summary><b>Mobile View</b></summary>
+
+![Hero Section Mobile View](github_assets/readme_images/features/home/mobile/m-hero-section.png)
+</details>
+
+- **Sticky Heading with Call-to-Action**: As users scroll, a sticky heading with a compelling call-to-action (CTA) button remains in view. This design choice keeps the key message and action prompt accessible, encouraging user engagement and conversion throughout their navigation of the site.
+
+
+#### 📘 About Section
+
+- **Brand Overview and Mission**: The About Section serves as a gateway for visitors to delve into the essence of the brand. It thoughtfully presents an overview of the brand's values and mission, offering insight into what drives the company and its commitment to customers.
+
+<details><summary><b>Desktop View</b></summary>
+
+![About Section Desktop View](github_assets/readme_images/features/home/about-section.png)
+</details>
+
+- **Engagement and Connection**: Crafted to engage, this section not only informs but also connects with visitors. It's an opportunity to narrate the brand's story in a way that resonates with the audience, encouraging a deeper understanding and a stronger emotional connection with the brand.
+
+<details><summary><b>Mobile View</b></summary>
+
+![About Section Mobile View](github_assets/readme_images/features/home/mobile/m-about-section.png)
+</details>
+
+- **Responsive and Interactive Design**: Keeping with the theme of accessibility, the About Section is designed to be fully responsive. Whether accessed via desktop or mobile, the section maintains its aesthetic appeal and readability, ensuring a consistent user experience across all devices.
+
+
+#### 🌍 Location Carousel
+
+- **Browse by Destinations**: The Location Carousel allows users to explore various travel destinations based on the number of available trips. This feature provides a quick and intuitive way for users to identify destinations of interest.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Location Carousel Desktop View](github_assets/readme_images/features/home/location-carousel.png)
+</details>
+
+- **Interactive Trip Filtering**: Each card in the carousel is clickable and acts as a filter. By selecting a location, users can easily filter the trips available in that specific area, making the trip selection process straightforward and user-friendly.
+
+<details><summary><b>Mobile View</b></summary>
+
+![Location Carousel Mobile View](github_assets/readme_images/features/home/mobile/m-location-carousel.png)
 </details>
