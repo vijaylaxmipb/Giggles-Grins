@@ -36,10 +36,6 @@ body {
     background-position: center;
 }
 
-.container {
-    margin-top: 20px; 
-}
-
 /* from Bulma */
 .icon {
     align-items: center;
@@ -236,6 +232,18 @@ a.category-badge > span.badge:hover {
     z-index: 1050; /* Higher than other elements */
 }
 
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1050;
+    min-width: 180px;
+}
+
 .navbar-nav .nav-link {
     padding: 10px;
     color: #555;
@@ -295,6 +303,15 @@ a.category-badge > span.badge:hover {
 
 screenshot-container {
     margin-top: -20px; 
+}
+
+.mr-5 {
+    margin-right: 0 !important; /* Overrides Bootstrap's margin-right */
+}
+
+.mx-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 .button-container {
@@ -598,6 +615,206 @@ button[type="submit"] {
     padding: 10px 0;
 }
 
+.container {
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #ffff; /* White text for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 50px;
+}
+
+h2.logo-font {
+    color: #fff; /* White heading text */
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.login input {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for inputs */
+    border: 1px solid #ccc;
+    color: #333; /* Dark text inside input */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.login input::placeholder {
+    color: #999; /* Light placeholder text */
+}
+
+.login input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque when focused */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.btn-outline-secondary {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.btn-outline-secondary:hover {
+    color: #000;
+    border-color: #007bff;
+    background: #007bff;
+}
+
+.secondaryAction {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.secondaryAction:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Center the logout page */
+.logout-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    min-height: calc(100vh - 100px); /* Ensure it takes the full height of the viewport, minus header/footer */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Optional background for better readability */
+}
+
+/* Style for the form */
+.logout-form {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Align buttons vertically */
+    gap: 15px; /* Add space between buttons */
+    margin-top: 20px; /* Add some margin above the buttons */
+}
+
+/* Style for buttons */
+.logout-form button {
+    padding: 10px 20px; /* Add consistent padding for buttons */
+    font-size: 1rem; /* Standardize font size */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-form button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.logout-form a {
+    padding: 10px 20px; /* Add consistent padding for buttons */
+    font-size: 1rem; /* Standardize font size */
+    background-color: transparent;
+    color: #555;
+    border: 1px solid #555;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-form a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Signup Form Styling */
+
+.signup-form {
+    max-width: 400px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background: #333; 
+    color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the input fields */
+.signup-form input {
+    width: 100%; /* Full-width inputs */
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #444; /* Darker background for inputs */
+    border: 1px solid #555; /* Subtle border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 1rem;
+    color: #fff; /* Light text color */
+}
+/* Style the button */
+.signup-form button {
+    width: 100%; /* Full-width button */
+    padding: 12px 15px;
+    background: #007bff; /* Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup-form input::placeholder {
+    color: #aaa; /* Subtle placeholder color */
+}
+
+.signup-form button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+
+.signup-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; /* Light heading color */
+    font-size: 1.5rem;
+}
+
+.signup-form p {
+    text-align: center;
+    color: #ccc; /* Light gray text */
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+
+/* Adjust spacing for the footer */
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
 
 
 /* -------------------------------- Media Queries */
@@ -770,13 +987,17 @@ button[type="submit"] {
 
       .navbar-nav {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
         width: 100%;
     }
 
     .nav-item.dropdown .dropdown-menu {
         position: relative;
         width: 100%;
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
     }
 
     .navbar-toggler {
@@ -811,6 +1032,30 @@ button[type="submit"] {
         width: 100%;
         border-radius: 0;
     }
+
+    #delivery-banner {
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 5px 0;
+    }
+
+    .signup-form {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h2.logo-font {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary, .btn-outline-secondary {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
 }
 
   
