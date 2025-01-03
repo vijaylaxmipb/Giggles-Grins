@@ -2,16 +2,27 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height:100%;
     background: url('/media/bckground_img.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: #ADD8E6;
     color: #555;
     font-family: 'Lato';
-    height: 100vh;
     
+    
+}
+
+main {
+    flex: 1; 
 }
 
 .logo-container {
@@ -477,53 +488,64 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: #343a40; /* Dark background color */
-    color: #ffffff; /* White text color */
-    padding: 20px 0; /* Space inside the footer */
-    margin-top: 20px;
+    background-color: #343a40; 
+    color: #ffffff; 
+    text-align: center;
 }
 
 footer h5 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+  
+    margin-bottom: 5px;
     color: #ffffff;
     text-transform: uppercase;
+    font-size: 1rem;
 }
 
 footer ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none; 
     padding: 0;
-}
-
-footer ul li {
-    margin-bottom: 10px;
-}
-
-footer ul li a {
-    color: #ffffff; /* Link color */
-    text-decoration: none; /* Remove underline */
-}
-
-footer ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: #d1d1d1; /* Slightly lighter color on hover */
-}
-
-footer p {
     margin: 0;
 }
 
+footer ul li {
+    margin-bottom: 3px;
+    line-height: 1.2;
+}
+
+footer ul li a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+footer ul li a:hover {
+    text-decoration: underline; 
+    color: #d1d1d1; 
+}
+
+footer p {
+    margin: 5px 0; 
+    font-size: 0.9rem;
+
+}
+
 footer hr {
-    background-color: #ffffff; /* White line for separation */
+    background-color: #ffffff; 
     height: 1px;
     border: none;
+    margin: 5px 0;
 }
 
 footer .text-center p {
-    margin-top: 10px;
-    font-size: 0.9rem;
+    margin-top: 3px;
     color: #d1d1d1;
+    font-size: 0.75rem;
 }
+
+footer.bg-dark.text-white.py-4 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
 
 form .form-control {
     margin-bottom: 15px;
@@ -535,13 +557,13 @@ button[type="submit"] {
 
 .nav-item.dropdown .dropdown-menu {
     position: absolute;
-    top: 100%; /* Ensures it is directly below the parent */
+    top: 100%; 
     left: 0;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1050; /* Higher than other elements */
+    z-index: 1050; 
 }
 
 .dropdown-menu {
@@ -562,9 +584,17 @@ button[type="submit"] {
 
   /* Allauth form formatting */
 
+  .allauth-form-inner-content {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+ 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem; 
+    color: #6c757d; 
 }
 
 .allauth-form-inner-content input {
@@ -643,9 +673,6 @@ button[type="submit"] {
     border-radius: 0;
 }
 
-
-
-  
   /* fixed top navbar only on medium and up */
   @media (min-width: 992px) {
     .fixed-top-desktop-only {
