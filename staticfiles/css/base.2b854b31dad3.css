@@ -51,12 +51,7 @@ body {
 }
 
 h2.logo-font {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 2rem;
-    z-index: 100;
-    color: #fff; /* Light text for contrast */
-    position: relative;
+    margin-top:1.5rem ;
     
 }
 
@@ -621,12 +616,11 @@ button[type="submit"] {
 }
 
 .container {
-    
-    color:black; /* White text for contrast */
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #ffff; /* White text for contrast */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 50px;
-    
 }
 
 h2.logo-font {
@@ -673,8 +667,8 @@ h2.logo-font {
 }
 
 .btn-outline-secondary {
-    color: black;
-    border: 1px solid black;
+    color: #fff;
+    border: 1px solid #fff;
     padding: 10px 20px;
     font-size: 1rem;
     background: transparent;
@@ -1050,7 +1044,7 @@ footer {
     }
 
     .container {
-        padding: 10px;
+        padding: 15px;
     }
 
     h2.logo-font {
