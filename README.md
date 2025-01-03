@@ -495,3 +495,151 @@ These are the underlying principles that guide the UX/UI design of the platform,
 
 </details>
 
+- **Captivating Fullscreen Image**: The landing page features a striking fullscreen image that immediately grabs the visitor's attention. This visual centerpiece is designed to make a strong first impression and engage users from the moment they arrive on the page.
+
+## Desktop View
+
+![Landing Page Desktop View](/media/readme_imgs/Landing_page.png)
+
+- **Responsive Design for Different Devices**: Acknowledging the diversity of devices used to access the site, the hero image is optimized for desktop and mobile. This ensures that the image looks great and loads quickly on any screen size, providing an optimal user experience.
+
+## Mobile View
+
+![Landing Page Mobile View](/media/readme_imgs/Landing_page_mobile.png)
+
+
+#### 📘 Product Section
+
+- **Brand Overview and Mission**: At Giggles & Grins Kids Clothing, our mission is to bring joy and comfort to children through thoughtfully designed, high-quality clothing. We aim to support parents by offering a delightful shopping experience that reflects our commitment to style, comfort, and sustainability. This section offers insight into our brand's core values and the inspiration driving our dedication to creating happy moments for kids and families alike.
+
+- **Engagement and Connection**: At Giggles & Grins, we’re passionate about creating comfortable and stylish clothing for children.By sharing our journey, we aim to build trust and connect with our customers, fostering lasting relationships and happy memories
+
+<details><summary><b>Desktop View</b></summary>
+
+![Product Section Desktop View](/media/readme_imgs/Product_section_desktop_view.png)
+</details>
+
+
+- **Responsive and Interactive Design**: The product Section is fully optimized for both desktop and mobile, ensuring a seamless user experience across all devices. From bold visuals on larger screens to a compact, intuitive layout on mobile, we maintain aesthetic appeal and readability at every touchpoint.
+
+
+#### Profile Section
+
+- **Default Delivery Information**: The profile page allows users to conveniently manage their delivery information. This includes fields for phone number, address details, and locality, ensuring that customers can quickly update their information for a seamless shopping experience.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Profile sectiom Desktop View](/media/readme_imgs/My_profile_desktop_view.png)
+</details>
+
+- **Order History with Downloadable Invoices**: The profile section provides a comprehensive view of past orders. Users can see details such as order numbers, dates, items purchased, and total costs. To enhance convenience, each order includes a Download Invoice button, enabling users to quickly download and save their invoices for future reference or record-keeping.
+
+<details><summary><b>Mobile View</b></summary>
+
+![Profile sectiom Mobile View](/media/readme_imgs/My_profile_mobile_view.png)
+![Profile sectiom Mobile View](/media/readme_imgs/My_profile_mobile1_view.png)
+
+</details>
+
+***Responsive and Intuitive Design***:The profile page is thoughtfully designed to be responsive and user-friendly. Whether accessed on desktop or mobile, it ensures easy navigation and interaction, maintaining a clean layout and functional usability across all devices.
+
+
+#### Product Management Section
+
+- **Showcase of Popular Trips**: The Top Adventures Carousel highlights the top 8 trips that have been favorited by other users. This feature is designed to quickly draw attention to the most popular and highly recommended trips, aiding users in their decision-making.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Product Management Section](/media/readme_imgs/Product_Mgmt_desktop_view.png)
+</details>
+
+- **Add a Product**: The Product Management section is designed to streamline the addition and management of products. Key features include:
+- Category and Subcategory Selection: Easily categorize products for better organization and user navigation.
+- SKU Assignment: Assign unique stock-keeping units to efficiently track inventory.
+- Product Details: Input essential details such as name, description, and specifications to provide customers with comprehensive product information.
+
+- **User-Friendly Interface**: The interface ensures that adding and managing products is straightforward. Fields are clearly labeled and logically arranged to minimize effort and reduce errors during product entry.
+
+- **Responsive Design**:This section is fully optimized for different devices, ensuring that product management tasks can be performed efficiently on both desktop and mobile devices.
+
+<details><summary><b>Mobile View</b></summary>
+
+![Product Management Sectio](/media/readme_imgs/Product_Mgmt_mobile_view.png)
+</details>
+
+#### Checkout Section
+
+- **Order Details and Delivery Information***:The Checkout section allows customers to seamlessly finalize their purchases. The form includes fields for:
+- Personal Details: Customers can input their full name and email address for order confirmation.
+- Delivery Information: Includes phone number, street address, city, and other essential delivery details to ensure accurate shipping.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Checkout Section](/media/readme_imgs/Checkout_destop_view.png)
+</details>
+
+- **Order Summary**:
+- Items Ordered: Displays product images, names, sizes, quantities, and subtotals for transparency.
+- Order Total: Includes the subtotal, delivery charges (if any), and the final grand total, ensuring clarity before payment.
+
+- **Responsive Design**:The Checkout section is designed for usability on both desktop and mobile devices, ensuring a smooth and efficient checkout process for all users.
+
+<details><summary><b>Mobile View</b></summary>
+
+![Checkout Section](/media/readme_imgs/Checkout_mobile_view.png)
+</details>
+
+#### 📬 Footer 
+
+- **Social Media Links**:The footer section connects users to Giggles & Grins' social media presence with direct links to Facebook,instagram,twitter this ensured that users can stay updated & engaged with the brand accross popular platforms.
+<details><summary><b>Desktop View</b></summary>
+
+-**Contact Information**:A dedicated area provides essential contact details, including Email Address,Phone Number,Physical Address
+
+![Footer Desktop View](/media/readme_imgs/Footer_deskto_view.png)
+</details>
+
+- **Quick Links**:The footer offers quick navigation to important pages, ensuring users can easily access to My Account,Shop,Contact Us.
+
+<details><summary><b>Mobile View</b></summary>
+
+![Footer Mobile View](/media/readme_imgs/Footer_mobile_view.png)
+</details>
+
+- **Responsive Design**:The footer layout is optimized for mobile and desktop devices, ensuring clear visibility and accessibility across all screen sizes.
+- **Legal and Branding Compliance**: The footer also includes necessary copyright and disclaimer notices, fulfilling legal requirements and strengthening brand identity. This aspect is crucial for both branding and compliance with legal standards.
+
+The footer design not only caters to functional needs but also plays a vital role in enhancing user interaction and legal compliance.
+
+### Explore Page Features
+
+#### 🔍 Product Explore
+- **Product Listing Overview**:The Page  is designed to provide users with a seamless shopping experience. It showcases a variety of products with a clean and visually appealing layout. Key features include:
+
+- Subcategory Filters:Users can filter products by categories such as jeans, sweatshirts, baby wear, nightwear, and more. This ensures effortless navigation to find desired items.
+
+- Product Count: Displays the total number of available products in the current view, giving users a quick insight into the product range.
+
+![Product Explore](/media/readme_imgs/Product_explore.png)
+
+#### Product Details Section
+- **Product Cards**:Each product is displayed in a visually appealing card format that includes:
+  - A high-quality image of the product.
+  - The product name and price.
+  - A rating system to reflect customer reviews.
+  - Quick options for users to view details or proceed directly to purchase.
+
+- **Sorting Options**:A dropdown menu allows users to sort products by parameters such as Rating (High to Low),Price,Catergory.
+- **Responsive Design**:The page adapts seamlessly across desktop and mobile devices, ensuring a user-friendly experience regardless of screen size.
+
+![Product Detail Section](/media/readme_imgs/Product_detail.png)
+
+- **Mobile Filtering**: For mobile users, a hidden drawer for filtering is accessible via a floating button, ensuring a clean, uncluttered interface while retaining full functionality.
+
+- **Product Description**:Offers detailed information about the product, highlighting features like material, fit, and use cases.
+- **Child-Specific Features**:Includes key information like Skin-friendly material,Certified for child safety standards,Available in vibrant, attractive colors.
+
+- **High-Resolution Product Image**:Captures every detail of the product, giving customers a clear view.
+
+The Product explore page  provide an engaging, user-friendly experience, adapting its features and interface to suit both desktop and mobile users.
+
