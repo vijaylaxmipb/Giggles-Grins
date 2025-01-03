@@ -643,3 +643,83 @@ The footer design not only caters to functional needs but also plays a vital rol
 
 The Product explore page  provide an engaging, user-friendly experience, adapting its features and interface to suit both desktop and mobile users.
 
+### Cart and Checkout Features
+
+#### 🖼️ Page Banner
+- **Contextual Banner**: A visually appealing banner tops the Cart page, enhancing the user's visual experience and providing contextual information.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Cart Page Banner](github_assets/readme_images/features/cart_checkout/cart-banner.png)
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Mobile Cart Page Banner](github_assets/readme_images/features/cart_checkout/mobile/m-cart-banner.png)
+</details>
+
+#### 🛍️ Cart Section
+- **Detailed Cart Overview**: Displays all selected kids' clothing items in the cart with product details (e.g., size, color, and quantity), providing users with a clear summary before checkout.
+- **Easy Product Management**: Options to remove items from the cart, ensuring users can effortlessly adjust their purchases.
+- **Quantity Adjustment Feature**: Users can increase or decrease the quantity of each item, with a dynamically updated total price displayed in real time.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Cart Section Desktop](/media/readme_imgs/Cart_desktop_view.png)
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Cart Section Mobile](/media/readme_imgs/Cart_mobile_view.png)
+</details>
+
+#### 💳 Checkout Modal
+- **Streamlined Checkout Process**: A sleek and intuitive checkout modal ensures a hassle-free payment process for purchasing kids' clothing.
+- **Input Validation for Accuracy**: The checkout button remains disabled until all required fields, such as shipping and payment details, are completed correctly.
+- **Real-time Input Feedback**: Immediate validation feedback guides users to fix any errors in their inputs, ensuring a smooth and error-free transaction.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Checkout Desktop](/media/readme_imgs/checkout_view_desktop.png)
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Checkout Mobile](/media/readme_imgs/checkout_view_mobile.png)
+</details>
+
+#### ✅ Checkout Success
+- **Payment Confirmation**: A distinct message signals the successful processing of payment, instilling confidence in users.
+- **Order Summary**: Includes a unique order ID and a brief summary of the purchased items for easy reference.
+- **Email Notification Assurance**: Notifies users that an email containing order and payment details has been sent, ensuring transparent communication.
+- **User-Friendly Design**: The Checkout Success page is thoughtfully designed with clarity and simplicity, creating a positive and reassuring post-purchase experience.
+
+<details><summary><b>Desktop View</b></summary>
+
+![Checkout Success Desktop](/media/readme_imgs/Checkout_Success_desktop_view.png)
+</details>
+
+<details><summary><b>Mobile View</b></summary>
+
+![Checkout Success Mobile](/media/readme_imgs/Checkout_Success_mobile_view.png)
+</details>
+
+### User Profiles
+
+#### 🛠 Profile Management
+- **Easy Access to Personal Information**: Users can visit their profile page to view and manage personal details and order history.
+- **Order Overview**: Displays all past orders, including purchase dates and item details, for easy tracking and reference.
+- **Edit Personal Information**: Users can conveniently update their profile details, such as name, contact information, or email address.
+- **Account Management Features**: Users can log out or delete their profile for complete control over their account settings.
+
+<details><summary><b>Desktop</b></summary>
+
+![Userprofile Desktop](/media/readme_imgs/Userprofile_desktop_view.png)
+</details>
+
+<details><summary><b>Mobile</b></summary>
+
+![Userprofile Mobile](/media/readme_imgs/Userprofile_mobile_view.png)
+
+</details>
+
