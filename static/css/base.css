@@ -9,20 +9,12 @@ html {
 body {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height:100%;
     background: url('/media/bckground_img.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: #ADD8E6;
     color: #555;
     font-family: 'Lato';
     
-    
-}
-
-main {
-    flex: 1; 
 }
 
 .logo-container {
@@ -210,8 +202,9 @@ a.category-badge > span.badge:hover {
     padding: 10px 20px;
     background-color: white;
     border-bottom: 1px solid #ddd;
-    z-index: 9999;
+    z-index: 1000;
     overflow: visible;
+    position: relative;
 }
 
 
@@ -232,6 +225,17 @@ a.category-badge > span.badge:hover {
     margin-right: 15px; 
 }
 
+.nav-item.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position it right below the parent */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1050; /* Higher than other elements */
+}
+
 .navbar-nav .nav-link {
     padding: 10px;
     color: #555;
@@ -243,7 +247,7 @@ a.category-badge > span.badge:hover {
 /* Dropdown menu styling */
 .nav-item.dropdown .dropdown-menu {
     position: absolute;
-    top: 100%; /* Ensure it is placed below the navbar */
+    top: 100%;
     left: 0;
     background-color: white;
     border: 1px solid #ddd;
@@ -488,64 +492,87 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: #343a40; 
-    color: #ffffff; 
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+footer .row,
+footer .container-fluid {
+    margin: 0;
+    padding: 0;
 }
 
 footer h5 {
-  
-    margin-bottom: 5px;
-    color: #ffffff;
     text-transform: uppercase;
     font-size: 1rem;
+    margin-bottom: 5px;
+    color: #ffffff;
 }
 
 footer ul {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
     margin: 0;
+    line-height: 1.5;
 }
 
 footer ul li {
-    margin-bottom: 3px;
-    line-height: 1.2;
+    margin: 0;
 }
 
 footer ul li a {
-    color: #ffffff; 
-    text-decoration: none; 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
 
 footer ul li a:hover {
-    text-decoration: underline; 
-    color: #d1d1d1; 
+    text-decoration: underline;
+    color: #d1d1d1;
 }
 
 footer p {
-    margin: 5px 0; 
-    font-size: 0.9rem;
+    margin: 5px 0;
+    font-size: 0.75rem;
+    color: #d1d1d1;
+}
 
+footer .contact-details,
+footer .social-media,
+footer .quick-links {
+    flex: 1;
+    max-width: 300px; /* Adjusts width for each section */
+}
+
+footer .social-media ul,
+footer .contact-details ul,
+footer .quick-links ul {
+    padding: 0;
 }
 
 footer hr {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     height: 1px;
     border: none;
-    margin: 5px 0;
+    width: 90%;
 }
 
 footer .text-center p {
-    margin-top: 3px;
-    color: #d1d1d1;
+    margin-top: 5px;
     font-size: 0.75rem;
+    color: #d1d1d1;
 }
 
 footer.bg-dark.text-white.py-4 {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
-
 
 form .form-control {
     margin-bottom: 15px;

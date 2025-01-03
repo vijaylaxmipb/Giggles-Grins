@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
     {% endblock %}
 
     {% block extra_meta %}
@@ -134,7 +135,7 @@
     </header>
 
     <!-- Messages -->
-<main class="flex-fill">
+
 
     {% if messages %}
         <div class="message-container">
@@ -161,11 +162,12 @@
     <!-- Main Content -->
     {% block content %}
     {% endblock %}
-</main>
+
 
     <!-- Footer -->
+
     <footer class="bg-dark text-white py-4">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <!-- Social Media Links -->
                 <div class="col-md-4">
@@ -188,7 +190,7 @@
                         </li>
                     </ul>
                 </div>
-
+    
                 <!-- Contact Details -->
                 <div class="col-md-4">
                     <h5>Contact Us</h5>
@@ -196,7 +198,7 @@
                     <p><i class="fas fa-phone"></i> Phone: +123 456 7890</p>
                     <p><i class="fas fa-map-marker-alt"></i> Address: 123 Main Street, Anytown, USA</p>
                 </div>
-
+    
                 <!-- Quick Links -->
                 <div class="col-md-4">
                     <h5>Quick Links</h5>
@@ -213,13 +215,12 @@
                     </ul>
                 </div>
             </div>
-
             <hr class="bg-white">
             <div class="text-center">
                 <p class="mb-0">&copy; 2024 Giggles & Grins. All Rights Reserved.</p>
             </div>
         </div>
-    </footer>
+    </footer>    
 
 
     <!-- Post Load Scripts -->
