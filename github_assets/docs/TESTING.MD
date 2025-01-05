@@ -2,8 +2,6 @@
 
 ![Line brake](/media/readme_imgs/line-break.png)
 
-<img alt="logo" src="../media/readme_imgs/LOGO.PNG" width="300px">
-
 ### Table of Contents
 - [Introduction](#introduction)
 - [Testing Strategy](#testing-strategy)
@@ -45,7 +43,7 @@ In this document, you will find:
 - Accessibility testing measures to create an inclusive and user-friendly shopping experience.
 - SEO testing practices to enhance search engine visibility and adherence to best practices for online discoverability.
 
-![Line brake](../readme_images/color-line-break.png)
+![Line brake](/media/readme_imgs/line-break.png)
 
 ### Testing Strategy
 
@@ -471,7 +469,7 @@ Expected Outcome: The footer should fulfill legal requirements and strengthen br
 [⬆️Back to top](<#table-of-contents>)
 ![Line brake](/media/readme_imgs/line-break.png)
 
-### Explore Page Features
+### Product Page Features
 
 ### 1. Page Banner
 
@@ -533,7 +531,7 @@ Expected Outcome: User interactions with products, including login/signup prompt
 
 ---
 
-4. Visual Trip Cards
+4. Visual appeal
 
 Objective: Evaluate the visual appeal, design consistency, and functionality of product on the Page, ensuring they provide key product details and seamless navigation to product detail pages.
 
@@ -1252,11 +1250,9 @@ Impact on Web Development:
 ---
 
 [⬆️Back to top](<#table-of-contents>)
-![Line brake](../readme_images/color-line-break.png)
+![Line brake](/media/readme_imgs/line-break.png)
 
 ### PageSpeed Insights Results
-
-# Giggles Grins
 
 ## Overview
 PageSpeed Insights is a powerful tool provided by Google that analyzes the content of a web page, then generates suggestions to make that page faster and more efficient. It measures various aspects of website performance, providing both a score and actionable recommendations.
@@ -1319,26 +1315,6 @@ The testing process was conducted systematically using PageSpeed Insights:
 2. **Continuous Monitoring**:
    - Scheduled regular performance checks.
    - Used tools like Lighthouse and PageSpeed Insights to ensure sustained optimization.
-
----
-
-## Results
-
-### Initial Analysis Report:
-
-#### Mobile Performance:
-![First Test - Mobile](../testing_images/pagespeed_insights/first-test-mobile.png)
-
-#### Desktop Performance:
-![First Test - Desktop](../testing_images/pagespeed_insights/first-test-desktop.png)
-
-### Final Analysis Report:
-
-#### Mobile Performance:
-![Last Test - Mobile](../testing_images/pagespeed_insights/last-test-mobile.png)
-
-#### Desktop Performance:
-![Last Test - Desktop](../testing_images/pagespeed_insights/last-test-desktop.png)
 
 ---
 
@@ -1411,10 +1387,6 @@ Throughout the development of Giggles Grins, numerous small bugs were encountere
 
 - **Suspected Cause**: The issue is presumed to be related to the integration of Crispy Tailwind forms, possibly a minor styling conflict or a rendering issue specific to the production environment.
 - **Current Impact**: This bug is not critical to the application's functionality. The form remains usable, and the issue is largely cosmetic.
-- **Screenshots**:
-
-![bug-development](../testing_images/bugs/countries-select-development.png)
-![bug-production](../testing_images/bugs/countries-select-production.png)
 
 Plan for Resolution
 

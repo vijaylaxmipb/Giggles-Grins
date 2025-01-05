@@ -766,6 +766,7 @@ Ensuring data integrity and enhancing user experience through real-time feedback
 
 </details>
 
+
 #### 📩 Order Confirmation
 
 - **Guest Checkout Notification**: Guests who shop without an account receive an additional message in their order confirmation email, encouraging them to register for an account. This feature is designed to promote customer engagement and streamline future shopping experiences.
@@ -833,7 +834,7 @@ The Admin Panel in Giggles & Grins is a powerful and intuitive interface designe
 ![Sub Category](/media/readme_imgs/subcategory_administrator.png)
 </details>
 
-<details><summary><b>Sub Category</b></summary>
+<details><summary><b>Orders Category</b></summary>
 
 ![orders](/media/readme_imgs/checkout_order_admin.png)
 </details>
@@ -858,9 +859,10 @@ These future enhancements are not just incremental improvements—they mark a st
 
 # 🧮Testing
 
-For a comprehensive overview of the application's testing procedures, methodologies, and results, please refer to the dedicated testing documentation:
+For a comprehensive overview of the applications testing procedures, methodologies, and results, please refer to the dedicated testing documentation:
 
 [View Testing Documentation](github_assets/docs/TESTING.md)
+
 
 # 🤖Technologies Used
 
