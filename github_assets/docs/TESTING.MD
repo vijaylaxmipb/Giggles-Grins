@@ -1252,69 +1252,104 @@ Impact on Web Development:
 ---
 
 [⬆️Back to top](<#table-of-contents>)
-![Line brake](/media/readme_imgs/line-break.png)
-
-Home Page
-
-![wave-home-page](../testing_images/code_validation/wave-home-page.png)
-
-Explore Page
-
-![wave-explore-page](../testing_images/code_validation/wave-explore-page.png)
-
-Trip Detail Page
-
-![wave-trip-detail-page](../testing_images/code_validation/wave-trip-detail-page.png)
-
-Cart/Checkout Page
-
-![wave-cart-checkout-page](../testing_images/code_validation/wave-cart-checkout-page.png)
-
----
-
-[⬆️Back to top](<#table-of-contents>)
 ![Line brake](../readme_images/color-line-break.png)
 
 ### PageSpeed Insights Results
 
-Overview
+# Giggles Grins
 
+## Overview
 PageSpeed Insights is a powerful tool provided by Google that analyzes the content of a web page, then generates suggestions to make that page faster and more efficient. It measures various aspects of website performance, providing both a score and actionable recommendations.
-Purpose of the Analysis
 
-- Performance Evaluation: To assess how well the Mont Adventures website performs in terms of loading speed and responsiveness.
-- User Experience Enhancement: Fast-loading pages improve user experience, especially on mobile devices.
-- Search Engine Optimization: Page speed is a ranking factor for search engines, so optimizing for speed can help improve the website's search engine rankings.
+---
 
-Testing Process
+## Purpose of the Analysis
 
-- The PageSpeed Insights tool analyzes both the mobile and desktop versions of the website.
-- It provides a performance score out of 100, categorizing the site as 'Good', 'Needs Improvement', or 'Poor'.
-- The analysis includes metrics such as Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS).
+### Key Objectives:
+- **Performance Evaluation**: To assess how well the Giggles Grins website performs in terms of loading speed and responsiveness.
+- **User Experience Enhancement**: Fast-loading pages improve user experience, especially on mobile devices.
+- **Search Engine Optimization (SEO)**: Page speed is a ranking factor for search engines, so optimizing for speed can help improve the website's search engine rankings.
 
-Key Findings
+---
 
-- Performance Metrics: Detailed insights into various performance metrics, identifying areas where the website excels and areas needing improvement.
-- Opportunities for Optimization: Specific recommendations on how to improve page loading times, such as optimizing images, leveraging browser caching, or minifying CSS and JavaScript.
+## Testing Process
 
-Action Taken
+The testing process was conducted systematically using PageSpeed Insights:
 
-- Following the analysis, implement the suggested optimizations to improve performance scores.
-- Continuously monitor the website’s performance to ensure it remains optimized over time.
+1. **Devices Analyzed**:
+   - **Mobile**: Evaluates mobile device performance.
+   - **Desktop**: Evaluates desktop performance.
 
-Conclusion
+2. **Performance Metrics**:
+   - **Largest Contentful Paint (LCP)**: Measures loading performance.
+   - **First Input Delay (FID)**: Measures interactivity.
+   - **Cumulative Layout Shift (CLS)**: Measures visual stability.
 
-The PageSpeed Insights analysis for Mont Adventures provides a comprehensive view of the site's performance, highlighting critical areas for improvement. Implementing these recommendations not only enhances the user experience but also contributes positively to SEO efforts. Regular monitoring and optimization are key to maintaining a fast and efficient website.
+3. **Scoring Categories**:
+   - **Good**: 90-100
+   - **Needs Improvement**: 50-89
+   - **Poor**: 0-49
 
-First Analyze Report:
+4. **Recommendations**:
+   - Provided actionable suggestions, including image optimization, code minification, and caching strategies.
 
-![first-test-mobile](../testing_images/pagespeed_insights/first-test-mobile.png)
-![first-test-desktop](../testing_images/pagespeed_insights/first-test-desktop.png)
+---
 
-Last Analyze Report:
+## Key Findings
 
-![last-test-mobile](../testing_images/pagespeed_insights/last-test-mobile.png)
-![last-test-desktop](../testing_images/pagespeed_insights/last-test-desktop.png)
+### Performance Metrics:
+- Detailed insights into various performance metrics, identifying areas where the website excels and areas needing improvement.
+
+### Opportunities for Optimization:
+- Optimize and compress images.
+- Minify CSS, JavaScript, and HTML files.
+- Leverage browser caching.
+- Implement lazy loading for non-critical resources.
+
+---
+
+## Actions Taken
+
+1. **Implemented Optimizations**:
+   - Resized and compressed images using modern formats (e.g., WebP).
+   - Minified CSS and JavaScript files to reduce page load times.
+   - Enabled browser caching for static resources.
+   - Reduced unused JavaScript and CSS.
+
+2. **Continuous Monitoring**:
+   - Scheduled regular performance checks.
+   - Used tools like Lighthouse and PageSpeed Insights to ensure sustained optimization.
+
+---
+
+## Results
+
+### Initial Analysis Report:
+
+#### Mobile Performance:
+![First Test - Mobile](../testing_images/pagespeed_insights/first-test-mobile.png)
+
+#### Desktop Performance:
+![First Test - Desktop](../testing_images/pagespeed_insights/first-test-desktop.png)
+
+### Final Analysis Report:
+
+#### Mobile Performance:
+![Last Test - Mobile](../testing_images/pagespeed_insights/last-test-mobile.png)
+
+#### Desktop Performance:
+![Last Test - Desktop](../testing_images/pagespeed_insights/last-test-desktop.png)
+
+---
+
+## Conclusion
+
+The PageSpeed Insights analysis for Giggles Grins provides a comprehensive view of the site's performance, highlighting critical areas for improvement. Implementing these recommendations not only enhances the user experience but also contributes positively to SEO efforts. Regular monitoring and optimization are key to maintaining a fast and efficient website.
+
+Analyze Report:
+
+![test-mobile](/media/readme_imgs/Pagespeed_insight.png)
+
 
 Current Optimizations
 
@@ -1356,26 +1391,27 @@ Conclusion
 ---
 
 [⬆️Back to top](<#table-of-contents>)
-![Line brake](../readme_images/color-line-break.png)
+![Line brake](/media/readme_imgs/line-break.png)
 
 
-### Bugs and Fixes
+## Bugs and Fixes
 
-Overview of Bug Handling
+### Overview of Bug Handling
 
-Throughout the development of Mont Adventures, numerous small bugs were encountered. However, these were typically minor and swiftly rectifiable, addressed promptly as part of the development workflow.
-Current Bug Status
+Throughout the development of Giggles Grins, numerous small bugs were encountered. However, these were typically minor and swiftly rectifiable, addressed promptly as part of the development workflow.
+
+### Current Bug Status
 
 - As of the latest release, no critical bugs have been identified that impede the full functionality and navigability of the application.
 - The focus has been on ensuring a smooth and error-free experience for the end user.
 
-Notable Non-Critical Bug
+### Notable Non-Critical Bug
 
-Issue: In the production environment, an anomaly has been observed in the profile edit form, specifically in the country select dropdown. An additional arrow appears in the dropdown, which is not present in the development environment.
+**Issue**: In the production environment, an anomaly has been observed in the profile edit form, specifically in the country select dropdown. An additional arrow appears in the dropdown, which is not present in the development environment.
 
-- Suspected Cause: The issue is presumed to be related to the integration of Crispy Tailwind forms, possibly a minor styling conflict or a rendering issue specific to the production environment.
-- Current Impact: This bug is not critical to the application's functionality. The form remains usable, and the issue is largely cosmetic.
-- Screenshots:
+- **Suspected Cause**: The issue is presumed to be related to the integration of Crispy Tailwind forms, possibly a minor styling conflict or a rendering issue specific to the production environment.
+- **Current Impact**: This bug is not critical to the application's functionality. The form remains usable, and the issue is largely cosmetic.
+- **Screenshots**:
 
 ![bug-development](../testing_images/bugs/countries-select-development.png)
 ![bug-production](../testing_images/bugs/countries-select-production.png)
