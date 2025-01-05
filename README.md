@@ -8,8 +8,6 @@ Explore Giggles & Grins
 </div> <div align="center">
 
 </div>
-🏠 Introduction
-<img alt="logo" src="github_assets/readme_images/docs-logo.png" width="300px">
 
 # Introduction
 
@@ -46,7 +44,7 @@ Welcome to Giggles & Grins, a dynamic platform focused on delivering top-tier ex
 
 - **Admin Management:**: Real-time product and inventory management features for easy handling of sales and feedback.
 
-![Line brake](/media/readme_imgs/line-break.png))
+![Line brake](/media/readme_imgs/line-break.png)
 
 
 ## 📜Table of Contents
@@ -120,7 +118,7 @@ The **Giggles & Grins** platform is designed to provide families with a wide sel
 1. **Competition from larger platforms:** Focus on unique selling points like child-specific products and trust-building features.
 2. **Supply Chain Issues:** Establishing multiple suppliers and ensuring product availability during peak seasons.
 
-![Line brake](github_assets/readme_images/color-line-break.png)
+![Line brake](/media/readme_imgs/line-break.png)
 
 [⬆️Back to top](<#📜table-of-contents>)
 
@@ -157,7 +155,7 @@ Each task within the development cycle was assigned a point value based on compl
 - Agile Development: Utilized for its emphasis on iterative development and cross-functional collaboration.
 - GitHub Kanban: Employed for efficient task management, facilitating the breakdown of milestones into epics and user stories.
 
-![Line brake](github_assets/readme_images/color-line-break.png)
+![Line brake](/media/readme_imgs/line-break.png)
 
 [⬆️Back to top](<#📜table-of-contents>)
 
@@ -168,7 +166,6 @@ Each task within the development cycle was assigned a point value based on compl
 ### The Strategy Plan
 - The strategy plane defines the purpose of the platform and aligns it with the target audience's needs and business goals.
 
-#### The Site's Ideal User
 ### Target Audience:
 - Parents or guardians looking for quality clothing for children aged 0–12 years.
 - Gift buyers searching for kids' clothing for birthdays, special occasions.
@@ -361,9 +358,9 @@ Wireframes for key pages have been designed to visualize the layout and function
 
 #### Database Schema
 
-The database schema was designed using [dbdiagram.io](https://dbdiagram.io), which provided an intuitive interface for creating and visualizing the database structure. This tool facilitated the definition of tables, relationships, and constraints, streamlining the database design process.
+The database schema was designed using [lucidchart.com](https://lucidchart.com), which provided an intuitive interface for creating and visualizing the database structure. This tool facilitated the definition of tables, relationships, and constraints, streamlining the database design process.
 
-![Database Schema]()
+![Database Schema](/media/readme_imgs/diagram.png)
 
 #### Dynamic Elements
 
@@ -419,7 +416,7 @@ Lato is the primary typeface used in this project, chosen for its modernity and 
 - **Readability**: Clear letterforms and spacing ensure great readability on all devices and screen sizes.
 - **Usage**: 
 
-### Usage in Mont Adventures
+### Usage in Giggles & Grins
 
 In Giggles & Grins , Lato is used across various elements - from navigation menus and headers to content body and call-to-action buttons. Its consistent application throughout the platform provides a cohesive visual experience, supporting the overall branding and design ethos.
 
@@ -643,22 +640,12 @@ The footer design not only caters to functional needs but also plays a vital rol
 
 The Product explore page  provide an engaging, user-friendly experience, adapting its features and interface to suit both desktop and mobile users.
 
-### Cart and Checkout Features
+### Cart/Bag and Checkout Features
 
 #### 🖼️ Page Banner
 - **Contextual Banner**: A visually appealing banner tops the Cart page, enhancing the user's visual experience and providing contextual information.
 
-<details><summary><b>Desktop View</b></summary>
-
-![Cart Page Banner](github_assets/readme_images/features/cart_checkout/cart-banner.png)
-</details>
-
-<details><summary><b>Mobile View</b></summary>
-
-![Mobile Cart Page Banner](github_assets/readme_images/features/cart_checkout/mobile/m-cart-banner.png)
-</details>
-
-#### 🛍️ Cart Section
+#### 🛍️ Cart/Bag Section
 - **Detailed Cart Overview**: Displays all selected kids' clothing items in the cart with product details (e.g., size, color, and quantity), providing users with a clear summary before checkout.
 - **Easy Product Management**: Options to remove items from the cart, ensuring users can effortlessly adjust their purchases.
 - **Quantity Adjustment Feature**: Users can increase or decrease the quantity of each item, with a dynamically updated total price displayed in real time.
@@ -868,3 +855,276 @@ From **Personalized Recommendations** based on browsing and purchase history to 
 The **Vendor Portal for Product Submissions** will transform **Giggles & Grins** into a dynamic marketplace, enabling trusted vendors to contribute unique products directly to the platform. Additionally, **Live Order Notifications** and a robust **Chat Bot with Support Ticketing** System will ensure customers are always informed and supported.
 
 These future enhancements are not just incremental improvements—they mark a strategic move towards creating a smarter, more connected, and customer-centric e-commerce platform. **Giggles & Grins** is evolving into more than just a kids' clothing store; it is becoming a trusted partner for families, setting new standards in the online shopping experience.
+
+# 🧮Testing
+
+For a comprehensive overview of the application's testing procedures, methodologies, and results, please refer to the dedicated testing documentation:
+
+[View Testing Documentation](github_assets/docs/TESTING.md)
+
+# 🤖Technologies Used
+
+This project is built using a diverse set of technologies, frameworks, and tools to ensure a seamless, scalable, and efficient shopping experience.
+
+### Frontend
+- **HTML5**: For structuring the web content.
+- **Tailwind CSS** & **DaisyUI**: Used for styling with a utility-first CSS framework and UI components.
+- **HTMX**: For adding interactive components and AJAX functionalities.
+- **JavaScript Libraries**:
+  - **LazySizes**: Enables lazy loading of images to improve page load times.
+  - **StickyJS**: To make certain elements sticky during page scrolling.
+  - **GlideJS**: For creating responsive and touch-friendly carousels.
+  - **jQuery**: Simplifies DOM manipulation and event handling.
+  - **Lightbox JS**: For presenting images in a full-screen lightbox view.
+
+### Backend
+- **Python**: The core programming language used for backend development, known for its simplicity and power.
+- **Django**: A high-level Python Web framework that enables rapid and clean development, perfect for building robust web applications.
+
+### Database
+- **ElephantSQL**: As the cloud-hosted PostgreSQL database service.
+
+### Storage and Media
+- **AWS S3**: Utilized for secure and scalable storage of static and media files.
+
+### Deployment and Domain Management
+- **Git & GitHub**: For version control and source code repository.
+- **Heroku**: For deploying the web application.
+- **Cloudflare**: Provides domain management along with security and performance optimization.
+
+### Email Service
+- **Spaceship**: For efficient email service setup and management.
+
+### Design and Documentation Tools
+- **Photoshop**: For graphic design and image editing.
+- **Claude**: Assists in generating and refining README and documentation text.
+
+This comprehensive selection of technologies and tools ensures a scalable, efficient, and user-friendly application, focusing on seamless front-end interactivity and robust back-end functionality.
+
+## 🛠 Dependencies
+
+To run this project, you need to install the following dependencies. You can do this by running `pip install -r requirements.txt` in your command line. Ensure you are in the project's root directory where the `requirements.txt` file is located.
+
+```
+asgiref==3.7.2
+boto3==1.28.45
+botocore==1.31.45
+certifi==2023.7.22
+cffi==1.15.1
+charset-normalizer==3.2.0
+coverage==7.3.2
+crispy-tailwind==0.5.0
+cryptography==41.0.3
+cssselect==1.2.0
+cssutils==2.9.0
+defusedxml==0.7.1
+dj-database-url==0.5.0
+Django==4.1
+django-allauth==0.56.1
+django-countries==7.5.1
+django-crispy-forms==2.0
+django-htmx==1.16.0
+django-storages==1.14
+django-unfold==0.11.0
+gunicorn==21.2.0
+idna==3.4
+importlib-metadata==6.7.0
+jmespath==1.0.1
+lxml==4.9.3
+oauthlib==3.2.2
+packaging==23.1
+Pillow==10.0.1
+psycopg2==2.9.7
+pycparser==2.21
+PyJWT==2.8.0
+python-dateutil==2.8.2
+python-dotenv==1.0.0
+python3-openid==3.2.0
+requests==2.31.0
+requests-oauthlib==1.3.1
+s3transfer==0.6.2
+six==1.16.0
+sqlparse==0.4.4
+stripe==6.6.0
+typing_extensions==4.7.1
+tzdata==2023.3
+urllib3==1.26.16
+zipp==3.17.0
+```
+
+# ⚙️Setup and Installation (GitHub and Heroku)
+
+> The site was deployed via Heroku, and the live link can be found here - [Mont Adventures](https://mont-adventures-pp5-23ff8a97d0dd.herokuapp.com/)
+
+### Project Deployment: Heroku
+
+#### 1. **Initial Setup on Heroku:**
+
+* Sign up or log in to [Heroku](https://www.heroku.com/).
+* On the main Heroku Dashboard, click 'New' > 'Create New App'.
+* Name your project (e.g., `mont-adventures-pp5`). Remember, the app name must be unique.
+* Choose a suitable region and then click 'Create app'.
+
+#### 2. **Setting Up the Database:**
+
+* Navigate to the 'Resources' tab from the submenu.
+* In the 'Add-ons' section, search for 'Heroku Postgres'.
+* Select and add 'Heroku Postgres' as the database.
+* Go to the 'Settings' tab, and within the 'Config Vars' section, copy the `DATABASE_URL` for later use.
+
+#### 3. **Configuring Django App for Heroku:**
+
+* Create a `.env` file at the root of your Django project.
+  * Add `DATABASE_URL=<your_database_url_from_heroku>`
+  * Add `SECRET_KEY=<your_secret_key>`
+  * Add `USE_AWS=<True>`
+  * Add `AWS_ACCESS_KEY_ID=<your_key_id>`
+  * Add `AWS_BUCKET_NAME=<your_bucket_name>`
+  * Add `AWS_REGION_NAME=<your_region_name>`
+  * Add `AWS_SECRET_ACCESS_KEY=<your_secret_access_key_id>`
+  * Add `DEFAULT_FROM_EMAIL=<your_default_from_email_name>`
+  * Add `EMAIL_HOST_PASS=<your_email_host_pass>`
+  * Add `EMAIL_HOST_USER=<your_email_host_user>`
+  * Add `MAILCHIMP_API_KEY=<your_mailchimp_api_key>`
+  * Add `MAILCHIMP_AUDIENCE_ID=<your_mailchimp_audience_id>`
+  * Add `MAILCHIMP_REGION=<your_mailchimp_region>`
+  * Add `STRIPE_PUBLIC_KEY=<your_stripe_public_key>`
+  * Add `STRIPE_SECRET_KEY=<your_stripe_secret_key>`
+  * Add `STRIPE_WH_SECRET=<your_stripe_wh_secret>`
+
+
+* Add these variables to the Heroku 'Config Vars'.
+* Modify `settings.py` in your Django app:
+  * Import `dotenv` and load `.env` with `dotenv.load_dotenv()`.
+  * Replace the default secret key with `SECRET_KEY = os.environ.get('SECRET_KEY')`.
+  * Update the databases section to connect to the Heroku Postgres: `DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}`.
+
+#### 4. **Setting Up AWS S3:**
+
+* Visit [AWS S3](https://aws.amazon.com/s3/) and either sign in or create an account.
+* Create a new S3 bucket and note down the necessary configurations like `AWS_S3_ENDPOINT_URL` and `AWS_STORAGE_BUCKET_NAME`.
+* Add these configurations to your `.env` file.
+* Add these variables to Heroku 'Config Vars'.
+* Modify `settings.py` to configure AWS S3:
+  * Add AWS configurations for static and media files.
+
+#### 5. **Final Configurations:**
+
+* Link your templates directory in Heroku: `TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')`.
+* Update the templates directory to `TEMPLATES_DIR`: `'DIRS': [TEMPLATES_DIR]`.
+* Add your Heroku app to `ALLOWED_HOSTS` (format: `app_name.herokuapp.com`).
+* Create three top-level directories in your project: `media`, `static`, `templates`.
+* Add a `Procfile` at the top level and write: `web: gunicorn PROJECT_NAME.wsgi`.
+* Commit and push your changes to GitHub.
+
+#### 6. **Deploy on Heroku:**
+
+* In Heroku, go to the 'Deploy' tab.
+* Deploy the branch manually and monitor the build logs for any issues.
+* Once the build completes, you'll see a success message and a link to view the live site.
+
+> **Note**: Replace placeholders like `<your_database_url_from_heroku>`, `<your_secret_key>`, `<PROJECT_NAME>` with actual values relevant to your project.
+
+#### Forking the Repository
+
+Forking the GitHub Repository allows you to have a copy of the original repository. This enables you to view or make changes without affecting the original content.
+
+To fork the repository:
+
+1. Log into [GitHub](https://github.com/) or create an account.
+2. Navigate to the repository: [Mont Adventures](https://github.com/kpetrauskas92/Mont-Adventures-PP5).
+3. At the top-right corner of the repository page, click on the "Fork" button.
+4. A copy of the repository will now be available in your account.
+
+#### Cloning the Repository
+
+Cloning creates a local copy of the repository on your machine, allowing you to run and modify the project locally.
+
+To clone the repository:
+
+1. Visit the [Mont Adventures repository](https://github.com/kpetrauskas92/Mont-Adventures-PP5).
+2. Click on the green "Code" button located at the top of the file list.
+3. Choose the "Clone with HTTPS" option and copy the provided URL to your clipboard.
+4. Open your preferred code editor or terminal.
+5. Change your current directory to the location where you want to clone the repository.
+6. Type `git clone`, then paste the URL you copied.
+7. Press `Enter`, and the repository will be cloned to your specified directory.
+
+![Line brake](/media/readme_imgs/line-break.png)
+
+[⬆️Back to top](<#📜table-of-contents>)
+
+---
+
+# 🎓Credits & Acknowledgements
+
+## Credits
+
+### Content 
+
+- The format and template for the README file was borrowed from the [Code institute](https://codeinstitute.net/ie/).
+
+- The images were taken from [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/)
+
+### Coding help
+
+- The outline template for the Python was provided by the [Code Institiute](https://www.codeinstitute.com)
+
+
+- I also took a lot of inspiration from the Code institute Boutiquo Ado Walk through project & took it as base for my Giggles & Grins project [Code Institiute](https://www.codeinstitute.com)
+
+- A lot of the python coding was done with help from the tutorial pages at [w3schools](https://www.w3schools.com/)
+
+- The Django documentation was one of the main resources I used during development [Django Documentation](https://docs.djangoproject.com/en/4.2/)
+
+- The tutor support team from codeinstitute were extremely helpful in helping me to overcome bugs in my code & chatGPT for resolving some code issue.
+
+- I used the following tutorial for help with my requirements.txt file [LearnPython](https://learnpython.com/blog/python-requirements-file/)
+
+- I received a lot of help and advice from my mentor Spencer Barriball for his guidance on making this project, he helped me provide guidance on features and pointed me to the right direction.
+
+- Extending user model
+  https://docs.djangoproject.com/en/dev/topics/auth/customizing/#extending-the-existing-user-model
+- Pylint for Django
+- https://stackoverflow.com/questions/71986184/how-can-i-override-str-in-models-py
+- W3 Schools
+  https://www.w3schools.com/django/django_collect_static_files.php
+- Virtual Environment
+  https://www.w3schools.com/django/django_create_virtual_environment.php
+- Code Institute Material
+- Bootstrap
+  https://getbootstrap.com/docs/5.0/getting-started/download/
+- Django Documentation
+  https://docs.djangoproject.com/en/3.2/l
+
+## Photos
+- **Shutterstock**: The visually captivating photos throughout the site were sourced from Shutterstock. These images have played a crucial role in enhancing the aesthetic appeal and user experience of Mont Adventures.
+
+## Learning Resources
+- **Bugbytes on YouTube**: Special thanks to [Bugbytes](https://www.youtube.com/@bugbytes3923) for their excellent tutorials on HTMX. Their content was instrumental in helping me understand and effectively implement HTMX in the project.
+- **General Online Resources**:
+  - **Stack Overflow**: For being an invaluable resource in troubleshooting and solving numerous coding challenges.
+  - **Google**: For serving as the gateway to a wealth of information, tips, and solutions that were essential throughout the development process.
+
+### Overcoming Challenges
+
+**AllAuth Sign-In Complexities**: The integration of Django AllAuth for the sign-in functionality posed unique challenges. Customizing the default sign-in templates and workflows to align with the project’s specific requirements was particularly tricky. I encountered issues with redirect handling and ensuring seamless integration with custom user models.
+
+There were moments where I felt stuck, especially while debugging inconsistencies between development and production environments. However, by carefully examining the AllAuth documentation and experimenting with various configurations, I eventually resolved the issues. This experience not only enhanced my understanding of authentication systems but also improved my problem-solving skills and patience in tackling complex integrations.
+
+**Sign-In Form Struggles**:During the development process, I faced significant challenges with setting up the sign-in form. While the form initially appeared functional, issues arose once CSS was implemented. The form either failed to render correctly or was completely hidden due to conflicting styles. Debugging this issue required a deep dive into the interaction between the CSS and the default Django AllAuth templates. By carefully inspecting the CSS rules and overriding the AllAuth template structure, I was eventually able to resolve the issue. This process not only improved my understanding of styling in Django applications but also reinforced the importance of testing the visual aspects of every component during development.Thanks to Tutor support for giving feedback & suggestion with these issues.
+
+**Checkout Complexities**: The checkout app posed significant challenges, particularly integrating custom features and models. Despite some moments where I felt I lacked common sense in my approach, I persevered, finding solutions and pushing through.
+
+**Code Refinement**: In hindsight, I see opportunities where the code could have been cleaner, more refactored, and DRY principles more consistently applied. As the deadline approached, my focus shifted towards ensuring everything worked seamlessly rather than refining the code further.
+
+### Gratitude and Reflection
+
+**Fun and Learning**: This project has been an incredible journey of fun, frustration, learning, and growth. I'm immensely grateful to the Code Institute for their excellent course material, which laid the groundwork for everything I achieved in this project.
+
+**Closing Thoughts**: As I look back, I realize how far I've come. Giggles Grins is not just a project; it's a testament to my dedication, creativity, and the journey of a developer constantly striving to learn and improve.
+
+---
+
+![Line brake](/media/readme_imgs/line-break.png)
+[⬆️Back to top](<#📜table-of-contents>)
