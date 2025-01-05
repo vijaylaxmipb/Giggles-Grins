@@ -62,7 +62,7 @@ Welcome to Giggles & Grins, a dynamic platform focused on delivering top-tier ex
     - [Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
     - [Risks and Mitigation Strategies](#risks-and-mitigation-strategies)
 3. [🧑‍💻Development Plan](#🧑‍💻development-plan)
-    - [Introduction](#introduction-1)
+    - [Introduction](#introduction)
     - [Research and Initial Decisions](#research-and-initial-decisions)
     - [Point System and Estimation](#point-system-and-estimation)
     - [Timeline and Milestones](#timeline-and-milestones)
