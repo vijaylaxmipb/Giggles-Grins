@@ -55,7 +55,7 @@ h2.logo-font {
     text-align: center;
     font-size: 2rem;
     z-index: 100;
-    color: #fff; /* Light text for contrast */
+    color: #fff; 
     position: relative;
     
 }
@@ -228,13 +228,13 @@ a.category-badge > span.badge:hover {
 
 .nav-item.dropdown .dropdown-menu {
     position: absolute;
-    top: 100%; /* Position it right below the parent */
+    top: 100%; 
     left: 0;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1050; /* Higher than other elements */
+    z-index: 1050; 
 }
 
 .navbar-nav .nav-item.dropdown .dropdown-menu {
@@ -254,6 +254,15 @@ a.category-badge > span.badge:hover {
     color: #555;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.loading-spinner h1 {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
 }
 
 
@@ -311,7 +320,7 @@ screenshot-container {
 }
 
 .mr-5 {
-    margin-right: 0 !important; /* Overrides Bootstrap's margin-right */
+    margin-right: 0 !important; 
 }
 
 .mx-5 {
@@ -569,7 +578,7 @@ footer .contact-details,
 footer .social-media,
 footer .quick-links {
     flex: 1;
-    max-width: 300px; /* Adjusts width for each section */
+    max-width: 300px; 
 }
 
 footer .social-media ul,
@@ -622,9 +631,9 @@ button[type="submit"] {
 
 .container {
     
-    color:black; /* White text for contrast */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color:black; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 50px;
     
 }
@@ -638,9 +647,9 @@ h2.logo-font {
 }
 
 .login input {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for inputs */
+    background-color: rgba(255, 255, 255, 0.8); 
     border: 1px solid #ccc;
-    color: #333; /* Dark text inside input */
+    color: #333;
     padding: 10px;
     border-radius: 5px;
     width: 100%;
@@ -648,13 +657,13 @@ h2.logo-font {
 }
 
 .login input::placeholder {
-    color: #999; /* Light placeholder text */
+    color: #999; 
 }
 
 .login input:focus {
-    border-color: #007bff; /* Blue border on focus */
+    border-color: #007bff;
     outline: none;
-    background-color: rgba(255, 255, 255, 1); /* Fully opaque when focused */
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .btn-primary {
@@ -702,26 +711,25 @@ h2.logo-font {
 .logout-page-container {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertically center content */
-    align-items: center; /* Horizontally center content */
-    min-height: calc(100vh - 100px); /* Ensure it takes the full height of the viewport, minus header/footer */
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Optional background for better readability */
+    justify-content: center; 
+    align-items: center; 
+    min-height: calc(100vh - 100px); 
+    background: rgba(255, 255, 255, 0.9);
 }
 
 /* Style for the form */
 .logout-form {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    align-items: center; /* Align buttons vertically */
-    gap: 15px; /* Add space between buttons */
-    margin-top: 20px; /* Add some margin above the buttons */
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+    margin-top: 20px; 
 }
 
 /* Style for buttons */
 .logout-form button {
-    padding: 10px 20px; /* Add consistent padding for buttons */
-    font-size: 1rem; /* Standardize font size */
+    padding: 10px 20px; 
+    font-size: 1rem; 
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -736,8 +744,8 @@ h2.logo-font {
 }
 
 .logout-form a {
-    padding: 10px 20px; /* Add consistent padding for buttons */
-    font-size: 1rem; /* Standardize font size */
+    padding: 10px 20px; 
+    font-size: 1rem; 
     background-color: transparent;
     color: #555;
     border: 1px solid #555;
@@ -766,20 +774,20 @@ h2.logo-font {
 
 /* Style the input fields */
 .signup-form input {
-    width: 100%; /* Full-width inputs */
+    width: 100%; 
     padding: 10px;
     margin-bottom: 15px;
-    background: #444; /* Darker background for inputs */
-    border: 1px solid #555; /* Subtle border */
-    border-radius: 5px; /* Add rounded corners */
+    background: #444; 
+    border: 1px solid #555; 
+    border-radius: 5px; 
     font-size: 1rem;
-    color: #fff; /* Light text color */
+    color: #fff; 
 }
 /* Style the button */
 .signup-form button {
-    width: 100%; /* Full-width button */
+    width: 100%; 
     padding: 12px 15px;
-    background: #007bff; /* Blue button */
+    background: #007bff; 
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -789,24 +797,24 @@ h2.logo-font {
 }
 
 .signup-form input::placeholder {
-    color: #aaa; /* Subtle placeholder color */
+    color: #aaa; 
 }
 
 .signup-form button:hover {
-    background: #0056b3; /* Darker blue on hover */
+    background: #0056b3;
 }
 
 
 .signup-form h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #fff; /* Light heading color */
+    color: #fff; 
     font-size: 1.5rem;
 }
 
 .signup-form p {
     text-align: center;
-    color: #ccc; /* Light gray text */
+    color: #ccc; 
     margin-bottom: 20px;
     font-size: 1rem;
 }
@@ -824,7 +832,7 @@ footer {
 
 /* General container for the password reset form */
 .password-reset-container {
-    max-width: 400px; /* Adjust width as necessary */
+    max-width: 400px;
     width: 100%;
     padding: 20px;
     background: #ffffff;
@@ -1156,12 +1164,12 @@ footer {
     }
 
     h2.logo-font {
-        font-size: 1.5rem; /* Reduce font size for mobile */
-        margin-top: 10px; /* Adjust spacing */
-        text-align: center; /* Center-align text */
-        color: #fff; /* Ensure it remains visible */
-        position: relative; /* Ensure it doesn't overlap */
-        z-index: 10; /* Keeps it above other elements */
+        font-size: 1.5rem; 
+        margin-top: 10px;
+        text-align: center;
+        color: #fff;
+        position: relative; 
+        z-index: 10; 
     }
     
 

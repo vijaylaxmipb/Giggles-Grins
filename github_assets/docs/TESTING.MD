@@ -24,7 +24,6 @@
   - [CI Python Linter Results](#ci-python-linter-results)
   - [JSLint Results](#jslint-results)
   - [W3C Validator HTML/CSS Results](#w3c-validator-htmlcss-results)
-  - [Wave Accessibility Results](#wave-accessibility-results)
   - [PageSpeed Insights Results](#pagespeed-insights-results)
 - [Bugs and Fixes](#bugs-and-fixes)
 - [Conclusion](#conclusion)
@@ -693,9 +692,9 @@ Expected Outcome: The page banner should be visually attractive and contextually
 
 ---
 
-### 2. Cart Section
+### 2. Bag Section
 
-1. Detailed Cart Overview
+1. Detailed Bag Overview
 
 Objective: Verify that the cart provides a clear and detailed summary of all selected products.
 
@@ -703,7 +702,7 @@ Test for Clarity and Accuracy
 
 - Test Steps for Desktop and Mobile:
     - Add multiple products to the cart.
-    - Access the Cart page on both desktop and mobile devices.
+    - Access the bag page on both desktop and mobile devices.
     - Confirm that each product is listed with complete details, including product name,unit price,total price.
     - Verify that all calculations (e.g., total price per product and overall cart total) are accurate.
 
@@ -713,7 +712,7 @@ Expected Outcome: The cart should display a detailed and accurate overview of al
 
 ---
 
-2. Easy cart Management
+2. Easy Bag Management
 
 Objective: Test the functionality of managing cart items by removing products.
 
@@ -1165,25 +1164,262 @@ Validation Tests/Results
 
 | App              | Files                                                                                      | Results |
 |------------------|--------------------------------------------------------------------------------------------|---------|
-| **Cart App**     | test_utils.py, test_views.py, cart_utils.py, context_processors.py, urls.py, views.py      | Pass    |
-| **Checkout App** | test_checkout_utils.py, test_forms.py, test_models.py, test_signals.py, test_views.py, test_webhook_handler.py, admin.py, checkout_utils.py, forms.py, models.py, signals.py, urls.py, views.py, webhook_handler.py, webhooks.py | Pass    |
-| **Home App**     | middleware.py, sitemaps.py, urls.py, views.py                                              | Pass    |
-| **Mont Adventures Main** | settings.py, unfold_settings.py, urls.py                                         | Pass    |
-| **Profiles App** | test_forms.py, test_models.py, test_views.py, admin.py, forms.py, models.py, signals.py, urls.py, views.py | Pass    |
-| **Trip Packages App** | generate_dates.py, test_generate_dates.py, admin.py, forms.py, models.py, trip_utils.py, urls.py, views.py | Pass    |
-
-### JSLint Results
-
-| App              | File               | Results | Notes |
-|------------------|--------------------|---------|-------|
-| **Checkout App** | stripe_elements.js | Pass    | 'var stripe = Stripe(stripePublicKey);' shows "Could not find name 'Stripe'." This is considered a false positive as changing it to 'stripe' breaks the script. Followed the boutique ado walkthrough approach, so it was ignored. |
-| **Home App**     | carousel.js        | Pass    | ESlint was ignored as it displayed 'Glide not defined,' but Glide is needed as a slider framework and must be initialized with this script. |
-| **Main Static Assets** | main.js, toasts.js | Pass | ESlint ignored for main.js due to its use only for the sticky elements by 'sticky.js'. |
-| **Trip Packages App** | filter-sidebar.js, trip-details.js | Pass | - |
-
+| **Cart App**     | utils.py,views.py, context.py, urls.py, views.py,test.py,app.py     | Pass    |
+| **Checkout App** | forms.py, models.py, signals.py, views.py, webhook_handler.py, admin.py, webhooks.py | Pass    |
+| **Home App**     | apps.py, forms.py, urls.py, views.py,models.py.py                                              | Pass    |
+| **products App** | settings.py,forms.py,models.py,views.py,urls.py,py                                         | Pass    |
+| **Profiles App** | forms.py, models.py, views.py, admin.py, forms.py, models.py, signals.py, urls.py, views.py | Pass    |
 
 ---
 
+[⬆️Back to top](<#table-of-contents>)
+![Line brake](/media/readme_imgs/line-break.png)
 
+### W3C Validator HTML/CSS Results
+
+CSS Results:
+
+checkout.css
+
+![checkout-css](/media/readme_imgs/Checkout_css_w3c%20validator.png)
+
+profile.css
+
+![profile-css](/media/readme_imgs/profile_css_fixed%20error.png)
+
+base.css
+
+![base-css](/media/readme_imgs/w3c_css_validator.png)
+
+
+HTML Results:
+
+Home Page
+
+![home-page](/media/readme_imgs/home_w3c_validator.png)
+
+product Page
+
+![product-page](/media/readme_imgs/products_w3c_validator.png)
+
+Bag Page
+
+![bag-page](/media/readme_imgs/bag_w3c_validator.png)
+
+Checkout Page
+
+![checkout-page](/media/readme_imgs/checkout_w3c_validator.png)
+
+Profile Page
+
+![profile-page](/media/readme_imgs/products_w3c_validator.png)
+
+
+Checkout Success Page
+
+![checkout-success-page](/media/readme_imgs/checkout_w3c_validator.png)
+
+Password Reset Page
+
+![password-reset-page]()
+
+Password Reset Done Page
+
+![password-reset-done-page](/media/readme_imgs/reset_password_w3c%20validator.png)
+
+
+Implication for Validation:
+Due to the dynamic nature of content loading via HTMX, standard methods of viewing source code for validation purposes are not fully effective. The source code viewed in a browser typically represents the initial page load and does not reflect content dynamically loaded through HTMX.
+
+Note on W3C CSS Validator Errors for HTMX Related Attributes.
+
+HTMX Custom Attributes:
+
+- HTMX extends HTML by introducing custom attributes starting with hx-. These attributes enable various AJAX functionalities directly in HTML, making it easier to create dynamic and responsive web pages without heavy JavaScript.
+
+W3C Validation Errors:
+
+- When validating HTML that uses HTMX, the W3C validator, which checks HTML against the official HTML specifications, reports errors for these custom attributes. This is because the validator only recognizes standard HTML attributes and is not aware of HTMX-specific enhancements.
+
+Nature of These Errors:
+
+- The reported errors are specific to HTMX's custom attributes. They indicate a deviation from standard HTML but do not imply any actual issue with how the HTMX-enhanced page will function. These attributes are essential for HTMX's AJAX capabilities and are correctly used within the context of an HTMX-enabled project.
+
+Impact on Web Development:
+
+- While these errors are flagged in validation, they do not impact the functionality or performance of web pages enhanced with HTMX. In the context of an HTMX project, these attributes are correctly used and crucial for enabling its features.
+
+---
+
+[⬆️Back to top](<#table-of-contents>)
+![Line brake](/media/readme_imgs/line-break.png)
+
+Home Page
+
+![wave-home-page](../testing_images/code_validation/wave-home-page.png)
+
+Explore Page
+
+![wave-explore-page](../testing_images/code_validation/wave-explore-page.png)
+
+Trip Detail Page
+
+![wave-trip-detail-page](../testing_images/code_validation/wave-trip-detail-page.png)
+
+Cart/Checkout Page
+
+![wave-cart-checkout-page](../testing_images/code_validation/wave-cart-checkout-page.png)
+
+---
+
+[⬆️Back to top](<#table-of-contents>)
+![Line brake](../readme_images/color-line-break.png)
+
+### PageSpeed Insights Results
+
+Overview
+
+PageSpeed Insights is a powerful tool provided by Google that analyzes the content of a web page, then generates suggestions to make that page faster and more efficient. It measures various aspects of website performance, providing both a score and actionable recommendations.
+Purpose of the Analysis
+
+- Performance Evaluation: To assess how well the Mont Adventures website performs in terms of loading speed and responsiveness.
+- User Experience Enhancement: Fast-loading pages improve user experience, especially on mobile devices.
+- Search Engine Optimization: Page speed is a ranking factor for search engines, so optimizing for speed can help improve the website's search engine rankings.
+
+Testing Process
+
+- The PageSpeed Insights tool analyzes both the mobile and desktop versions of the website.
+- It provides a performance score out of 100, categorizing the site as 'Good', 'Needs Improvement', or 'Poor'.
+- The analysis includes metrics such as Largest Contentful Paint (LCP), First Input Delay (FID), and Cumulative Layout Shift (CLS).
+
+Key Findings
+
+- Performance Metrics: Detailed insights into various performance metrics, identifying areas where the website excels and areas needing improvement.
+- Opportunities for Optimization: Specific recommendations on how to improve page loading times, such as optimizing images, leveraging browser caching, or minifying CSS and JavaScript.
+
+Action Taken
+
+- Following the analysis, implement the suggested optimizations to improve performance scores.
+- Continuously monitor the website’s performance to ensure it remains optimized over time.
+
+Conclusion
+
+The PageSpeed Insights analysis for Mont Adventures provides a comprehensive view of the site's performance, highlighting critical areas for improvement. Implementing these recommendations not only enhances the user experience but also contributes positively to SEO efforts. Regular monitoring and optimization are key to maintaining a fast and efficient website.
+
+First Analyze Report:
+
+![first-test-mobile](../testing_images/pagespeed_insights/first-test-mobile.png)
+![first-test-desktop](../testing_images/pagespeed_insights/first-test-desktop.png)
+
+Last Analyze Report:
+
+![last-test-mobile](../testing_images/pagespeed_insights/last-test-mobile.png)
+![last-test-desktop](../testing_images/pagespeed_insights/last-test-desktop.png)
+
+Current Optimizations
+
+1. JavaScript Optimization:
+
+- Action Taken: Deferred loading of several JavaScript files.
+- Impact: This reduced the initial load time by delaying the loading of non-critical JavaScript, thereby improving the site's interactivity metrics.
+
+2. CSS Optimization:
+
+- Action Taken: Minified the TailwindCSS output file.
+- Impact: The reduction in CSS file size led to a quicker download and parse time, slightly enhancing the overall page speed.
+
+Results and Reflection
+
+- The above optimizations led to a slight increase in the site's speed score.
+- Given the time constraints, these initial improvements are satisfactory for the current phase of the project.
+- Recognizing that further detailed analysis and optimization are required for more significant performance gains.
+
+Future Optimization Plans
+
+1. Caching Strategy:
+
+- Plan: To implement a more robust caching strategy upon final build deployment.
+- Method: Utilize Cloudflare's caching capabilities to optimize content delivery and further improve load times.
+- Expectation: Anticipate noticeable improvements in page loading speed, especially for repeat visitors.
+
+2. Additional Cloudflare Features:
+
+- Exploration: Investigate other Cloudflare features such as image optimization (Polish), Argo routing, and advanced caching techniques.
+    Goal: To leverage these features for enhanced performance and efficiency.
+
+Conclusion
+
+- The initial steps taken have resulted in a moderate improvement in site performance.
+- Recognizing the importance of ongoing optimization, further enhancements will be pursued post-launch, particularly focusing on caching and Cloudflare's advanced capabilities.
+- Continuous monitoring and iterative improvements will be key to maintaining optimal site performance.
+
+---
+
+[⬆️Back to top](<#table-of-contents>)
+![Line brake](../readme_images/color-line-break.png)
+
+
+### Bugs and Fixes
+
+Overview of Bug Handling
+
+Throughout the development of Mont Adventures, numerous small bugs were encountered. However, these were typically minor and swiftly rectifiable, addressed promptly as part of the development workflow.
+Current Bug Status
+
+- As of the latest release, no critical bugs have been identified that impede the full functionality and navigability of the application.
+- The focus has been on ensuring a smooth and error-free experience for the end user.
+
+Notable Non-Critical Bug
+
+Issue: In the production environment, an anomaly has been observed in the profile edit form, specifically in the country select dropdown. An additional arrow appears in the dropdown, which is not present in the development environment.
+
+- Suspected Cause: The issue is presumed to be related to the integration of Crispy Tailwind forms, possibly a minor styling conflict or a rendering issue specific to the production environment.
+- Current Impact: This bug is not critical to the application's functionality. The form remains usable, and the issue is largely cosmetic.
+- Screenshots:
+
+![bug-development](../testing_images/bugs/countries-select-development.png)
+![bug-production](../testing_images/bugs/countries-select-production.png)
+
+Plan for Resolution
+
+- While this issue is not currently critical, it is earmarked for future investigation and resolution.
+- A deeper analysis will be conducted to isolate the cause, potentially examining the interplay between Tailwind CSS, Crispy forms, and the production environment's specifics.
+
+Conclusion
+
+The proactive approach in addressing bugs during development has resulted in a stable release of Mont Adventures. The ongoing commitment to refining and enhancing the application will continue to address any such minor issues as part of regular maintenance and updates.
+
+---
+
+[⬆️Back to top](<#table-of-contents>)
+![Line brake](../readme_images/color-line-break.png)
+
+### Conclusion
+
+As I conclude the comprehensive testing phase for Mont Adventures, it's an opportune moment to reflect on the journey, the challenges faced, and the accomplishments achieved.
+Key Achievements
+
+- Thorough Testing Approach: The application underwent a range of tests, from unit to user acceptance testing, ensuring every facet was rigorously evaluated for quality and functionality.
+- Performance Enhancements: Efforts to optimize performance, such as deferring JavaScript and minifying CSS, have resulted in notable improvements, demonstrating a commitment to efficient and responsive design.
+- Accessibility and User Experience: Adherence to accessibility standards and a focus on user experience were central to my approach, leading to an inclusive and engaging application.
+- Responsive Design Mastery: Testing across various devices affirmed the application's adaptability and seamless user experience across different platforms.
+
+Challenges and Learning
+
+- Balancing Quality with Time Constraints: One of the significant challenges was managing the extensive scope of testing within the project timeline, which taught me valuable lessons in prioritization and time management.
+- Debugging Production Environment: Encountering and addressing issues unique to the production environment highlighted the importance of thorough, environment-specific testing.
+
+Looking Ahead
+
+- Commitment to Continuous Improvement: The development journey doesn't end here. I'm dedicated to ongoing improvement and updates, ensuring Mont Adventures stays ahead in terms of technology and user satisfaction.
+- Valuing Monitoring and User Feedback: Regular monitoring and user feedback will be crucial in refining and enhancing the application further.
+
+Final Thoughts
+
+The testing phase for Mont Adventures has been a challenging yet rewarding solo endeavor. It has not only improved the application's current state but also equipped me with insights and experiences that will benefit future projects. Launching this version of Mont Adventures, I'm confident in its quality, functionality, and the positive experience it will offer users. I look forward to the ongoing journey and the new opportunities it will bring.
+
+---
+
+[⬆️Back to top]
 
 

@@ -13,7 +13,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
     def save_model(self, request, obj, form, change):
         if not obj.friendly_name:
-            obj.friendly_name = obj.name  # Auto fill friendly_name if it's empty
+            obj.friendly_name = obj.name
         super().save_model(request, obj, form, change)
 
 

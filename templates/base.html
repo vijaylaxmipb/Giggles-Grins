@@ -4,8 +4,8 @@
 <html lang="en">
 <head>
     {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
     {% endblock %}
@@ -40,7 +40,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Giggles & Grins {% block extra_title %}{% endblock %}</title>
+    <title>Giggles & Grins {% block extra_title %}Welcome{% endblock %}</title>
     <!-- Favicon Links -->
     <link rel="icon" href="{% static 'images/favicon/favicon.ico' %}" type="image/x-icon">
     <link rel="shortcut icon" href="{% static 'images/favicon/favicon.ico' %}" type="image/x-icon">
@@ -225,7 +225,7 @@
 
     <!-- Post Load Scripts -->
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
     <script>
