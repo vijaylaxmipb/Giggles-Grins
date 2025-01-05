@@ -630,7 +630,7 @@ button[type="submit"] {
 }
 
 h2.logo-font {
-    color: #fff; /* White heading text */
+    color: #fff; 
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -821,6 +821,85 @@ footer {
     padding: 20px;
     width: 100%;
 }
+
+/* General container for the password reset form */
+.password-reset-container {
+    max-width: 400px; /* Adjust width as necessary */
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+/* Full page styling to handle footer placement */
+.password-reset-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.password-reset-page-content {
+    flex: 1;
+}
+
+/* Title styling */
+.password-reset-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.password-reset-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.password-reset-form input[type="email"],
+.password-reset-form button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-reset-form input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.25);
+}
+
+/* Button styling */
+.password-reset-form button {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.password-reset-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Help text styling */
+.help-text {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+}
+
 
 
 /* -------------------------------- Media Queries */
@@ -1061,6 +1140,30 @@ footer {
         font-size: 0.9rem;
         padding: 8px 16px;
     }
+
+    .password-reset-container {
+        padding: 15px;
+    }
+
+    .password-reset-container h1 {
+        font-size: 20px;
+    }
+
+    .password-reset-form input[type="email"],
+    .password-reset-form button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    h2.logo-font {
+        font-size: 1.5rem; /* Reduce font size for mobile */
+        margin-top: 10px; /* Adjust spacing */
+        text-align: center; /* Center-align text */
+        color: #fff; /* Ensure it remains visible */
+        position: relative; /* Ensure it doesn't overlap */
+        z-index: 10; /* Keeps it above other elements */
+    }
+    
 
 }
 

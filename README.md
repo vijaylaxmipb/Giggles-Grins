@@ -723,3 +723,148 @@ The Product explore page  provide an engaging, user-friendly experience, adaptin
 
 </details>
 
+### Other Features
+
+#### 🪟 Modals
+Interactive dialog boxes that enhance user engagement and streamline the user experience. They are designed to grab the user's attention for specific actions, providing a focused environment without leaving the current page.
+
+<details><summary><b>Login & Sign Up</b></summary>
+
+- **Login Modal**: Streamlines the login process with a clear, user-friendly interface.
+- **Sign Up Modal**: Encourages new users to join with an easy-to-use registration form.
+
+![Login Modal](/media/readme_imgs/Login.png)
+![Sign Up Modal](/media/readme_imgs/Signup.png)
+</details>
+
+<details><summary><b>Password Reset</b></summary>
+
+- **Password Reset Modal**: Provides users with a simple and secure way to reset their passwords, ensuring continued access to their accounts.
+
+![Password Reset Modal](/media/readme_imgs/password_reset.png)
+</details>
+
+<details><summary><b>Add/Edit Review</b></summary>
+
+- **Add Review Modal**: Allows users to share their experiences easily.
+
+![Add Review Modal](/media/readme_imgs/Review.png)
+
+</details>
+
+
+#### ✅ Form Validations
+Ensuring data integrity and enhancing user experience through real-time feedback, our form validations guide users in providing correct and required information.
+
+<details><summary><b>Login & Sign Up</b></summary>
+
+- **Login Validation**: Checks user credentials for accuracy and security.
+- **Sign Up Validation**: Ensures all necessary information is provided correctly during registration.
+
+![Login Validation](/media/readme_imgs/Login_validation.png)
+![Sign Up Validation](/media/readme_imgs/Signup_validation.png)
+</details>
+
+<details><summary><b>Review Validation</b></summary>
+
+- **Review Validation**: Assists users in providing meaningful feedback.
+
+![Review Validation](/media/readme_imgs/Review_validation.png)
+
+<details><summary><b>Checkout</b></summary>
+
+- **Checkout Validation**: Ensures all transaction details are filled out correctly, enhancing the reliability of the checkout process.
+
+![Checkout Validation 1](/media/readme_imgs/Checkout_validation.png)
+
+</details>
+
+#### 📩 Order Confirmation
+
+- **Guest Checkout Notification**: Guests who shop without an account receive an additional message in their order confirmation email, encouraging them to register for an account. This feature is designed to promote customer engagement and streamline future shopping experiences.
+
+- **Custom Email Design**: The email template features a visually appealing design, consistent with the Giggles & Grins brand, ensuring a professional and user-friendly experience for recipients.
+
+<details><summary><b>Confirmation Email</b></summary>
+
+![order-email](/media/readme_imgs/confirmation.png)
+</details>
+
+#### 👤 Admin Panel
+
+The Admin Panel in Giggles & Grins is a powerful and intuitive interface designed for administrators to efficiently manage various aspects of the platform. It ensures streamlined operations and provides full control over the platform's content and user interactions.
+
+- **Accounts Management:**: 
+  - *Description*: Manage user email addresses and authentication details to ensure secure and effective communication.
+  - *Utility*: Enables administrators to oversee user accounts and streamline account-related queries.
+
+- **Authentication and Authorization**: 
+  - *Description*: Manage user roles and permissions through groups and individual accounts.
+  - *Utility*: Ensures secure access control and maintains platform integrity.
+
+- **Checkout Management**: 
+  - *Description*: Oversee and manage customer orders, including tracking payments and delivery statuses.
+  - *Utility*: Critical for providing a smooth and efficient checkout process for users.
+
+- **Order Management**: 
+  - *Description*:View and manage detailed order information, including products, quantities, and total costs.
+  - *Utility*: Provides insight into individual transactions for better order handling
+    - **User Orders**:
+     - Description: Track all orders placed by a specific user for personalized customer service.
+     - Utility: Helps resolve user-specific order issues efficiently.
+
+- **Product Management**: 
+  - **Categories**
+  - *Description*: Add, update, or delete product categories to keep the product catalog organized.
+  - *Utility*: Improves user navigation and product discoverability.
+
+  - **Products**:
+  - *Description*: Manage individual product details such as pricing, stock, and descriptions.
+  - *Utility*: Keeps the product catalog up-to-date and accurate.
+
+  - **Subcategories**:
+  - Description: Refine product organization with subcategories for better browsing experiences.
+  - Utility: Enhances the overall product navigation for customers.
+
+<details><summary><b>Dashboard</b></summary>
+
+![dashboard](/media/readme_imgs/Dashboard_access.png)
+</details>
+
+<details><summary><b>Products</b></summary>
+
+![Products](/media/readme_imgs/product_administrator.png)
+</details>
+
+<details><summary><b>Category</b></summary>
+
+![Category](/media/readme_imgs/Category_administrator.png)
+</details>
+
+<details><summary><b>Sub Category</b></summary>
+
+![Sub Category](/media/readme_imgs/subcategory_administrator.png)
+</details>
+
+<details><summary><b>Sub Category</b></summary>
+
+![orders](/media/readme_imgs/checkout_order_admin.png)
+</details>
+<details><summary><b></b></summary>
+
+
+![Line brake](/media/readme_imgs/line-break.png)
+
+[⬆️Back to top](<#📜table-of-contents>)
+
+---
+
+# 🌠Future Enhancements
+
+As Giggles & Grins continues to grow, a series of thoughtful feature enhancements are planned to redefine the shopping experience and elevate the platform's offerings. These enhancements aim to provide a more personalized, convenient, and engaging journey for customers.
+
+From **Personalized Recommendations** based on browsing and purchase history to **Wishlist Sharing** that allows users to share their favorite products with friends and family, each feature is being developed to add value and create a deeper connection with users. The introduction of **Gift Cards** and **Exclusive Promo Codes** will enhance customer loyalty and incentivize more purchases, while **Social Sign Up and Sign In** will streamline the account creation process for a global audience.
+
+The **Vendor Portal for Product Submissions** will transform **Giggles & Grins** into a dynamic marketplace, enabling trusted vendors to contribute unique products directly to the platform. Additionally, **Live Order Notifications** and a robust **Chat Bot with Support Ticketing** System will ensure customers are always informed and supported.
+
+These future enhancements are not just incremental improvements—they mark a strategic move towards creating a smarter, more connected, and customer-centric e-commerce platform. **Giggles & Grins** is evolving into more than just a kids' clothing store; it is becoming a trusted partner for families, setting new standards in the online shopping experience.
