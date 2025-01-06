@@ -344,6 +344,7 @@ Expected Outcome: The tests confirm the hero image is optimized, responsive, and
 
 - Result: Pass
 
+---
 
 ### 3. Product Section - All Products
 
@@ -422,7 +423,7 @@ Expected Outcome: The Section has been confirmed to be fully responsive and inte
 
 ---
 
-3. Quick Links
+2. Quick Links
 
 Objective: Validate the functionality and relevance of the "Quick Links" section (e.g., My Account, Shop, Contact Us).
 
@@ -436,7 +437,7 @@ Expected Outcome: All quick links are functional, correctly redirecting users to
 
 ---
 
-4. Footer Responsiveness
+3. Footer Responsiveness
 
 Objective: Ensure the footer maintains its layout and functionality across various devices and screen sizes.
 
@@ -451,7 +452,7 @@ Expected Outcome: The footer adapts seamlessly to all screen sizes and maintains
 
 ---
 
-5. Legal and Branding Compliance
+4. Legal and Branding Compliance
 
 Objective: Verify that the footer includes all necessary legal and branding elements and that they are correctly displayed.
 
@@ -515,7 +516,7 @@ Expected Outcome: The Shop Now button should & redirect users to the correct pro
 
 ---
 
-3. User Interaction with Products
+### 3. User Interaction with Products
 
 Objective: Confirm that users can interact with products effortlessly, whether by favoriting items or being appropriately prompted to log in or sign up for such features.
 
@@ -531,7 +532,7 @@ Expected Outcome: User interactions with products, including login/signup prompt
 
 ---
 
-4. Visual appeal
+### 4. Visual appeal
 
 Objective: Evaluate the visual appeal, design consistency, and functionality of product on the Page, ensuring they provide key product details and seamless navigation to product detail pages.
 
@@ -1336,7 +1337,7 @@ Current Optimizations
 
 2. CSS Optimization:
 
-- Action Taken: Minified the TailwindCSS output file.
+- Action Taken: Minified the CSS output file.
 - Impact: The reduction in CSS file size led to a quicker download and parse time, slightly enhancing the overall page speed.
 
 Results and Reflection
@@ -1353,15 +1354,10 @@ Future Optimization Plans
 - Method: Utilize Cloudflare's caching capabilities to optimize content delivery and further improve load times.
 - Expectation: Anticipate noticeable improvements in page loading speed, especially for repeat visitors.
 
-2. Additional Cloudflare Features:
-
-- Exploration: Investigate other Cloudflare features such as image optimization (Polish), Argo routing, and advanced caching techniques.
-    Goal: To leverage these features for enhanced performance and efficiency.
-
 Conclusion
 
 - The initial steps taken have resulted in a moderate improvement in site performance.
-- Recognizing the importance of ongoing optimization, further enhancements will be pursued post-launch, particularly focusing on caching and Cloudflare's advanced capabilities.
+- Recognizing the importance of ongoing optimization, further enhancements will be pursued post-launch, particularly focusing on caching.
 - Continuous monitoring and iterative improvements will be key to maintaining optimal site performance.
 
 ---
@@ -1416,7 +1412,7 @@ Plan for Resolution
 
 ### Conclusion
 
-As I conclude the comprehensive testing phase for Mont Adventures, it's an opportune moment to reflect on the journey, the challenges faced, and the accomplishments achieved.
+As I conclude the comprehensive testing phase for Giggle & Grins, it's an opportune moment to reflect on the journey, the challenges faced, and the accomplishments achieved.
 Key Achievements
 
 - Thorough Testing Approach: The application underwent a range of tests, from unit to user acceptance testing, ensuring every facet was rigorously evaluated for quality and functionality.
@@ -1436,7 +1432,7 @@ Looking Ahead
 
 Final Thoughts
 
-The testing phase for Mont Adventures has been a challenging yet rewarding solo endeavor. It has not only improved the application's current state but also equipped me with insights and experiences that will benefit future projects. Launching this version of Mont Adventures, I'm confident in its quality, functionality, and the positive experience it will offer users. I look forward to the ongoing journey and the new opportunities it will bring.
+The testing phase for Giggles & Grins has been a challenging yet rewarding solo endeavor. It has not only improved the application's current state but also equipped me with insights and experiences that will benefit future projects.
 
 ---
 
