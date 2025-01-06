@@ -361,7 +361,11 @@ Wireframes for key pages have been designed to visualize the layout and function
 
 The database schema was designed using [lucidchart.com](https://lucidchart.com), which provided an intuitive interface for creating and visualizing the database structure. This tool facilitated the definition of tables, relationships, and constraints, streamlining the database design process.
 
+<details><summary><b>Database Schema</b></summary>
+
 ![Database Schema](/media/readme_imgs/diagram.png)
+
+</details>
 
 #### Dynamic Elements
 
@@ -402,7 +406,11 @@ The database schema was designed using [lucidchart.com](https://lucidchart.com),
 - **Rusty Red (#DC3545):**: 
   - Alert or error indicators.Use for warnings, error messages, or highlights for urgency.
 
-![color-pallete](/media/readme_imgs/Color_pallet.png)
+<details><summary><b>Colour Schema</b></summary>
+
+![colour schema](/media/readme_imgs/Color_pallet.png)
+</details>
+
 
 #### Typography
 
@@ -496,14 +504,17 @@ These are the underlying principles that guide the UX/UI design of the platform,
 - **Captivating Fullscreen Image**: The landing page features a striking fullscreen image that immediately grabs the visitor's attention. This visual centerpiece is designed to make a strong first impression and engage users from the moment they arrive on the page.
 
 ## Desktop View
+<details><summary><b>Landing Page</b></summary>
 
 ![Landing Page Desktop View](/media/readme_imgs/Landing_page.png)
-
+</details>
 - **Responsive Design for Different Devices**: Acknowledging the diversity of devices used to access the site, the hero image is optimized for desktop and mobile. This ensures that the image looks great and loads quickly on any screen size, providing an optimal user experience.
 
 ## Mobile View
+<details><summary><b>Landing Page</b></summary>
 
 ![Landing Page Mobile View](/media/readme_imgs/Landing_page_mobile.png)
+</details>
 
 
 #### 📘 Product Section
@@ -617,8 +628,10 @@ The footer design not only caters to functional needs but also plays a vital rol
 - Subcategory Filters:Users can filter products by categories such as jeans, sweatshirts, baby wear, nightwear, and more. This ensures effortless navigation to find desired items.
 
 - Product Count: Displays the total number of available products in the current view, giving users a quick insight into the product range.
+<details><summary><b>Product Explore</b></summary>
 
 ![Product Explore](/media/readme_imgs/Product_explore.png)
+</details>
 
 #### Product Details Section
 - **Product Cards**:Each product is displayed in a visually appealing card format that includes:
@@ -629,8 +642,10 @@ The footer design not only caters to functional needs but also plays a vital rol
 
 - **Sorting Options**:A dropdown menu allows users to sort products by parameters such as Rating (High to Low),Price,Catergory.
 - **Responsive Design**:The page adapts seamlessly across desktop and mobile devices, ensuring a user-friendly experience regardless of screen size.
+<details><summary><b>Product Detail</b></summary>
 
 ![Product Detail Section](/media/readme_imgs/Product_detail.png)
+</details>
 
 - **Mobile Filtering**: For mobile users, a hidden drawer for filtering is accessible via a floating button, ensuring a clean, uncluttered interface while retaining full functionality.
 
