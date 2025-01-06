@@ -759,29 +759,27 @@ Interactive dialog boxes that enhance user engagement and streamline the user ex
 #### ✅ Form Validations
 Ensuring data integrity and enhancing user experience through real-time feedback, our form validations guide users in providing correct and required information.
 
-<details><summary><b>Login & Sign Up</b></summary>
-
 - **Login Validation**: Checks user credentials for accuracy and security.
 - **Sign Up Validation**: Ensures all necessary information is provided correctly during registration.
+
+<details><summary><b>Login & Sign Up</b></summary>
 
 ![Login Validation](/media/readme_imgs/Login_validation.png)
 ![Sign Up Validation](/media/readme_imgs/Signup_validation.png)
 </details>
 
-<details><summary><b>Review Validation</b></summary>
-
 - **Review Validation**: Assists users in providing meaningful feedback.
 
+<details><summary><b>Review Validation</b></summary>
+
 ![Review Validation](/media/readme_imgs/Review_validation.png)
-
-<details><summary><b>Checkout</b></summary>
-
-- **Checkout Validation**: Ensures all transaction details are filled out correctly, enhancing the reliability of the checkout process.
-
-![Checkout Validation 1](/media/readme_imgs/Checkout_validation.png)
-
 </details>
 
+- **Checkout Validation**: Ensures all transaction details are filled out correctly, enhancing the reliability of the checkout process.
+<details><summary><b>Checkout</b></summary>
+
+![Checkout Validation 1](/media/readme_imgs/Checkout_validation.png)
+</details>
 
 #### 📩 Order Confirmation
 
