@@ -883,23 +883,12 @@ This project is built using a diverse set of technologies, frameworks, and tools
 - **Python**: The core programming language used for backend development, known for its simplicity and power.
 - **Django**: A high-level Python Web framework that enables rapid and clean development, perfect for building robust web applications.
 
-### Database
-- **ElephantSQL**: As the cloud-hosted PostgreSQL database service.
-
 ### Storage and Media
 - **AWS S3**: Utilized for secure and scalable storage of static and media files.
 
 ### Deployment and Domain Management
 - **Git & GitHub**: For version control and source code repository.
 - **Heroku**: For deploying the web application.
-- **Cloudflare**: Provides domain management along with security and performance optimization.
-
-### Email Service
-- **Spaceship**: For efficient email service setup and management.
-
-### Design and Documentation Tools
-- **Photoshop**: For graphic design and image editing.
-- **Claude**: Assists in generating and refining README and documentation text.
 
 This comprehensive selection of technologies and tools ensures a scalable, efficient, and user-friendly application, focusing on seamless front-end interactivity and robust back-end functionality.
 
@@ -942,7 +931,7 @@ whitenoise==6.8.2
 
 * Sign up or log in to [Heroku](https://www.heroku.com/).
 * On the main Heroku Dashboard, click 'New' > 'Create New App'.
-* Name your project (e.g., `mont-adventures-pp5`). Remember, the app name must be unique.
+* Name your project (e.g., `giggles-grin`). Remember, the app name must be unique.
 * Choose a suitable region and then click 'Create app'.
 
 #### 2. **Setting Up the Database:**
@@ -1012,7 +1001,7 @@ Forking the GitHub Repository allows you to have a copy of the original reposito
 To fork the repository:
 
 1. Log into [GitHub](https://github.com/) or create an account.
-2. Navigate to the repository: [Mont Adventures](https://github.com/kpetrauskas92/Mont-Adventures-PP5).
+2. Navigate to the repository: [Giggles Grins](https://github.com/vijaylaxmipb/Giggles-Grins).
 3. At the top-right corner of the repository page, click on the "Fork" button.
 4. A copy of the repository will now be available in your account.
 
@@ -1022,7 +1011,7 @@ Cloning creates a local copy of the repository on your machine, allowing you to 
 
 To clone the repository:
 
-1. Visit the [Mont Adventures repository](https://github.com/kpetrauskas92/Mont-Adventures-PP5).
+1. Visit the [Giggles Grins repository](https://github.com/vijaylaxmipb/Giggles-Grins).
 2. Click on the green "Code" button located at the top of the file list.
 3. Choose the "Clone with HTTPS" option and copy the provided URL to your clipboard.
 4. Open your preferred code editor or terminal.
@@ -1083,7 +1072,6 @@ To clone the repository:
 ## Learning Resources
 - **Bugbytes on YouTube**: Special thanks to [Bugbytes](https://www.youtube.com/@bugbytes3923) for their excellent tutorials on HTMX. Their content was instrumental in helping me understand and effectively implement HTMX in the project.
 - **General Online Resources**:
-  - **Stack Overflow**: For being an invaluable resource in troubleshooting and solving numerous coding challenges.
   - **Google**: For serving as the gateway to a wealth of information, tips, and solutions that were essential throughout the development process.
 
 ### Overcoming Challenges
