@@ -3,7 +3,8 @@
 ![responsive-mockup](/media/am_i_responsive.png)
 
 <div align="center">
-Explore Giggles & Grins
+
+Explore [Giggles & Grins](https://giggles-grins-9b5ffdf8ecd6.herokuapp.com/)
 
 </div> <div align="center">
 
@@ -80,13 +81,13 @@ Welcome to Giggles & Grins, a dynamic platform focused on delivering top-tier ex
 9. [⚙️Setup and Installation (GitHub and Heroku)](#⚙️setup-and-installation-github-and-heroku)
 10. [🎓Credits & Acknowledgements](#🎓credits--acknowledgements)
 
-![Line brake](github_assets/readme_images/color-line-break.png)
+![Line brake](/media/readme_imgs/line-break.png)
 
 # 📈Business and Marketing Plan
 
 ### Introduction
 
-The **Giggles & Grins** platform is designed to provide families with a wide selection of child-friendly products, ranging from clothes to toys, curated based on quality, safety, and fun. The business plan details how the platform would function, attract customers, and generate sustainable revenue.
+The **Giggles & Grins** platform is designed to provide families with a wide selection of child-friendly products, ranging from clothes, curated based on quality, safety, and fun. The business plan details how the platform would function, attract customers, and generate sustainable revenue.
 
 ### Target Market
 
@@ -98,8 +99,8 @@ The **Giggles & Grins** platform is designed to provide families with a wide sel
 
 ### Revenue Model
 
-1. **Product Sales:**Offering a commission-based revenue model for every sale made on the platform.
-2. **Advertisement and Sponsored Listings:** Generating revenue through ads and listing promotions for specific brands.
+1. **Product Sales**: Offering a commission-based revenue model for every sale made on the platform.
+2. **Advertisement and Sponsored Listings**: Generating revenue through ads and listing promotions for specific brands.
 
 ### Marketing Strategies
 
@@ -132,8 +133,8 @@ The **Giggles & Grins** platform is designed to provide families with a wide sel
 
 ### Research and Initial Decisions
 
-Before the development journey began, a comprehensive research plan was set into motion. This involved:
-The platform’s development began by researching what features were most useful for families shopping for children's products, and which features parents most frequently requested.
+Before the development journey began, a comprehensive research plan was set into motion. This involved
+the platform’s development began by researching what features were most useful for families shopping for children's products, and which features parents most frequently requested.
 
 ### Point System and Estimation
 
@@ -198,11 +199,11 @@ The scope plane focuses on what features and functionalities are included in the
 - **User Sign In and Sign Up**: Secure and easy-to-navigate user authentication process for signing in and up.
 - **Product Listings**:Categorized into filters like Age Group (0–12 months, 1–2 years), Gender (Boys, Girls), Clothing Type (Outerwear, Dresses).
 Grid layout with product images, names, prices, and quick-view options.
-- **product Details:**:High-quality images with zoom functionality and multiple angle views.Size charts, fabric details, and care instructions.
+- **product Details:**:High-quality images,fabric details, and care instructions.
 Call-to-action buttons like "Add to Cart".
 - **Search and Filter:**:Advanced search bar with real-time suggestions.Sorting options: popularity, new arrivals, and price (low-to-high or high-to-low).
 - **Cart and Checkout:**: Dynamic cart with options to adjust quantities and remove items.Checkout with  payment methods i.e.,credit.Guest checkout for ease and flexibility.
-- **User Accounts:**: Registration for personalized shopping experiences.View order history, save favorite items, and manage delivery addresses.
+- **User Accounts:**: Registration for personalized shopping experiences.View order history, and manage delivery addresses.
 - **Reviews and Ratings:**: Allow users to leave feedback for products.Display ratings and customer reviews on product pages.
 - **Profile Management**: A user dashboard for managing personal information, viewing, and other account-related functionalities.
 - **Download Invoice**: User can download invoice once the order is placed.
