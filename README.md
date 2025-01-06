@@ -863,7 +863,7 @@ These future enhancements are not just incremental improvements—they mark a st
 
 For a comprehensive overview of the applications testing procedures, methodologies, and results, please refer to the dedicated testing documentation:
 
-[View Testing Documentation](github_assets/docs/TESTING.md)
+[View Testing Documentation](TESTING.md)
 
 
 # 🤖Technologies Used
