@@ -872,8 +872,6 @@ This project is built using a diverse set of technologies, frameworks, and tools
 
 ### Frontend
 - **HTML5**: For structuring the web content.
-- **Tailwind CSS** & **DaisyUI**: Used for styling with a utility-first CSS framework and UI components.
-- **HTMX**: For adding interactive components and AJAX functionalities.
 - **JavaScript Libraries**:
   - **LazySizes**: Enables lazy loading of images to improve page load times.
   - **StickyJS**: To make certain elements sticky during page scrolling.
