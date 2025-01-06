@@ -842,8 +842,6 @@ The Admin Panel in Giggles & Grins is a powerful and intuitive interface designe
 
 ![orders](/media/readme_imgs/checkout_order_admin.png)
 </details>
-<details><summary><b></b></summary>
-
 
 ![Line brake](/media/readme_imgs/line-break.png)
 
