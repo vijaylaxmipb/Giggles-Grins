@@ -1383,19 +1383,31 @@ Throughout the development of Giggles Grins, numerous small bugs were encountere
 
 ### Notable Non-Critical Bug
 
-**Issue**: In the production environment, an anomaly has been observed in the profile edit form, specifically in the country select dropdown. An additional arrow appears in the dropdown, which is not present in the development environment.
+- 1. Image Display Issues in Production
 
-- **Suspected Cause**: The issue is presumed to be related to the integration of Crispy Tailwind forms, possibly a minor styling conflict or a rendering issue specific to the production environment.
-- **Current Impact**: This bug is not critical to the application's functionality. The form remains usable, and the issue is largely cosmetic.
+**Issue**:  Certain images fail to display correctly in the production environment. While the images appeared as expected during development, they are missing or inaccessible in the live application.
+
+- **Suspected Cause**: This issue is likely due to misconfigurations in the S3 bucket used for media file storage. Possible causes include incorrect file paths, missing permissions, or caching issues.
+
+- **Current Impact**: The absence of some images slightly impacts the visual experience of the application but does not affect its core functionality.
 
 Plan for Resolution
 
-- While this issue is not currently critical, it is earmarked for future investigation and resolution.
-- A deeper analysis will be conducted to isolate the cause, potentially examining the interplay between Tailwind CSS, Crispy forms, and the production environment's specifics.
+- The issue was not fully resolved due to time constraints before the submission deadline.
+- Future fixes will focus on verifying S3 bucket configurations, ensuring correct file paths, updating permissions, and testing deployment pipelines for proper media file handling.
 
-Conclusion
+- 2. CSS Formatting Discrepancies
 
-The proactive approach in addressing bugs during development has resulted in a stable release of Mont Adventures. The ongoing commitment to refining and enhancing the application will continue to address any such minor issues as part of regular maintenance and updates.
+**Issue**:  CCertain CSS styles, including layout alignment, button hover effects, and spacing, are not rendering as intended in some sections of the application. These formatting issues were identified late in the development process.
+
+- **Suspected Cause**: hese issues are likely due to insufficient time for testing and fine-tuning the Tailwind CSS setup in production. There may also be conflicts between custom styles.
+
+- **Current Impact**: hese discrepancies are minor and primarily cosmetic, with no effect on the application's functionality or user experience flow.
+
+Plan for Resolution
+
+- In future iterations, a more thorough review of Tailwind CSS classes and testing in the production environment will be prioritized.
+- Additional time will be allocated for fine-tuning custom styles to ensure consistency.
 
 ---
 
