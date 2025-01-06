@@ -14,9 +14,8 @@ import dj_database_url
 import environ
 from pathlib import Path
 from dotenv import load_dotenv
-
-env = environ.Env()
-environ.Env.read_env()
+import environ
+load_dotenv()
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -33,8 +32,9 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # Load DEBUG from .env file, default to False if not set
-DEBUG = os.getenv('DEBUG', 'False') == 'True'
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'False') == 'False'
+DEBUG = False
+
 
 ALLOWED_HOSTS = [
     '8000-vijaylaxmip-gigglesgrin-qgow4e0ojph.ws.codeinstitute-ide.net',
