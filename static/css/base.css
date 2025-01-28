@@ -535,14 +535,14 @@ footer {
 
 footer .row,
 footer .container-fluid {
-    margin: 0;
-    padding: 0;
+    margin: 10px 0;
+    
 }
 
 footer h5 {
     text-transform: uppercase;
     font-size: 1rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: #ffffff;
 }
 
@@ -551,10 +551,11 @@ footer ul {
     padding: 0;
     margin: 0;
     line-height: 1.5;
+    text-align: center;
 }
 
 footer ul li {
-    margin: 0;
+    margin: 5px 0;
 }
 
 footer ul li a {
@@ -606,11 +607,29 @@ footer.bg-dark.text-white.py-4 {
 }
 
 form .form-control {
-    margin-bottom: 15px;
+    
+    margin: 10px 0;
+    width: 80%;
+    display: inline-block;
+    text-align: center;
 }
+
 button[type="submit"] {
     background-color: #007bff;
     color: #fff;
+}
+
+form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
 .nav-item.dropdown .dropdown-menu {
@@ -826,7 +845,7 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
 }
 
