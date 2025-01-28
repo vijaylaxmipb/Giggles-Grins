@@ -33,7 +33,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # Load DEBUG from .env file, default to False if not set
 DEBUG = os.getenv('DEBUG', 'False') == 'False'
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = [
@@ -70,6 +70,7 @@ INSTALLED_APPS = [
     'profiles',
     'django_countries',
     'orders',
+    'newsletter',
 
     # Other
     'crispy_forms',

@@ -198,6 +198,19 @@
                     <p><i class="fas fa-phone"></i> Phone: +123 456 7890</p>
                     <p><i class="fas fa-map-marker-alt"></i> Address: 123 Main Street, Anytown, USA</p>
                 </div>
+
+                <!-- Newsletter Signup Form -->
+            <div class="col-md-4">
+                <h5>Subscribe to Our Newsletter</h5>
+                <form action="{% url 'newsletter_signup' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
     
                 <!-- Quick Links -->
                 <div class="col-md-4">
