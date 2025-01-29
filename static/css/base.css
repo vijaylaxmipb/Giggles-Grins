@@ -533,17 +533,24 @@ footer {
     box-sizing: border-box;
 }
 
-footer .row,
-footer .container-fluid {
-    margin: 10px 0;
+footer .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: left;
     
 }
+ footer .container-fluid{
+    margin: 10px 0;
+
+ }
 
 footer h5 {
     text-transform: uppercase;
     font-size: 1rem;
     margin-bottom: 10px;
     color: #ffffff;
+    text-align: center;
 }
 
 footer ul {
@@ -555,7 +562,7 @@ footer ul {
 }
 
 footer ul li {
-    margin: 5px 0;
+    margin: 5px;
 }
 
 footer ul li a {
@@ -607,11 +614,8 @@ footer.bg-dark.text-white.py-4 {
 }
 
 form .form-control {
-    
-    margin: 10px 0;
-    width: 80%;
-    display: inline-block;
-    text-align: center;
+    margin: 10px;
+    width: 100%;
 }
 
 button[type="submit"] {
@@ -620,16 +624,35 @@ button[type="submit"] {
 }
 
 form button[type="submit"] {
+    width: auto;
     background-color: #007bff;
     color: #fff;
     padding: 5px 15px;
     border: none;
     border-radius: 5px;
+    text-align: center;
     cursor: pointer;
+    font-size: 0.9rem;
 }
 
 form button[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+footer .col-md-3 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+/* Adjust Input Field in Newsletter Form */
+form .form-control {
+    width: 100%; 
+    max-width: 250px; 
+    margin-bottom: 0; 
+    padding: 5px 10px; 
+    font-size: 0.9rem; 
 }
 
 .nav-item.dropdown .dropdown-menu {
@@ -839,7 +862,7 @@ h2.logo-font {
 }
 
 
-/* Adjust spacing for the footer */
+/* Adjust spacing for the footer 
 footer {
     margin-top: auto;
     background-color: #333;
@@ -847,7 +870,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     width: 100%;
-}
+}*/
 
 /* General container for the password reset form */
 .password-reset-container {
@@ -1190,8 +1213,17 @@ footer {
         position: relative; 
         z-index: 10; 
     }
-    
+    footer .row {
+        flex-wrap: wrap;
+    }
 
+    footer .col-md-3 {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    form button[type="submit"] {
+        width: auto;
+    }
 }
 
   

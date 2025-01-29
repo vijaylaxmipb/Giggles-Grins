@@ -7,6 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Giggles & Grins - Your one-stop shop for trendy and affordable kids' clothing. Discover high-quality outfits for children of all ages.">
         
     {% endblock %}
 
@@ -168,9 +169,9 @@
 
     <footer class="bg-dark text-white py-4">
         <div class="container-fluid">
-            <div class="row">
+            <div class="row d-flex justify-content-between text-center text-md-left">
                 <!-- Social Media Links -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h5>Follow Us</h5>
                     <ul class="list-unstyled">
                         <li>
@@ -192,7 +193,7 @@
                 </div>
     
                 <!-- Contact Details -->
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h5>Contact Us</h5>
                     <p><i class="fas fa-envelope"></i> Email: support@gigglesandgrins.com</p>
                     <p><i class="fas fa-phone"></i> Phone: +123 456 7890</p>
@@ -200,7 +201,7 @@
                 </div>
 
                 <!-- Newsletter Signup Form -->
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <h5>Subscribe to Our Newsletter</h5>
                 <form action="{% url 'newsletter_signup' %}" method="POST">
                     {% csrf_token %}
@@ -210,30 +211,30 @@
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                 </form>
             </div>
-        </div>
     
-                <!-- Quick Links -->
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="{% url 'profile' %}" class="text-white">My Account</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'products' %}" class="text-white">Shop</a>
-                        </li>
-                        <li>
-                            <a href="{% url 'contact' %}" class="text-white">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="bg-white">
-            <div class="text-center">
-                <p class="mb-0">&copy; 2024 Giggles & Grins. All Rights Reserved.</p>
+            <!-- Quick Links -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="{% url 'profile' %}" class="text-white">My Account</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'products' %}" class="text-white">Shop</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact' %}" class="text-white">Contact Us</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>    
+
+        <hr class="bg-white">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2024 Giggles & Grins. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>    
 
 
     <!-- Post Load Scripts -->
