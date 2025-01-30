@@ -1,0 +1,60 @@
+Internal Server Error: /checkout/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Giggles-Grins/checkout/views.py", line 82, in checkout
+    order_line_item.save()
+  File "/workspace/Giggles-Grins/checkout/models.py", line 134, in save
+    self.order.update_total()
+  File "/workspace/Giggles-Grins/checkout/models.py", line 65, in update_total
+    post_save.disconnect(update_on_save, sender=OrderLineItem)
+    ^^^^^^^^^
+NameError: name 'post_save' is not defined
+"POST /checkout/ HTTP/1.1" 500 90450
+Internal Server Error: /checkout/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Giggles-Grins/checkout/views.py", line 82, in checkout
+    order_line_item.save()
+  File "/workspace/Giggles-Grins/checkout/models.py", line 136, in save
+    self.order.update_total()
+  File "/workspace/Giggles-Grins/checkout/models.py", line 67, in update_total
+    post_save.disconnect(update_on_save, sender=OrderLineItem)
+                         ^^^^^^^^^^^^^^
+NameError: name 'update_on_save' is not defined
+"POST /checkout/ HTTP/1.1" 500 90580
+Internal Server Error: /checkout/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Giggles-Grins/checkout/views.py", line 82, in checkout
+    order_line_item.save()
+  File "/workspace/Giggles-Grins/checkout/models.py", line 133, in save
+    super().save(*args, **kwargs)
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/base.py", line 814, in save
+    self.save_base(
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/db/models/base.py", line 892, in save_base
+    post_save.send(
+  File "/workspace/.pip-modules/lib/python3.12/site-packages/django/dispatch/dispatcher.py", line 177, in send
+    (receiver, receiver(signal=self, sender=sender, **named))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Giggles-Grins/checkout/signals.py", line 12, in update_on_save
+    instance.order.update_total()
+  File "/workspace/Giggles-Grins/checkout/models.py", line 67, in update_total
+    post_save.disconnect(update_on_save, sender=OrderLineItem)
+                         ^^^^^^^^^^^^^^
+NameError: name 'update_on_save' is not defined
+"POST /checkout/ HTTP/1.1" 500 109911

@@ -25,7 +25,6 @@ class Order(models.Model):
         blank_label='(Select country)',
         null=False,
         blank=False)
-    # country = CountryField(blank_label='Country *', null=False, blank=False)
     postcode = models.CharField(max_length=20, null=True, blank=True)
     town_or_city = models.CharField(max_length=40, null=False, blank=False)
     street_address1 = models.CharField(max_length=80, null=False, blank=False)
@@ -62,14 +61,25 @@ class Order(models.Model):
         Update grand total each time a line item is added,
         accounting for delivery costs.
         """
+        
         self.order_total = self.lineitems.aggregate(
             Sum('lineitem_total'))['lineitem_total__sum'] or 0
+
+        # Debugging logs
+        print(f"Order Total: {self.order_total}")
+
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
             self.delivery_cost = self.order_total * \
                 settings.STANDARD_DELIVERY_PERCENTAGE / 100
         else:
             self.delivery_cost = 0
+
+        # Debugging logs
+        print(f"Delivery Cost: {self.delivery_cost}")
+
         self.grand_total = self.order_total + self.delivery_cost
+        # Debugging logs
+        print(f"Grand Total: {self.grand_total}")
         self.save()
 
     def save(self, *args, **kwargs):
@@ -112,7 +122,12 @@ class OrderLineItem(models.Model):
         and update the order total.
         """
         self.lineitem_total = self.product.price * self.quantity
+        
+        # Debugging logs
+        print(f"Saving OrderLineItem - Product: {self.product.name}, Quantity: {self.quantity}, Line Total: {self.lineitem_total}")
+
+        # Save the line item
         super().save(*args, **kwargs)
 
-    def __str__(self):
-        return f'SKU {self.product.sku} on order {self.order.order_number}'
+        # Trigger order total update
+        self.order.update_total()
