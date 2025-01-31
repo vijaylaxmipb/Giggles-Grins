@@ -266,6 +266,7 @@ else:
     #DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
     DEFAULT_FROM_EMAIL = f'Giggles & Grins <{EMAIL_HOST_USER}>'
 
+    
     # Debugging
     if not EMAIL_HOST_USER or not EMAIL_HOST_PASSWORD:
         raise ValueError("EMAIL_HOST_USER and EMAIL_HOST_PASS must be set in the environment")
