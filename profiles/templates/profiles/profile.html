@@ -63,8 +63,11 @@
                             {% for order in orders %}
                             <tr>
                                 <td>
-                                    <a href="{% url 'order_history' order.order_number %}">{{ order.order_number }}</a>
+                                    <a href="{% url 'order_history' order.order_number %}" class="order-number">
+                                        {{ order.order_number }}
+                                    </a>
                                 </td>
+                                
                                 <td>{{ order.order_date|date:"F d, Y H:i" }}</td>
                                 <td>
                                     <ul class="list-unstyled">
@@ -77,11 +80,11 @@
                                 </td>
                                 <td>${{ order.grand_total }}</td>
                                 <td>
-                                    <a href="{% url 'download_invoice' order.order_number %}" class="btn btn-outline-black">
+                                    <a href="{% url 'download_invoice' order.order_number %}" class="btn btn-outline-black download-invoice-btn">
                                         Download Invoice
                                     </a>
-                                    
                                 </td>
+                                
                             </tr>
                             {% empty %}
                             <tr>

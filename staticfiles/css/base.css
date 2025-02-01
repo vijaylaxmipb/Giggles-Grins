@@ -802,6 +802,43 @@ h2.logo-font {
     color: #000;
 }
 
+.order-number {
+    font-size: 0.85rem; 
+    color: #666; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 150px; 
+    display: inline-block;
+}
+
+
+.order-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-history th,
+.order-history td {
+    padding: 8px 12px; 
+    text-align: left; 
+}
+
+/* Resize the download invoice button */
+.download-invoice-btn {
+    padding: 5px 10px;
+    font-size: 0.9rem; 
+    border-radius: 4px; 
+    border: 1px solid #333; 
+    transition: all 0.3s ease; 
+}
+
+.download-invoice-btn:hover {
+    background-color: #333; 
+    color: #fff;
+}
+
+
 /* Signup Form Styling */
 
 .signup-form {

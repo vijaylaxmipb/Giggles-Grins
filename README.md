@@ -133,6 +133,7 @@ A vendor portal will allow external brands to manage their listings and sales in
 
 ---
 
+### Marketing Strategies:
 ### SEO Strategy
 To maximize the online visibility of Giggles & Grins, the following SEO practices were implemented:
 
@@ -153,6 +154,15 @@ To maximize the online visibility of Giggles & Grins, the following SEO practice
 - Used high-quality images with descriptive alt text to improve accessibility and image search rankings.Optimized image file sizes to ensure faster load times, enhancing user experience and SEO.
 8. **Content Structure:**
 - Organized content using clear headings (H1, H2, H3) and short paragraphs to make it easier for users and search engines to read and understand.
+
+9. **Social Media:** Leverage platforms like Facebook, where visuals can be highly engaging.
+
+<details><summary><b>Facebook Giggled & Grins</b></summary>
+
+![fb-page](/media/readme_imgs/Facebook_home.png)
+![fb-post](/media/readme_imgs/Facebook_post.png)
+</details>
+---
 
 ### Key Performance Indicators (KPIs)
 
@@ -645,6 +655,12 @@ These are the underlying principles that guide the UX/UI design of the platform,
 </details>
 
 #### 📬 Footer 
+
+- **Stay Connected with Newsletters**: The footer integrates a Giggles & Grins newsletter signup section, making it easy for visitors to stay informed about the latest news and offers. This feature enhances user engagement by keeping them connected with the brand.
+
+<details><summary><b>News Letter</b></summary>
+![News Letter](/media/readme_imgs/newsletter_confrimtion.png)
+
 
 - **Social Media Links**:The footer section connects users to Giggles & Grins' social media presence with direct links to Facebook,instagram,twitter this ensured that users can stay updated & engaged with the brand accross popular platforms.
 <details><summary><b>Desktop View</b></summary>
