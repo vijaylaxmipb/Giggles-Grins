@@ -1,7 +1,9 @@
+* {
+    box-sizing: border-box;
+}
 html {
     height: 100%;
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
 }
@@ -18,12 +20,13 @@ body {
 }
 
 .logo-container {
+    flex-grow: 1;
     display: flex;
     align-items: center;
-    gap: 10px;
-    height: 60px;
-
+    justify-content: center;
+    text-align: center;
 }
+
 
 .logo-container::before {
     content: '';
@@ -36,6 +39,13 @@ body {
     background-position: center;
 }
 
+header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -47,19 +57,16 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-    
 }
 
 h2.logo-font {
     margin-top: 50px;
     text-align: center;
     font-size: 2rem;
-    z-index: 100;
+    z-index: 10;
     color: #fff; 
-    position: relative;
-    
+    position: relative; 
 }
-
 .main-logo-link {
     width: fit-content;
 }
@@ -152,7 +159,6 @@ h2.logo-font {
 	left: 0;
 	position: fixed;
 	background: white;
-    /*background: rgba(255, 255, 255, 0.5);*/
 	z-index: -1;
     height: 100vh; 
     width: 100vw;
@@ -185,13 +191,24 @@ a.category-badge > span.badge:hover {
     border-radius: 8px;
 }
 .navbar-toggler {
-    float: left;
-    margin-right: 0;
+    margin-top: 10px;
+    text-align: center;
+    
 }
 
 .collapse.navbar-collapse {
     float: none;
     text-align: right;
+}
+
+.navbar-collapse {
+    position: absolute;
+    top: 100%; /* Adjust the dropdown to appear below the navbar */
+    left: 0;
+    right: 0;
+    z-index: 1050; /* Ensure it overlaps properly */
+    background-color: white; /* Set the background */
+    border: 1px solid #ddd;
 }
 
 
@@ -204,8 +221,30 @@ a.category-badge > span.badge:hover {
     background-color: white;
     border-bottom: 1px solid #ddd;
     z-index: 1000;
-    overflow: visible;
-    position: relative;
+    margin: 0;
+    padding-left: 0;
+    
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: start; 
+    gap: 15px; 
+}
+
+.navbar .logo-container {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -217,8 +256,20 @@ a.category-badge > span.badge:hover {
     padding: 10px 15px; 
 }
 
-
 .nav-item {
+    margin: 0;
+    padding: 5px;
+    text-align: left;
+}
+
+.nav-item a {
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item {
     margin: 0 15px;
 }
 
@@ -230,10 +281,11 @@ a.category-badge > span.badge:hover {
     position: absolute;
     top: 100%; 
     left: 0;
+    width: 100%;
     background-color: white;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius:none;
+    box-shadow: none;
     z-index: 1050; 
 }
 
@@ -265,28 +317,49 @@ a.category-badge > span.badge:hover {
     width: 1px;
 }
 
+.dropdown-item {
+    padding: 12px 20px;
+    font-size: 1rem;
+}
+
+.breadcrumb {
+    background: none;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '>';
+    margin: 0 5px;
+    color: #aaa;
+}
+
 
 /* Dropdown menu styling */
-.nav-item.dropdown .dropdown-menu {
+.nav-item.dropdown .dropdown-menu{
     position: absolute;
     top: 100%;
     left: 0;
+    width: auto;
     background-color: white;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-menu {
     min-width: 180px;
-    padding: 10px 0;
+    padding: 10px 20px;
     z-index: 1050;
+    text-align: left;
     
 }
 
 .nav-item a.nav-link {
-    font-size: 16px;
+   
     text-transform: uppercase; 
+    font-weight: bold;
+    padding: 2px 5px;
 }
 
 .sort-select-wrapper {
@@ -345,6 +418,40 @@ screenshot-container {
 }
 .submit-review {
     margin-top: 20px;
+}
+
+.list-inline {
+    margin: 0;
+    padding: 0;display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
+.list-inline-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.list-inline-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.fas.fa-shopping-bag.fa-lg {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.fas.fa-shopping-bag {
+    margin-right: 0; 
+    float: right;
+    margin-bottom: 5px;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -526,18 +633,20 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    margin: 0;
+    padding: 20px 10px;
+    margin: auto;
     width: 100%;
-    position: relative;
     box-sizing: border-box;
 }
 
 footer .row {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-between;
     text-align: left;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
     
 }
  footer .container-fluid{
@@ -613,9 +722,18 @@ footer.bg-dark.text-white.py-4 {
     padding-bottom: 0 !important;
 }
 
+.form-control {
+    max-width: 90%;
+    margin:0 auto;
+}
+
 form .form-control {
-    margin: 10px;
+    max-width: 100%;
     width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 button[type="submit"] {
@@ -643,16 +761,24 @@ footer .col-md-3 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; 
+
+}
+
+footer .col-md-3,
+footer .col-md-4 {
+    flex: 1; 
+    max-width: 25%;
 }
 
 /* Adjust Input Field in Newsletter Form */
 form .form-control {
     width: 100%; 
-    max-width: 250px; 
+    max-width: none; 
     margin-bottom: 0; 
-    padding: 5px 10px; 
-    font-size: 0.9rem; 
+    padding: 10px; /* Adjust padding for better aesthetics */
+    font-size: 1rem; /* Consistent font size */
+    border-radius: 5px; /* Optional rounded corners */
+    margin: 0;
 }
 
 .nav-item.dropdown .dropdown-menu {
@@ -677,6 +803,8 @@ form .form-control {
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
     
 }
 
@@ -687,6 +815,25 @@ h2.logo-font {
     margin-bottom: 20px;
     font-weight: bold;
 }
+
+.login {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+h2.logo-font {
+    font-size: 1.8rem;
+    color: #000;
+}
+
+button.btn-primary {
+    padding: 10px 20px;
+}
+
 
 .login input {
     background-color: rgba(255, 255, 255, 0.8); 
@@ -706,6 +853,26 @@ h2.logo-font {
     border-color: #007bff;
     outline: none;
     background-color: rgba(255, 255, 255, 1);
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+input, textarea {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
 }
 
 .btn-primary {
@@ -898,17 +1065,6 @@ h2.logo-font {
     font-size: 1rem;
 }
 
-
-/* Adjust spacing for the footer 
-footer {
-    margin-top: auto;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
-}*/
-
 /* General container for the password reset form */
 .password-reset-container {
     max-width: 400px;
@@ -920,8 +1076,6 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
-
 
 /* Full page styling to handle footer placement */
 .password-reset-page {
@@ -987,6 +1141,58 @@ footer {
     margin-top: 20px;
 }
 
+.list-inline {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0 !important; 
+    gap: 10px;
+}
+
+.list-inline-item {
+    margin: 0 5px;
+}
+
+ul.list-inline {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul.list-inline .list-inline-item {
+    text-align: center;
+    width: auto;
+    margin: 5px 0;
+}
+
+.list-inline-item div i {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem; 
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.no-flex {
+    display: block;
+}
+
+.row.bg-white {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin: 0;
+}
+
+.mx-auto {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 
 
 /* -------------------------------- Media Queries */
@@ -1057,7 +1263,7 @@ footer {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #17a2b8;
 }
 
 
@@ -1141,6 +1347,30 @@ footer {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block; /* Show dropdown on hover */
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%; 
+        left: auto;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .fas.fa-shopping-bag.fa-lg {
+        font-size: 1.2rem; 
+        margin: 0 5px; 
+    }
+    
+    .list-inline-item div {
+        align-items: center; 
+    }
+    
 }
   
 
@@ -1149,38 +1379,79 @@ footer {
         text-align: center; 
     }
 
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container h2 {
+        margin: 0;
+        font-size: 1.2rem;
+        color:white;
+    }
+
+    .logo-font{
+        margin: 0;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    h2.logo-font {
+        font-size: 1.8rem;
+        color: white;
+        margin: 0;
+    }
+
+    header.container-fluid {
+        
+        flex-direction: column;
+        align-items: center;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .navbar-toggler {
+            margin: 0 auto; 
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+    }
+
+    .navbar {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px; 
+    }
+
+    .navbar .navbar-nav {
+        flex-direction: column;
+        width: 100%; 
+        gap: 5px;
+    }
+
     .order-summary h3 {
         font-size: 1.5em;
-      }
+    }
     
       .order-summary p {
         font-size: 1em;
-      }
+    }
 
       .navbar-nav {
-        flex-direction: column;
-        align-items: stretch;
-        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        
     }
 
     .nav-item.dropdown .dropdown-menu {
-        position: relative;
+        
         width: 100%;
         margin: 0;
         border-radius: 0;
         border: none;
         box-shadow: none;
+        background-color: white;
     }
-
-    .navbar-toggler {
-        border: none;
-        background-color: #007bff;
-        color: white;
-        font-size: 1.2rem;
-        padding: 5px 10px;
-        border-radius: 5px;
-    }
-
     .dropdown-menu {
         border-radius: 0;
         border: none;
@@ -1192,6 +1463,7 @@ footer {
     .dropdown-item {
         padding: 10px 15px;
         color: #555;
+        font-size: 1rem;
     }
 
     .dropdown-item:hover {
@@ -1208,7 +1480,7 @@ footer {
     #delivery-banner {
         text-align: center;
         font-size: 0.9rem;
-        padding: 5px 0;
+        padding: 0px 0;
     }
 
     .signup-form {
@@ -1258,17 +1530,54 @@ footer {
         max-width: 100%;
         margin-bottom: 20px;
     }
+
+    .form-control {
+        width: 100%;
+    }
     form button[type="submit"] {
         width: auto;
     }
-}
 
-  
+    .logo-container {
+        order: -1;
+        flex-direction: column;
+    }
+
+    .navbar-collapse .list-inline { 
+        display: none !important;
+    }
+
+    .list-inline-item {
+        display: block;
+    }
+    
+    .col-md-4 {
+        text-align: center;
+    }
+    
+    .row.bg-white {
+        justify-content: end;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
   /* pad the top a bit when navbar is collapsed on mobile */
   @media (max-width: 991px) {
       .header-container {
           padding-top: 116px;
       }
+
+      h2.logo-font {
+        font-size: 1.8rem;
+    }
+
+    .logo-container {
+        justify-content: center;
+    }
+
+    header.container-fluid {
+        padding: 0px;
+    }
   
       body {
           height: calc(100vh - 116px);
@@ -1287,12 +1596,8 @@ footer {
     }
 
      .navbar-toggler {
-        padding: .6rem .6rem;
+        
         font-size: 1rem;
-    }
-
-    #delivery-banner h4 {
-        font-size: .9rem;
     }
 
     .btn.btn-outline-black.rounded-0,
@@ -1309,5 +1614,54 @@ footer {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+    .navbar-collapse .list-inline {
+        display: none !important;
+    }
 }
-  
+
+@media (max-width: 1024px) {
+    .navbar {
+        flex-wrap: wrap; 
+    }
+
+    .navbar-nav {
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+    }
+
+    .logo-container {
+        margin: auto; 
+        flex-grow: 1; 
+    }
+}
+
+@media (max-width: 576px) {
+    h2.logo-font {
+        font-size: 1.2rem;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column; 
+    }
+
+    .list-inline-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px; 
+    }
+
+    #delivery-banner h4 {
+        font-size: 1rem;
+    }
+
+    .logo-font {
+        text-transform: uppercase;
+        color: white;
+    }
+
+}
+

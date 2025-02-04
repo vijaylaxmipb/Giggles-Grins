@@ -6,9 +6,9 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-<div class="container mt-5">
+<div class="container mt-5 mb-5">
     <div class="row justify-content-center">
-        <div class="col-md-6">
+        <div class="col-md-6 bg-white p-4 shadow-sm rounded">
             <hr>
             <h2 class="text-center logo-font mb-4">{% trans "Sign In" %}</h2>
             <hr>
@@ -36,8 +36,12 @@
             <form class="login mt-3" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <input type="email" name="email" autocomplete="email" placeholder="Enter your email" required>
-                <input type="password" name="password" autocomplete="current-password" placeholder="Enter your password" required>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
+                </div>
                 <div class="d-flex justify-content-between">
                     <a class="btn btn-outline-secondary rounded-0" href="{% url 'home' %}">Home</a>
                     <button class="btn btn-primary rounded-0" type="submit">{% trans "Sign In" %}</button>
