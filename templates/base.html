@@ -55,15 +55,15 @@
     
     <header class="container-fluid fixed-top">
         <!-- Top Navigation Bar -->
-        <div class="row bg-white pt-lg-2 d-none d-lg-flex" style="display: block; margin-left: 0; margin-right: 0;">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+        <div class="row bg-white pt-lg-2 d-flex align-items-center" style="margin-left: 0; margin-right: 0;">
+            <div class="col-6 col-md-4 text-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <div class="logo-container">
                     <h2 class="logo-font text-black my-0"><strong>Giggles & </strong>Grins</h2>
                     </div>
                 </a>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+            <div class="col-6 col-md-4 text-center">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
@@ -71,13 +71,13 @@
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+            <div class="col-6 col-md-4 text-right">
+                <ul class="list-inline my-0">
                     <!-- User Account -->
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
+                                <div><i class="fas fa-user"></i></div>
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
@@ -96,8 +96,7 @@
                     </li>
                     <!-- Cart -->
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
-                            <div class="text-center">
+                        <a class="text-black nav-link" href="{% url 'view_bag' %}">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
@@ -106,7 +105,6 @@
                                         $0.00
                                     {% endif %}
                                 </p>
-                            </div>
                         </a>
                     </li>
                 </ul>
@@ -115,8 +113,8 @@
 
         <!-- Main Navigation -->
         <div class="row bg-white">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+                <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">

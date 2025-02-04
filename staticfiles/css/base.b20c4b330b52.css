@@ -20,11 +20,14 @@ body {
 }
 
 .logo-container {
-    flex-grow: 1;
     display: flex;
     align-items: center;
+    gap: 10px;
+    height: 60px;
     justify-content: center;
-    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
 }
 
 
@@ -39,13 +42,6 @@ body {
     background-position: center;
 }
 
-header .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
 /* from Bulma */
 .icon {
     align-items: center;
@@ -58,7 +54,6 @@ header .row {
 .logo-font {
     text-transform: uppercase;
 }
-
 h2.logo-font {
     margin-top: 50px;
     text-align: center;
@@ -191,24 +186,13 @@ a.category-badge > span.badge:hover {
     border-radius: 8px;
 }
 .navbar-toggler {
-    margin-top: 10px;
-    text-align: center;
-    
+    float: left;
+    margin-right: 0;
 }
 
 .collapse.navbar-collapse {
     float: none;
     text-align: right;
-}
-
-.navbar-collapse {
-    position: absolute;
-    top: 100%; /* Adjust the dropdown to appear below the navbar */
-    left: 0;
-    right: 0;
-    z-index: 1050; /* Ensure it overlaps properly */
-    background-color: white; /* Set the background */
-    border: 1px solid #ddd;
 }
 
 
@@ -235,7 +219,7 @@ a.category-badge > span.badge:hover {
 
 .navbar .navbar-nav {
     display: flex;
-    align-items: start; 
+    align-items: center; 
     gap: 15px; 
 }
 
@@ -256,18 +240,6 @@ a.category-badge > span.badge:hover {
     padding: 10px 15px; 
 }
 
-.nav-item {
-    margin: 0;
-    padding: 5px;
-    text-align: left;
-}
-
-.nav-item a {
-    display: block;
-    padding: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
 
 .navbar-nav .nav-item {
     margin: 0 15px;
@@ -422,25 +394,14 @@ screenshot-container {
 
 .list-inline {
     margin: 0;
-    padding: 0;display: flex;
-    align-items: center;
-    justify-content: flex-end;
     padding: 0;
-    margin: 0;
-    gap: 15px;
 }
 
 .list-inline-item {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-}
-
-.list-inline-item p {
     margin: 0;
-    font-size: 0.9rem;
-    text-align: center;
 }
 
 .fas.fa-shopping-bag.fa-lg {
@@ -450,8 +411,7 @@ screenshot-container {
 
 .fas.fa-shopping-bag {
     margin-right: 0; 
-    float: right;
-    margin-bottom: 5px;
+    float: right; 
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -722,18 +682,9 @@ footer.bg-dark.text-white.py-4 {
     padding-bottom: 0 !important;
 }
 
-.form-control {
-    max-width: 90%;
-    margin:0 auto;
-}
-
 form .form-control {
-    max-width: 100%;
+    margin: 10px;
     width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
 button[type="submit"] {
@@ -773,12 +724,10 @@ footer .col-md-4 {
 /* Adjust Input Field in Newsletter Form */
 form .form-control {
     width: 100%; 
-    max-width: none; 
+    max-width: 250px; 
     margin-bottom: 0; 
-    padding: 10px; /* Adjust padding for better aesthetics */
-    font-size: 1rem; /* Consistent font size */
-    border-radius: 5px; /* Optional rounded corners */
-    margin: 0;
+    padding: 5px 10px; 
+    font-size: 0.9rem; 
 }
 
 .nav-item.dropdown .dropdown-menu {
@@ -814,24 +763,6 @@ h2.logo-font {
     text-transform: uppercase;
     margin-bottom: 20px;
     font-weight: bold;
-}
-
-.login {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-h2.logo-font {
-    font-size: 1.8rem;
-    color: #000;
-}
-
-button.btn-primary {
-    padding: 10px 20px;
 }
 
 
@@ -1144,7 +1075,7 @@ input, textarea {
 .list-inline {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0;
     margin: 0 !important; 
     gap: 10px;
@@ -1169,29 +1100,13 @@ ul.list-inline .list-inline-item {
 }
 
 .list-inline-item div i {
-    display: flex;
-    flex-direction: column;
     font-size: 1.5rem; 
     margin-bottom: 5px;
-    align-items: center;
-    justify-content: center;
     
 }
 
 .no-flex {
     display: block;
-}
-
-.row.bg-white {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    margin: 0;
-}
-
-.mx-auto {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
 }
 
 
@@ -1380,25 +1295,19 @@ ul.list-inline .list-inline-item {
     }
 
     .logo-container {
-        flex-direction: column;
-        align-items: center;
+        margin: 0 auto;
+        text-align: center;
     }
 
-    .logo-container h2 {
-        margin: 0;
-        font-size: 1.2rem;
-        color:white;
-    }
-
-    .logo-font{
+    .logo-container h2.logo-font {
         margin: 0;
         font-size: 1.5rem;
-        color: white;
+        color: #000;
     }
 
     h2.logo-font {
-        font-size: 1.8rem;
-        color: white;
+        font-size: 1.5rem;
+        color: #000;
         margin: 0;
     }
 
@@ -1411,10 +1320,13 @@ ul.list-inline .list-inline-item {
     }
 
     .navbar-toggler {
-            margin: 0 auto; 
-            display: flex;
-            justify-content: center;
-            align-items: center;  
+        
+        border: none;
+        background-color: #007bff;
+        color: white;
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        border-radius: 5px;
     }
 
     .navbar {
@@ -1431,11 +1343,11 @@ ul.list-inline .list-inline-item {
 
     .order-summary h3 {
         font-size: 1.5em;
-    }
+      }
     
       .order-summary p {
         font-size: 1em;
-    }
+      }
 
       .navbar-nav {
         flex-wrap: nowrap;
@@ -1530,37 +1442,23 @@ ul.list-inline .list-inline-item {
         max-width: 100%;
         margin-bottom: 20px;
     }
-
-    .form-control {
-        width: 100%;
-    }
     form button[type="submit"] {
         width: auto;
     }
 
+    .list-inline {
+        flex-wrap: nowrap; 
+    }
+
     .logo-container {
-        order: -1;
-        flex-direction: column;
+        order: -1; 
     }
-
-    .navbar-collapse .list-inline { 
-        display: none !important;
-    }
-
     .list-inline-item {
-        display: block;
-    }
-    
-    .col-md-4 {
-        text-align: center;
-    }
-    
-    .row.bg-white {
-        justify-content: end;
-        margin-left: 0;
-        margin-right: 0;
+        width: auto;
     }
 }
+
+  
   /* pad the top a bit when navbar is collapsed on mobile */
   @media (max-width: 991px) {
       .header-container {
@@ -1600,6 +1498,10 @@ ul.list-inline .list-inline-item {
         font-size: 1rem;
     }
 
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
         padding: .375rem .375rem;
@@ -1613,9 +1515,6 @@ ul.list-inline .list-inline-item {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
-    }
-    .navbar-collapse .list-inline {
-        display: none !important;
     }
 }
 
@@ -1652,15 +1551,6 @@ ul.list-inline .list-inline-item {
         width: 100%;
         text-align: center;
         margin-bottom: 5px; 
-    }
-
-    #delivery-banner h4 {
-        font-size: 1rem;
-    }
-
-    .logo-font {
-        text-transform: uppercase;
-        color: white;
     }
 
 }
