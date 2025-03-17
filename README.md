@@ -77,6 +77,7 @@ Welcome to Giggles & Grins, a dynamic platform focused on delivering top-tier ex
     - [The Skeleton Plane](#the-skeleton-plane)
     - [The Surface Plane](#the-surface-plane)
 5. [⭐Features](#⭐features)
+    - [FAQ](#faq-feature)
 6. [🌠Future Enhancements](#🌠future-enhancements)
 7. [🧮Testing](#🧮testing)
 8. [🤖Technologies Used](#🤖technologies-used)
@@ -101,6 +102,14 @@ Welcome to Giggles & Grins, a dynamic platform focused on delivering top-tier ex
 
 
 ### E-Commerce Business Model
+
+Giggles & Grins operates on a **Business-to-Consumer (B2C)** model, which allows direct interaction between the business and the consumer, particularly focusing on families and parents. This model is designed to simplify the shopping experience for parents looking for reliable, child-friendly products, all in one place.
+
+#### Competitive Advantage:
+- **Child-Specific Product Focus**: Unlike larger, generalized e-commerce platforms (e.g., Amazon), Giggles & Grins is specifically designed to offer products tailored for children’s needs, ensuring safety, comfort, and high-quality standards.
+- **Curated Shopping Experience**: The platform eliminates the overwhelming task of sifting through endless product categories, instead offering curated selections based on age, gender, and type of product (e.g., baby wear, toddler fashion, and more).
+- **Community and Trust**: By leveraging **verified reviews** and **ratings**, customers can make informed decisions based on the feedback of other parents, creating a trustworthy and safe shopping environment.
+
 
 ## Key Features Supporting the Business Model:
 1. **Product Listings:** Categorized and subcategorized collections to make shopping simple and efficient.High-quality product images, detailed descriptions, and verified customer reviews build trust.
@@ -130,6 +139,15 @@ A vendor portal will allow external brands to manage their listings and sales in
 2. **Advertisement & Sponsored Listings**: Brands and partners can pay for premium placement on the site, ensuring their products are highlighted to a targeted audience.
 3. **Seasonal Promotions & Discounts**:The platform drives additional revenue through time-limited promotions, such as back-to-school sales, holiday discounts, and festive collections.
 4. **Referral Program & Loyalty Rewards**:Future integration of referral programs and points-based loyalty systems will incentivize repeat purchases and customer retention.
+
+#### **Scalability and Future Plans**:
+As we continue to grow, Giggles & Grins is focused on expanding its presence and offerings:
+- **Global Expansion**: The goal is to introduce **international shipping** and support **multi-currency** for customers outside the home region.
+- **Subscription Boxes**: We plan to introduce monthly **subscription boxes**, curated with new clothing or toys for kids, offering convenience and continuous customer engagement.
+- **Vendor Integration**: A **vendor portal** will allow external sellers to list their products on the platform, creating a larger product range and diversifying the marketplace.
+
+#### **Market Differentiation**:
+Giggles & Grins stands apart from larger e-commerce platforms by focusing exclusively on children’s needs, providing a curated and focused shopping experience. The combination of **trust-building features**, **verified reviews**, and a **personalized shopping experience** ensures customers return to the platform as a trusted, one-stop solution for their children's shopping needs.
 
 ---
 
@@ -659,11 +677,18 @@ These are the underlying principles that guide the UX/UI design of the platform,
 - **Stay Connected with Newsletters**: The footer integrates a Giggles & Grins newsletter signup section, making it easy for visitors to stay informed about the latest news and offers. This feature enhances user engagement by keeping them connected with the brand.
 
 <details><summary><b>News Letter</b></summary>
+
 ![News Letter](/media/readme_imgs/newsletter_confrimtion.png)
+![News Letter](/media/readme_imgs/newsletter_subscription_confrimed.png)
 
 
 - **Social Media Links**:The footer section connects users to Giggles & Grins' social media presence with direct links to Facebook,instagram,twitter this ensured that users can stay updated & engaged with the brand accross popular platforms.
+
 <details><summary><b>Desktop View</b></summary>
+
+![Facebook](/media/readme_imgs/Facebook_home.png)
+![Facebook](/media/readme_imgs/Facebook_post.png)
+
 
 -**Contact Information**:A dedicated area provides essential contact details, including Email Address,Phone Number,Physical Address
 
@@ -910,6 +935,37 @@ The Admin Panel in Giggles & Grins is a powerful and intuitive interface designe
 [⬆️Back to top](<#📜table-of-contents>)
 
 ---
+
+### FAQ Feature
+
+**Overview:**
+The **FAQ** feature provides users with a quick reference to frequently asked questions, reducing the need for customer support inquiries and enhancing user experience.
+
+**Key Features:**
+- **Dynamic FAQ Management**: FAQs are stored and managed via the Django Admin interface, allowing administrators to add, update, or delete questions easily.
+- **User-Friendly Interface**: The FAQ page is clean and simple, displaying a list of common questions with answers that expand when clicked.
+- **Customizable**: Admins can easily customize the FAQ section based on user needs and new inquiries.
+  
+**Implementation:**
+- **Model**: The `FAQ` model stores questions and answers, which are dynamically retrieved and displayed on the FAQ page.
+- **Template**: A custom template renders the questions and answers for the users.
+- **Admin Interface**: FAQs can be managed through the Django Admin interface for easy updates.
+  
+**Example FAQ Entry:**
+- **Q:** How do I place an order?
+- **A:** Simply browse our product categories, add items to your cart, and proceed to checkout!
+
+**Future Enhancements:**
+- **Searchable FAQ**: Implementing a search feature to help users find specific answers quickly.
+- **Multi-language Support**: Offering the FAQ section in multiple languages for a more inclusive experience.
+
+<details><summary><b>FAQ</b></summary>
+
+![FAQ](/media/readme_imgs/custom_features_faq.png)
+</details>
+
+---
+
 
 # 🌠Future Enhancements
 
