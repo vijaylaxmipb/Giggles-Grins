@@ -30,8 +30,7 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # Load DEBUG from .env file, default to False if not set
-DEBUG = os.getenv('DEBUG', 'False') == 'False'
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
 
 ALLOWED_HOSTS = [
