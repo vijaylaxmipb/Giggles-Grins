@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from .models import FAQ
 from .forms import ContactFormModelForm
 from django.conf import settings
+=======
+from django.shortcuts import render, redirect
+from .models import FAQ
+from .forms import ContactFormModelForm
+>>>>>>> b5f902bcadebe8c9b07e74c8effbb7d72511f367
 
 
 def faq_view(request):
@@ -15,6 +21,7 @@ def contact_form_view(request):
         form = ContactFormModelForm(request.POST)
         if form.is_valid():
             form.save()
+<<<<<<< HEAD
 
             # Send confirmation email
             send_mail(
@@ -32,3 +39,10 @@ def contact_form_view(request):
         form = ContactFormModelForm()
 
     return render(request, 'custom_features/contact_form.html', {'form': form})
+=======
+            return redirect('contact_success')
+    else:
+        form = ContactFormModelForm()
+
+    return render(request, 'custom_features/contact_form.html', {'form': form})
+>>>>>>> b5f902bcadebe8c9b07e74c8effbb7d72511f367

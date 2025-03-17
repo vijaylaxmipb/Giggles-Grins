@@ -266,6 +266,7 @@ Traceback (most recent call last):
     raise TemplateDoesNotExist(template_name, chain=chain)
 django.template.exceptions.TemplateDoesNotExist: contact_form.html
 "GET /contact/contact/ HTTP/1.1" 500 93053
+<<<<<<< HEAD
 Internal Server Error: /contact/contact/
 Traceback (most recent call last):
   File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
@@ -344,3 +345,5 @@ Traceback (most recent call last):
     raise SMTPAuthenticationError(code, resp)
 smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-395cb7eb92csm15425491f8f.91 - gsmtp')
 "POST /contact/contact/ HTTP/1.1" 500 110746
+=======
+>>>>>>> b5f902bcadebe8c9b07e74c8effbb7d72511f367
