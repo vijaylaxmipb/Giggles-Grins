@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import handler404
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
+    path('contact/', include('custom_features.urls')),
     path('', include('home.urls')),
     path('bag/', include('bag.urls')),
     path('products/', include('products.urls')),
@@ -29,6 +30,10 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('orders/', include('orders.urls')),
     path('newsletter/', include('newsletter.urls')),
+    path('contact/', include('home.urls')),
+    path('contact/', include('custom_features.urls')),
+    path('faq/', include('custom_features.urls')),
+
 
 
 

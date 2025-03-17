@@ -15,10 +15,6 @@
     <form class="signup-form mx-auto" id="signup_form" method="post" action="{% url 'account_signup' %}">
         {% csrf_token %}
         {{ form.as_p }}
-        <input type="text" name="first_name" autocomplete="given-name" placeholder="First Name" required>
-        <input type="text" name="last_name" autocomplete="family-name" placeholder="Last Name" required>
-        <input type="email" name="email" autocomplete="email" placeholder="Enter your email" required>
-        <input type="password" name="password" autocomplete="new-password" placeholder="Create a password" required>
         <div class="text-center">
             <button type="submit" class="btn btn-primary">{% trans "Sign Up" %} &raquo;</button>
         </div>

@@ -8,6 +8,10 @@ html {
     flex-direction: column;
 }
 
+.main {
+    flex: 1; 
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -59,14 +63,21 @@ header .row {
     text-transform: uppercase;
 }
 
+
 h2.logo-font {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 2rem;
-    z-index: 10;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-weight: bold;
+    font-size: 2.5rem;
     color: #fff; 
-    position: relative; 
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #000;
 }
+
+
 .main-logo-link {
     width: fit-content;
 }
@@ -808,14 +819,6 @@ form .form-control {
     
 }
 
-h2.logo-font {
-    color: #fff; 
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
 .login {
     max-width: 400px;
     margin: 0 auto;
@@ -823,11 +826,6 @@ h2.logo-font {
 
 .form-group {
     margin-bottom: 1rem;
-}
-
-h2.logo-font {
-    font-size: 1.8rem;
-    color: #000;
 }
 
 button.btn-primary {
@@ -1009,31 +1007,34 @@ input, textarea {
 /* Signup Form Styling */
 
 .signup-form {
-    max-width: 400px; 
-    margin: 20px auto; 
+    max-width: 400px;
+    margin: 50px auto;
     padding: 20px;
-    background: #333; 
-    color: #fff; 
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
-/* Style the input fields */
+/* Fix input fields */
 .signup-form input {
-    width: 100%; 
+    width: 100%;  
     padding: 10px;
-    margin-bottom: 15px;
-    background: #444; 
-    border: 1px solid #555; 
-    border-radius: 5px; 
+    margin-bottom: 10px;
+    background: #444;  
+    border: 1px solid #555;  
+    border-radius: 5px;  
     font-size: 1rem;
-    color: #fff; 
+    color: #fff;  
 }
-/* Style the button */
+
+/* Fix submit button */
 .signup-form button {
-    width: 100%; 
+    width: 100%;  
     padding: 12px 15px;
-    background: #007bff; 
+    background: #007bff;  
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -1042,12 +1043,13 @@ input, textarea {
     transition: background 0.3s ease;
 }
 
-.signup-form input::placeholder {
-    color: #aaa; 
-}
-
 .signup-form button:hover {
     background: #0056b3;
+}
+
+
+.signup-form input::placeholder {
+    color: #aaa; 
 }
 
 

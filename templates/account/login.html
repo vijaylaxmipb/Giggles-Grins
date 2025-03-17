@@ -6,48 +6,19 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-<div class="container mt-5 mb-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6 bg-white p-4 shadow-sm rounded">
-            <hr>
-            <h2 class="text-center logo-font mb-4">{% trans "Sign In" %}</h2>
-            <hr>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">{% trans "Sign Up" %}</h1>
 
-            {% get_providers as socialaccount_providers %}
+    <p class="text-center">
+        {% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
+    </p>
 
-            {% if socialaccount_providers %}
-            <p>{% blocktrans with site.name as site_name %}Please sign in with one
-                of your existing third-party accounts. Or, <a href="{{ signup_url }}">sign up</a>
-                for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
-
-            <div class="socialaccount_ballot">
-                <ul class="socialaccount_providers">
-                    {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-                </ul>
-                <div class="login-or">{% trans 'or' %}</div>
-            </div>
-
-            {% include "socialaccount/snippets/login_extra.html" %}
-            {% else %}
-            <p>{% blocktrans %}If you have not created an account yet, then please
-                <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-            {% endif %}
-
-            <form class="login mt-3" method="POST" action="{% url 'account_login' %}">
-                {% csrf_token %}
-                {{ form|crispy }}
-                <div class="form-group">
-                    <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <a class="btn btn-outline-secondary rounded-0" href="{% url 'home' %}">Home</a>
-                    <button class="btn btn-primary rounded-0" type="submit">{% trans "Sign In" %}</button>
-                </div>
-            </form>
+    <form class="signup-form mx-auto" id="signup_form" method="post" action="{% url 'account_signup' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">{% trans "Sign Up" %} &raquo;</button>
         </div>
-    </div>
+    </form>
 </div>
 {% endblock %}

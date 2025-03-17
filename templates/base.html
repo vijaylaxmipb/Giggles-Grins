@@ -52,8 +52,9 @@
 
 </head>
 <body>
+    <div class="d-flex flex-column min-vh-100">
     
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid fixed-top bg-white">
         <!-- Top Navigation Bar -->
         <div class="row bg-white pt-lg-2 d-flex align-items-center" style="margin-left: 0; margin-right: 0;">
             <div class="col-6 col-md-4 text-left">
@@ -159,13 +160,15 @@
     {% endblock %}
 
     <!-- Main Content -->
+    <main class="flex-grow-1">
     {% block content %}
     {% endblock %}
+    </main>
 
 
     <!-- Footer -->
 
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4 mt-auto">
         <div class="container-fluid">
             <div class="row d-flex justify-content-between text-center text-md-left">
                 <!-- Social Media Links -->
@@ -233,6 +236,8 @@
         </div>
     </div>
 </footer>    
+
+</div>
 
 
     <!-- Post Load Scripts -->

@@ -11,10 +11,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 import dj_database_url
-import environ
 from pathlib import Path
 from dotenv import load_dotenv
-import environ
 load_dotenv()
 
 
@@ -71,6 +69,7 @@ INSTALLED_APPS = [
     'django_countries',
     'orders',
     'newsletter',
+    'custom_features',
 
     # Other
     'crispy_forms',
@@ -99,7 +98,10 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = ["bootstrap4", "bootstrap5"]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),  
+            os.path.join(BASE_DIR, 'custom_features', 'templates') 
+        ],
 
         'APP_DIRS': True,
         'OPTIONS': {
@@ -136,7 +138,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = False
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
@@ -158,8 +160,11 @@ else:
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
-
-
+            'HOST': 'localhost',
+            'PORT': '5432',
+            'OPTIONS': {
+                'sslmode': 'require',
+            },
         }
     }
 
@@ -263,11 +268,8 @@ else:
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
-    #DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
     DEFAULT_FROM_EMAIL = f'Giggles & Grins <{EMAIL_HOST_USER}>'
 
-    
-    # Debugging
     if not EMAIL_HOST_USER or not EMAIL_HOST_PASSWORD:
         raise ValueError("EMAIL_HOST_USER and EMAIL_HOST_PASS must be set in the environment")
 
@@ -289,3 +291,5 @@ LOGGING = {
         },
     },
 }
+
+ACCOUNT_SIGNUP_FORM_CLASS = 'custom_features.forms.CustomSignupForm'
