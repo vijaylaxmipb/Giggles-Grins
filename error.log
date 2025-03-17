@@ -266,3 +266,81 @@ Traceback (most recent call last):
     raise TemplateDoesNotExist(template_name, chain=chain)
 django.template.exceptions.TemplateDoesNotExist: contact_form.html
 "GET /contact/contact/ HTTP/1.1" 500 93053
+Internal Server Error: /contact/contact/
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\custom_features\views.py", line 16, in contact_form_view
+    return redirect('contact_success')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'contact_success' not found. 'contact_success' is not a valid view function or pattern name.
+"POST /contact/contact/ HTTP/1.1" 500 145
+Internal Server Error: /contact/contact/
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\custom_features\views.py", line 16, in contact_form_view
+    return redirect('contact_success')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'contact_success' not found. 'contact_success' is not a valid view function or pattern name.
+"POST /contact/contact/ HTTP/1.1" 500 145
+Internal Server Error: /contact/contact/
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\custom_features\views.py", line 20, in contact_form_view
+    send_mail(
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\core\mail\__init__.py", line 87, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 127, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\HP\Documents\vscode-projects\Giggles-Grins\.venv\Lib\site-packages\django\core\mail\backends\smtp.py", line 94, in open
+    self.connection.login(self.username, self.password)
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 750, in login
+    raise last_exception
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+                   ^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python312\Lib\smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-395cb7eb92csm15425491f8f.91 - gsmtp')
+"POST /contact/contact/ HTTP/1.1" 500 110746
