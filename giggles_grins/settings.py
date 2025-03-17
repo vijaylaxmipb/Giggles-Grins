@@ -29,13 +29,8 @@ load_dotenv()
 # Load SECRET_KEY from .env file
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-<<<<<<< HEAD
-# Load DEBUG from .env file
-DEBUG = os.getenv('DEBUG', 'False') == 'False'
-=======
 # Load DEBUG from .env file, default to False if not set
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
->>>>>>> b5f902bcadebe8c9b07e74c8effbb7d72511f367
 
 
 ALLOWED_HOSTS = [
@@ -271,11 +266,7 @@ else:
     EMAIL_PORT = 587
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-<<<<<<< HEAD
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-=======
-    EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
->>>>>>> b5f902bcadebe8c9b07e74c8effbb7d72511f367
     DEFAULT_FROM_EMAIL = f'Giggles & Grins <{EMAIL_HOST_USER}>'
 
     if not EMAIL_HOST_USER or not EMAIL_HOST_PASSWORD:
