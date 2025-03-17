@@ -37,12 +37,13 @@ class UserOrder(models.Model):
 
     def __str__(self):
         return f"Order #{self.order_number}"
+    
 
 class OrderDetail(models.Model):  
     order = models.ForeignKey(
         UserOrder,
         on_delete=models.CASCADE,
-        related_name='details')  # Updated to UserOrder
+        related_name='details')  
     product_name = models.CharField(max_length=255)
     quantity = models.PositiveIntegerField(default=1)
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2)
