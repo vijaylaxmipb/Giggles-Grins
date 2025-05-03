@@ -11,6 +11,8 @@ from products.models import Product
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from bag.contexts import bag_contents
+from django.core.mail import send_mail
+
 
 import stripe
 import json
@@ -136,13 +138,32 @@ def checkout_success(request, order_number):
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
+    # ✅ Send confirmation email
+    subject = f"Order Confirmation - {order_number}"
+    message = (
+        f"Hi {order.full_name},\n\n"
+        f"Thank you for your purchase from Giggles & Grins!\n"
+        f"Your order number is {order_number}.\n\n"
+        f"We're processing your order and will notify you once it's on the way.\n\n"
+        f"Best regards,\n"
+        f"The Giggles & Grins Team"
+    )
+
+    send_mail(
+        subject,
+        message,
+        settings.DEFAULT_FROM_EMAIL,
+        [order.email],
+        fail_silently=False,
+    )
+
+    # ✅ Link order to user profile if logged in
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
-        # Attach the user's profile to the order
         order.user_profile = profile
         order.save()
 
-        # Save the user's info
+        # Save user info to profile if requested
         if save_info:
             profile_data = {
                 'default_phone_number': order.phone_number,
@@ -157,9 +178,9 @@ def checkout_success(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
-    messages.success(request, f'Order successfully processed! \
-        Your order number is {order_number}. A confirmation \
-        email will be sent to {order.email}.')
+    messages.success(request, f'Order successfully processed! '
+                              f'Your order number is {order_number}. A confirmation '
+                              f'email will be sent to {order.email}.')
 
     if 'bag' in request.session:
         del request.session['bag']

@@ -29,9 +29,7 @@ load_dotenv()
 # Load SECRET_KEY from .env file
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-# Load DEBUG from .env file, default to False if not set
-DEBUG = os.getenv('DEBUG', 'False') == 'False'
-
+DEBUG = False  # ✅ set to True for development, False for production
 
 ALLOWED_HOSTS = [
     '8000-vijaylaxmip-gigglesgrin-qgow4e0ojph.ws.codeinstitute-ide.net',
@@ -68,17 +66,16 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'django_countries',
-    'orders',
     'newsletter',
     'custom_features',
-
+    'orders',
     # Other
     'crispy_forms',
     'crispy_bootstrap4',
     'storages',
-
 ]
 
+ACCOUNT_SIGNUP_FORM_CLASS = 'custom_features.forms.CustomSignupForm'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -221,6 +218,7 @@ else:
     if not EMAIL_HOST_USER or not EMAIL_HOST_PASSWORD:
         raise ValueError("EMAIL_HOST_USER and EMAIL_HOST_PASS must be set in the environment")
 
+
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = False
@@ -282,5 +280,3 @@ LOGGING = {
         },
     },
 }
-
-ACCOUNT_SIGNUP_FORM_CLASS = 'custom_features.forms.CustomSignupForm'

@@ -33,3 +33,7 @@ def contact_form_view(request):
         form = ContactFormModelForm()
 
     return render(request, 'custom_features/contact_form.html', {'form': form})
+
+
+def contact_success(request):
+    return render(request, 'custom_features/contact_success.html')

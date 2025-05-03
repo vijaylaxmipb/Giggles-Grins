@@ -12,8 +12,8 @@ def view_bag(request):
     for message in storage:
         print(f"Message: {message}")
 
-    messages.success(request, "Test success message")
-    messages.error(request, "Test error message")
+    # messages.success(request, "Test success message")
+    # messages.error(request, "Test error message")
     return render(request, 'bag/bag.html')
 
 
