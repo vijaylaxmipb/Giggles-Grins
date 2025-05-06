@@ -7,6 +7,7 @@ from django.db.models.functions import Lower
 from .forms import ReviewForm
 from .forms import ProductForm
 from django.urls import reverse
+from urllib.parse import unquote
 
 
 def all_products(request):
@@ -42,16 +43,15 @@ def all_products(request):
             products = products.filter(
                 category__name__in=[
                     cat.strip() for cat in current_categories])
-            print(f"Filtered by categories: {current_categories}")
-            print(f"Products after category filter: {products.count()}")
-
+            
         if 'subcategory' in request.GET:
-            current_subcategories = request.GET['subcategory'].split(',')
-            products = products.filter(
-                subcategory__name__in=[
-                    sub.strip() for sub in current_subcategories])
-            print(f"Filtered by subcategories: {current_subcategories}")
-            print(f"Products after subcategory filter: {products.count()}")
+            current_subcategories = [
+                unquote(sub.strip()) for sub in request.GET['subcategory'].split(',')
+            ]
+            products = products.filter(subcategory__name__in=current_subcategories)
+            
+            if not products.exists():
+                messages.warning(request, "No products found for this subcategory.")
 
         if 'special_offers' in request.GET:
             products = products.filter(is_special_offer=True)
