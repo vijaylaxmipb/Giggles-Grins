@@ -1,22 +1,32 @@
 from django import forms
 from .models import ContactForm
+from allauth.account.forms import SignupForm as AllauthSignupForm, LoginForm as AllauthLoginForm
 
 
+# Contact Form ModelForm
 class ContactFormModelForm(forms.ModelForm):
     class Meta:
         model = ContactForm
         fields = ['name', 'email', 'subject', 'message']
 
-        
-class CustomSignupForm(forms.Form):
-    def __init__(self, *args, **kwargs):
-        from allauth.account.forms import SignupForm  # ✅ local import to avoid circular import
-        self.signup_form_class = SignupForm
-        self.signup_form = self.signup_form_class(*args, **kwargs)
 
-    def __getattr__(self, attr):
-        # Redirect attribute access to the wrapped form
-        return getattr(self.signup_form, attr)
+# Custom Signup Form extending allauth's SignupForm
+class CustomSignupForm(AllauthSignupForm):
+    full_name = forms.CharField(max_length=100, label='Full Name', required=True)
 
     def save(self, request):
-        return self.signup_form.save(request)
+        user = super().save(request)
+        full_name = self.cleaned_data.get('full_name')
+        if full_name:
+            parts = full_name.strip().split(' ', 1)
+            user.first_name = parts[0]
+            user.last_name = parts[1] if len(parts) > 1 else ''
+            user.save()
+        return user
+
+
+# Custom Login Form extending allauth's LoginForm
+class CustomLoginForm(AllauthLoginForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.order_fields(['login', 'password'])

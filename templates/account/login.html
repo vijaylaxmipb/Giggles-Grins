@@ -1,24 +1,47 @@
 {% extends "base.html" %}
-
 {% load i18n %}
-{% load account socialaccount %}
+{% load account %}
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-<div class="container mt-5">
-    <h1 class="text-center mb-4">{% trans "Sign Up" %}</h1>
+<div class="container mt-5 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+  <div class="signup-form"> <!-- Reusing signup form styles for design consistency -->
+    <h1 class="text-center mb-4">{% trans "Sign In" %}</h1>
 
-    <p class="text-center">
-        {% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
-    </p>
-
-    <form class="signup-form mx-auto" id="signup_form" method="post" action="{% url 'account_signup' %}">
+    <form method="post" action="{% url 'account_login' %}">
         {% csrf_token %}
-        {{ form.as_p }}
-        <div class="text-center">
-            <button type="submit" class="btn btn-primary">{% trans "Sign Up" %} &raquo;</button>
+
+        <!-- Login Field -->
+        <div class="form-group">
+            {{ form.login.label_tag }}
+            {{ form.login }}
         </div>
+
+        <!-- Password Field -->
+        <div class="form-group">
+            {{ form.password.label_tag }}
+            {{ form.password }}
+        </div>
+
+        <!-- Remember Me Field -->
+        <div class="form-check mb-3">
+            {{ form.remember }}
+            {{ form.remember.label_tag }}
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-block">
+                {% trans "Log In" %} &raquo;
+            </button>
+        </div>
+
+        <!-- Forgot Password Link -->
+        <p class="secondaryAction text-center mt-3">
+            <a href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+        </p>
     </form>
+  </div>
 </div>
 {% endblock %}
