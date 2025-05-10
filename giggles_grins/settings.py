@@ -29,7 +29,7 @@ load_dotenv()
 # Load SECRET_KEY from .env file
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = True  # ✅ set to True for development, False for production
+DEBUG = False  # ✅ set to True for development, False for production
 
 ALLOWED_HOSTS = [
     '8000-vijaylaxmip-gigglesgrin-qgow4e0ojph.ws.codeinstitute-ide.net',
@@ -67,7 +67,7 @@ INSTALLED_APPS = [
     'profiles',
     'django_countries',
     'newsletter',
-    'custom_features',
+    'support',
     'orders',
     # Other
     'crispy_forms',
@@ -77,8 +77,8 @@ INSTALLED_APPS = [
 ]
 
 ACCOUNT_FORMS = {
-    'signup': 'custom_features.forms.CustomSignupForm',
-    'login': 'custom_features.forms.CustomLoginForm',
+    'signup': 'support.forms.CustomSignupForm',
+    'login': 'support.forms.CustomLoginForm',
 }
 
 
@@ -103,7 +103,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
-            os.path.join(BASE_DIR, 'custom_features', 'templates')
+            os.path.join(BASE_DIR, 'support', 'templates')
         ],
 
         'APP_DIRS': True,

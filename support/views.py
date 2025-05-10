@@ -8,7 +8,7 @@ from django.conf import settings
 
 def faq_view(request):
     faqs = FAQ.objects.all()
-    return render(request, 'custom_features/faq.html', {'faqs': faqs})
+    return render(request, 'support/faq.html', {'faqs': faqs})
 
 
 def contact_form_view(request):
@@ -32,8 +32,8 @@ def contact_form_view(request):
     else:
         form = ContactFormModelForm()
 
-    return render(request, 'custom_features/contact_form.html', {'form': form})
+    return render(request, 'support/contact_form.html', {'form': form})
 
 
 def contact_success(request):
-    return render(request, 'custom_features/contact_success.html')
+    return render(request, 'support/contact_success.html')

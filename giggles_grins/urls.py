@@ -29,12 +29,7 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('orders/', include('orders.urls')),
     path('newsletter/', include('newsletter.urls')),
-    # path('faq/', include('custom_features.urls')),
-    # path('contact/', include('custom_features.urls')),
-    path('features/', include('custom_features.urls')),
-
-
-
+    path('features/', include('support.urls')),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
