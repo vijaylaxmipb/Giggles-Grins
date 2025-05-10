@@ -1,8 +1,7 @@
+from django.views.decorators.http import require_POST
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
 from django.contrib.messages.api import get_messages
-
-
 from products.models import Product
 
 
@@ -12,11 +11,10 @@ def view_bag(request):
     for message in storage:
         print(f"Message: {message}")
 
-    # messages.success(request, "Test success message")
-    # messages.error(request, "Test error message")
     return render(request, 'bag/bag.html')
 
 
+@require_POST
 def add_to_bag(request, item_id):
     """Add a quantity of the specified product to the shopping bag"""
     product = get_object_or_404(Product, pk=item_id)

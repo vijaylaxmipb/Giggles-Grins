@@ -29,7 +29,7 @@ load_dotenv()
 # Load SECRET_KEY from .env file
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = False  # ✅ set to True for development, False for production
+DEBUG = True  # ✅ set to True for development, False for production
 
 ALLOWED_HOSTS = [
     '8000-vijaylaxmip-gigglesgrin-qgow4e0ojph.ws.codeinstitute-ide.net',
