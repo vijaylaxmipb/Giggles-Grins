@@ -73,7 +73,6 @@ h2.logo-font {
     text-transform: uppercase;
     margin-bottom: 20px;
     font-weight: bold;
-    font-size: 1.8rem;
     color: #000;
 }
 
@@ -816,7 +815,7 @@ form .form-control {
     padding: 50px;
     margin-bottom: 0;
     padding-bottom: 0;
-    padding-bottom: 100px;
+    
     
 }
 
@@ -1308,9 +1307,6 @@ ul.list-inline .list-inline-item {
           z-index: 1030;
     }
   
-    .header-container {
-          padding-top: 164px;
-    }
     body {
         height: calc(100vh - 116px);
     }
@@ -1566,9 +1562,6 @@ ul.list-inline .list-inline-item {
 }
   /* pad the top a bit when navbar is collapsed on mobile */
   @media (max-width: 991px) {
-      .header-container {
-          padding-top: 116px;
-      }
 
       h2.logo-font {
         font-size: 1.8rem;
