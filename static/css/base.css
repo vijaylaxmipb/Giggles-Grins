@@ -29,6 +29,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    max-width: 200px;
+    overflow: hidden;
 }
 
 
@@ -67,11 +69,11 @@ header .row {
 h2.logo-font {
     background: linear-gradient(to right, #ff9a9e, #fad0c4);
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #fff; 
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
     color: #000;
 }
@@ -213,18 +215,18 @@ a.category-badge > span.badge:hover {
 
 .navbar-collapse {
     position: absolute;
-    top: 100%; /* Adjust the dropdown to appear below the navbar */
+    top: 100%; 
     left: 0;
     right: 0;
-    z-index: 1050; /* Ensure it overlaps properly */
-    background-color: white; /* Set the background */
+    z-index: 1050; 
+    background-color: white; 
     border: 1px solid #ddd;
 }
 
 
 .navbar {
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-start;
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 20px;
@@ -233,15 +235,22 @@ a.category-badge > span.badge:hover {
     z-index: 1000;
     margin: 0;
     padding-left: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
     
 }
 
 .navbar-nav {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 15px;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
 }
+
 
 .navbar .navbar-nav {
     display: flex;
@@ -317,6 +326,13 @@ a.category-badge > span.badge:hover {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.page-title {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
 
 .loading-spinner h1 {
     position: absolute;
@@ -428,29 +444,6 @@ screenshot-container {
 }
 .submit-review {
     margin-top: 20px;
-}
-
-.list-inline {
-    margin: 0;
-    padding: 0;display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0;
-    margin: 0;
-    gap: 15px;
-}
-
-.list-inline-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.list-inline-item p {
-    margin: 0;
-    font-size: 0.9rem;
-    text-align: center;
 }
 
 .fas.fa-shopping-bag.fa-lg {
@@ -812,10 +805,8 @@ form .form-control {
     color:black; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    padding: 50px;
+    padding: 100px;
     margin-bottom: 0;
-    padding-bottom: 0;
-    
     
 }
 
@@ -1147,37 +1138,58 @@ input, textarea {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0;
-    margin: 0 !important; 
-    gap: 10px;
-}
-
-.list-inline-item {
-    margin: 0 5px;
-}
-
-ul.list-inline {
-    display: flex;
-    justify-content:end;
-    align-items: center;
+    gap: 15px;
     padding: 0;
     margin: 0;
 }
 
-ul.list-inline .list-inline-item {
+.list-inline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin: 0 5px;
+    padding: 0;
     text-align: center;
-    width: auto;
-    margin: 5px 0;
+}
+
+ul.list-inline {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0 !important;
+    gap: 15px; /* spacing between items */
+}
+
+ul.list-inline .list-inline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.list-inline-item p.my-0 {
+    margin: 0 !important;
+    margin-bottom: 8px !important;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+ul.list-inline .list-inline-item:last-child {
+    padding-right: 10px;
 }
 
 .list-inline-item div i {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     margin-bottom: 5px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .no-flex {
@@ -1194,6 +1206,15 @@ ul.list-inline .list-inline-item {
 .mx-auto {
     margin-left: 0 !important;
     margin-right: 0 !important;
+}
+
+.container.header-container {
+    margin-top: 80px;
+    margin-bottom: 0.5rem;
+}
+
+form[action="/products/"] {
+    margin-bottom: 1rem;
 }
 
 
@@ -1374,6 +1395,12 @@ ul.list-inline .list-inline-item {
   
 
   @media (max-width: 768px) {
+
+
+    .container.header-container {
+        margin-top: 160px;
+    }
+
     .total-checkout-wrapper {
         text-align: center; 
     }
@@ -1381,6 +1408,7 @@ ul.list-inline .list-inline-item {
     .logo-container {
         flex-direction: column;
         align-items: center;
+        flex: 0 0 auto;
     }
 
     .logo-container h2 {
@@ -1396,7 +1424,7 @@ ul.list-inline .list-inline-item {
     }
 
     h2.logo-font {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         color: white;
         margin: 0;
     }
@@ -1661,3 +1689,39 @@ ul.list-inline .list-inline-item {
 
 }
 
+
+ul.list-inline {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0 !important;
+    gap: 15px;
+}
+
+ul.list-inline .list-inline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul.list-inline .list-inline-item p {
+    font-size: 0.9rem;
+    margin: 0 !important;
+    margin-bottom: 8px !important;
+}
+
+ul.list-inline .list-inline-item:last-child {
+    margin-right: 15px !important;
+    padding-right: 5px;
+}
+
+ul.list-inline .list-inline-item div i {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    display: block;
+}
