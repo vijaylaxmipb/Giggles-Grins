@@ -122,12 +122,7 @@ class OrderLineItem(models.Model):
         and update the order total.
         """
         self.lineitem_total = self.product.price * self.quantity
-        
-        # Debugging logs
-        print(f"Saving OrderLineItem - Product: {self.product.name}, Quantity: {self.quantity}, Line Total: {self.lineitem_total}")
 
-        # Save the line item
         super().save(*args, **kwargs)
 
-        # Trigger order total update
         self.order.update_total()
