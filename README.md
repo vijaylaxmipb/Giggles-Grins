@@ -76,8 +76,9 @@ Welcome to Giggles & Grins, a dynamic platform focused on delivering top-tier ex
     - [The Structure Plane](#the-structure-plane)
     - [The Skeleton Plane](#the-skeleton-plane)
     - [The Surface Plane](#the-surface-plane)
-5. [⭐Features](#⭐features)
+5. [⭐Support Features](#⭐support-feature )
     - [FAQ](#faq-feature)
+    - [Contact Us](#contact-us)
 6. [🌠Future Enhancements](#🌠future-enhancements)
 7. [🧮Testing](#🧮testing)
 8. [🤖Technologies Used](#🤖technologies-used)
@@ -667,10 +668,6 @@ These are the underlying principles that guide the UX/UI design of the platform,
 
 - **Responsive Design**:The Checkout section is designed for usability on both desktop and mobile devices, ensuring a smooth and efficient checkout process for all users.
 
-<details><summary><b>Mobile View</b></summary>
-
-![Checkout Section](/media/readme_imgs/Checkout_mobile_view.png)
-</details>
 
 #### 📬 Footer 
 
@@ -678,8 +675,11 @@ These are the underlying principles that guide the UX/UI design of the platform,
 
 <details><summary><b>News Letter</b></summary>
 
-![News Letter](/media/readme_imgs/newsletter_confrimtion.png)
-![News Letter](/media/readme_imgs/newsletter_subscription_confrimed.png)
+![News Letter](/media/readme_imgs/subscription.PNG)
+![News Letter](/media/readme_imgs/subscription_confirm%20messgepng.PNG)
+![News Letter](/media/readme_imgs/subscription_mil.PNG)
+![News Letter](/media/readme_imgs/subscription_mil_inbox.PNG)
+![News Letter](/media/readme_imgs/subscription_link_click.PNG)
 
 
 - **Social Media Links**:The footer section connects users to Giggles & Grins' social media presence with direct links to Facebook,instagram,twitter this ensured that users can stay updated & engaged with the brand accross popular platforms.
@@ -753,15 +753,6 @@ The Product explore page  provide an engaging, user-friendly experience, adaptin
 - **Easy Product Management**: Options to remove items from the cart, ensuring users can effortlessly adjust their purchases.
 - **Quantity Adjustment Feature**: Users can increase or decrease the quantity of each item, with a dynamically updated total price displayed in real time.
 
-<details><summary><b>Desktop View</b></summary>
-
-![Cart Section Desktop](/media/readme_imgs/Cart_desktop_view.png)
-</details>
-
-<details><summary><b>Mobile View</b></summary>
-
-![Cart Section Mobile](/media/readme_imgs/Cart_mobile_view.png)
-</details>
 
 #### 💳 Checkout Modal
 - **Streamlined Checkout Process**: A sleek and intuitive checkout modal ensures a hassle-free payment process for purchasing kids' clothing.
@@ -773,10 +764,6 @@ The Product explore page  provide an engaging, user-friendly experience, adaptin
 ![Checkout Desktop](/media/readme_imgs/checkout_view_desktop.png)
 </details>
 
-<details><summary><b>Mobile View</b></summary>
-
-![Checkout Mobile](/media/readme_imgs/checkout_view_mobile.png)
-</details>
 
 #### ✅ Checkout Success
 - **Payment Confirmation**: A distinct message signals the successful processing of payment, instilling confidence in users.
@@ -786,12 +773,12 @@ The Product explore page  provide an engaging, user-friendly experience, adaptin
 
 <details><summary><b>Desktop View</b></summary>
 
-![Checkout Success Desktop](/media/readme_imgs/Checkout_Success_desktop_view.png)
-</details>
+![Checkout Success Desktop](/media/readme_imgs/Checkout_one.png)
+![Checkout Success Desktop](/media/readme_imgs/Checkout_two.png)
+![Checkout Success Desktop](/media/readme_imgs/order_confirmtion.png)
+![Checkout Success Desktop](/media/readme_imgs/order_confirmtion_mil.png)
+![Checkout Success Desktop](/media/readme_imgs/order_confirmtion_mil_inbox.png)
 
-<details><summary><b>Mobile View</b></summary>
-
-![Checkout Success Mobile](/media/readme_imgs/Checkout_Success_mobile_view.png)
 </details>
 
 ### User Profiles
@@ -804,14 +791,10 @@ The Product explore page  provide an engaging, user-friendly experience, adaptin
 
 <details><summary><b>Desktop</b></summary>
 
-![Userprofile Desktop](/media/readme_imgs/Userprofile_desktop_view.png)
+![Userprofile Desktop](/media/readme_imgs/my_profile.png)
+![Userprofile Desktop](/media/readme_imgs/my_profile_updte.png)
 </details>
 
-<details><summary><b>Mobile</b></summary>
-
-![Userprofile Mobile](/media/readme_imgs/Userprofile_mobile_view.png)
-
-</details>
 
 ### Other Features
 
@@ -936,20 +919,20 @@ The Admin Panel in Giggles & Grins is a powerful and intuitive interface designe
 
 ---
 
-### FAQ Feature
+### Support Feature (FAQ & Contact Us)
 
 **Overview:**
-The **FAQ** feature provides users with a quick reference to frequently asked questions, reducing the need for customer support inquiries and enhancing user experience.
+The **Support** module enhances user experience by providing quick access to common questions and an easy way to get in touch via a contact form. It reduces dependency on live support and ensures users can find help independently.
 
 **Key Features:**
 - **Dynamic FAQ Management**: FAQs are stored and managed via the Django Admin interface, allowing administrators to add, update, or delete questions easily.
-- **User-Friendly Interface**: The FAQ page is clean and simple, displaying a list of common questions with answers that expand when clicked.
+- **User-Friendly Interface**: The FAQ page is clean and simple, displaying a list of common questions clean design with collapsible answers for better readability.
 - **Customizable**: Admins can easily customize the FAQ section based on user needs and new inquiries.
   
 **Implementation:**
 - **Model**: The `FAQ` model stores questions and answers, which are dynamically retrieved and displayed on the FAQ page.
-- **Template**: A custom template renders the questions and answers for the users.
-- **Admin Interface**: FAQs can be managed through the Django Admin interface for easy updates.
+- **Template**: Renders FAQ entries dynamically.
+- **Admin Interface**: FAQs can be managed through the Django Admin interface for easy updates & Enables full control over content.
   
 **Example FAQ Entry:**
 - **Q:** How do I place an order?
@@ -961,8 +944,33 @@ The **FAQ** feature provides users with a quick reference to frequently asked qu
 
 <details><summary><b>FAQ</b></summary>
 
-![FAQ](/media/readme_imgs/custom_features_faq.png)
+![FAQ](/media/readme_imgs/FAQ_Page.png)
 </details>
+
+**Overview:Contact Us Feature**
+The **Contact Us** feature allows users to easily reach out with inquiries, suggestions, or concerns. It helps streamline communication and enhances customer trust and satisfaction.
+
+**Key Features:**
+- **Simple Contact Form**: Users can submit their Name, Email, Subject, and Message directly from the site.
+- **Clean Design**: The form is integrated into a visually appealing page that matches the overall site theme.
+- **Validation & Submission**: All fields are required and validated before submission.
+  
+**Implementation:**
+- **Model**: Stores user-submitted queries with fields for name, email, subject, and message.
+- **Form**: Built with Django Forms for validation and clean data handling.
+- **Template**: Responsive HTML template styled to match the brand.
+- **Admin Interface**: Allows reviewing contact form submissions if stored in the database.
+
+**Future Enhancements:**
+- **Email Notifications**: Auto-send user messages to support inbox.
+- **Message Categories**: Let users choose topics like "Order", "Return", etc.
+- **Admin Dashboard**: View and respond to messages directly.
+
+<details><summary><b>Contact Us</b></summary>
+
+![Contact Us](/media/readme_imgs/contact_us.png)
+</details>
+
 
 ---
 
