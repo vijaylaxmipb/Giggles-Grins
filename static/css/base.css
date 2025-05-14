@@ -307,7 +307,7 @@ a.category-badge > span.badge:hover {
     width: 100%;
     background-color: white;
     border: 1px solid #ddd;
-    border-radius:none;
+    border-radius: 0;
     box-shadow: none;
     z-index: 1050; 
 }
