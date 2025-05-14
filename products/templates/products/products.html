@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_meta %}
-    <meta name="description" content="Explore a wide range of kids' clothing and accessories at Giggles & Grins. Find trendy, affordable, and high-quality products for boys, girls, and babies. Shop now!">
+{% block meta_description %}
+<meta name="description" content="Discover adorable and comfy outfits for toddlers and babies. Giggles & Grins brings you the best in kids’ fashion for every season.">
 {% endblock %}
 
 {% block page_header %}
@@ -22,7 +22,7 @@
         <!-- Filter Section -->
         <div class="col-md-3">
             {% for c in current_categories %}
-                <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name|urlencode }}">
                     <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                 </a>
             {% endfor %}
@@ -31,7 +31,7 @@
             <ul class="list-group mb-3">
                 {% for subcategory in all_subcategories %}
                 <li class="list-group-item {% if subcategory.name in current_subcategories %}active{% endif %}">
-                    <a href="{% url 'products' %}?subcategory={{ subcategory.name }}" class="{% if subcategory.name in current_subcategories %}text-white{% endif %}">
+                    <a href="{% url 'products' %}?subcategory={{ subcategory.name|urlencode }}" class="{% if subcategory.name in current_subcategories %}text-white{% endif %}">
                         {{ subcategory.name }}
                     </a>
                 </li>
@@ -56,12 +56,10 @@
                 <a href="{% url 'products' %}" class="btn btn-outline-success">
                     Shop All Products
                 </a>
-        </div>
-
+            </div>
 
             <!-- Sorting and Product Count Row -->
             <div class="row mb-3">
-                <!-- Product Count and Back Link -->
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-muted mt-3 text-center text-md-left">
                         {% if search_term or current_categories or current_sorting != 'None_None' %}
@@ -72,7 +70,6 @@
                     </p>
                 </div>
 
-                <!-- Sorting Dropdown -->
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
                         <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
@@ -109,15 +106,15 @@
                                 <p class="card-text font-weight-bold">${{ product.price }}</p>
                                 {% if product.subcategory %}
                                     <p class="small mt-1 mb-0">
-                                        <a class="text-muted" href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
+                                        <a class="text-muted" href="{% url 'products' %}?subcategory={{ product.subcategory.name|urlencode }}">
                                             <i class="fas fa-tag mr-1"></i>{{ product.subcategory.friendly_name }}
                                         </a>
                                     </p>
                                 {% elif product.category %}
                                     <p class="small mt-1 mb-0">
-                                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name|urlencode }}">
                                             <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                        </a>
+                                        </a>         
                                     </p>
                                 {% endif %}
                                 {% if product.rating %}
@@ -143,10 +140,11 @@
         </div>
     </div>
 </div>
+
 <div class="btt-button shadow-sm rounded-0 border border-black">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-    </a>	
+    </a>    
 </div>
 {% endblock %}
 
@@ -155,7 +153,7 @@
 <script>
     $('.btt-link').click(function(e) {
         window.scrollTo(0,0)
-    })
+    });
 </script>
 
 <script>
@@ -178,6 +176,6 @@
 
             window.location.replace(currentUrl);
         }
-    })
+    });
 </script>
 {% endblock %}

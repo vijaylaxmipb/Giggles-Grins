@@ -434,11 +434,11 @@ Wireframes for key pages have been designed to visualize the layout and function
 
 #### Database Schema
 
-The database schema was designed using [lucidchart.com](https://lucidchart.com), which provided an intuitive interface for creating and visualizing the database structure. This tool facilitated the definition of tables, relationships, and constraints, streamlining the database design process.
+The database schema was generated using Django Extensions and Graphviz. Django Extensions' graph_models command, in combination with Graphviz, enabled automatic creation of an Entity-Relationship Diagram (ERD) based on the Django models. This approach provided an accurate and visual representation of the database structure, including models and their relationships.
 
 <details><summary><b>Database Schema</b></summary>
 
-![Database Schema](/media/readme_imgs/diagram.png)
+![Database Schema](/media/readme_imgs/ERD.PNG)
 
 </details>
 
@@ -775,9 +775,6 @@ The Product explore page  provide an engaging, user-friendly experience, adaptin
 
 ![Checkout Success Desktop](/media/readme_imgs/Checkout_one.png)
 ![Checkout Success Desktop](/media/readme_imgs/Checkout_two.png)
-![Checkout Success Desktop](/media/readme_imgs/order_confirmtion.png)
-![Checkout Success Desktop](/media/readme_imgs/order_confirmtion_mil.png)
-![Checkout Success Desktop](/media/readme_imgs/order_confirmtion_mil_inbox.png)
 
 </details>
 
@@ -834,8 +831,13 @@ Ensuring data integrity and enhancing user experience through real-time feedback
 
 <details><summary><b>Login & Sign Up</b></summary>
 
-![Login Validation](/media/readme_imgs/Login_validation.png)
-![Sign Up Validation](/media/readme_imgs/Signup_validation.png)
+![Login Validation](/media/readme_imgs/signin_successful.png)
+![Sign Up Validation](/media/readme_imgs/register_pge.png)
+![Sign Up Validation](/media/readme_imgs/register_pge_confirm.png)
+![Sign Up Validation](/media/readme_imgs/register_pge_confirmed.png)
+![Sign Up Validation](/media/readme_imgs/register_pge_confirm_mil.png)
+[Sign Up Validation](/media/readme_imgs/register_pge_confirm_inbox.png)
+![Sign Up Validation](/media/readme_imgs/register_pge_confirm_tb.png)
 </details>
 
 - **Review Validation**: Assists users in providing meaningful feedback.
@@ -859,7 +861,9 @@ Ensuring data integrity and enhancing user experience through real-time feedback
 
 <details><summary><b>Confirmation Email</b></summary>
 
-![order-email](/media/readme_imgs/confirmation.png)
+![order-email](/media/readme_imgs/order_confirmtion.png)
+![order-email](/media/readme_imgs/order_confirmtion_mil.png)
+![order-email](/media/readme_imgs/order_confirmtion_mil_inbox.png)
 </details>
 
 #### 👤 Admin Panel
@@ -884,6 +888,13 @@ The Admin Panel in Giggles & Grins is a powerful and intuitive interface designe
 
   Products:
   Admins can manage product details like pricing, stock levels, and descriptions to keep listings accurate. This helps maintain a reliable and up-to-date catalog for shoppers.
+  <details><summary><b>Products</b></summary>
+
+![Products](/media/readme_imgs/product_dded.png)
+![Products](/media/readme_imgs/product_updte.png)
+![Products](/media/readme_imgs/product_removed.png)
+![Products](/media/readme_imgs/product_removedto%20one.png)
+</details>
 
   Subcategories:
   Subcategories allow for more refined product organization, improving the user experience by offering better navigation. Admins can use this to group products under relevant sections, ensuring clarity.

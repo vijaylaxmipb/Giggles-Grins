@@ -33,9 +33,7 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'form-control border-black rounded-0'
 
         self.fields['category'].queryset = Category.objects.all()
-        self.fields['category'].empty_label = None
-
         self.fields['subcategory'].queryset = Subcategory.objects.all()
 
-        self.fields['category'].widget.attrs['placeholder'] = 'Select a category'
-        self.fields['subcategory'].widget.attrs['placeholder'] = 'Select a subcategory'
+        self.fields['category'].empty_label = 'Select a category'
+        self.fields['subcategory'].empty_label = 'Select a subcategory'
