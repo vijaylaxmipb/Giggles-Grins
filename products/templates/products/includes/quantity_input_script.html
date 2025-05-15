@@ -40,4 +40,11 @@
         var itemId = $(this).data('item_id');
         handleEnableDisable(itemId);
     });
+
+    // ✅ Submit the update form when "Update" link is clicked
+    $('.update-link').click(function (e) {
+        e.preventDefault();
+        var form = $(this).closest('.input-group').closest('form.update-form');
+        form.submit();
+    });
 </script>

@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect, reverse, HttpResponse, get_object
 from django.contrib import messages
 from django.contrib.messages.api import get_messages
 from products.models import Product
+from django.http import JsonResponse
 
 
 # Create your views here.
@@ -106,33 +107,35 @@ def adjust_bag(request, item_id):
 
 
 def remove_from_bag(request, item_id):
-    """Remove the item from the shopping bag"""
-
     try:
+        print("POST DATA:", request.POST)
         product = get_object_or_404(Product, pk=item_id)
-        size = None
-        if 'product_size' in request.POST:
-            size = request.POST['product_size']
+        size = request.POST.get('product_size')
         bag = request.session.get('bag', {})
 
         if size:
-            del bag[item_id]['items_by_size'][size]
-            if not bag[item_id]['items_by_size']:
-                bag.pop(item_id)
-            messages.success(
-                request, f'Removed size {
-                    size.upper()} {
-                    product.name} from your bag')
+            if item_id in bag and size in bag[item_id].get('items_by_size', {}):
+                del bag[item_id]['items_by_size'][size]
+                if not bag[item_id]['items_by_size']:
+                    bag.pop(item_id)
+                messages.success(request, f'Removed size {size.upper()} {product.name} from your bag')
+            else:
+                print("❗Item/Size not found in bag")
+                return JsonResponse({'error': 'Item or size not found'}, status=400)
         else:
-            bag.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your bag')
+            if item_id in bag:
+                bag.pop(item_id)
+                messages.success(request, f'Removed {product.name} from your bag')
+            else:
+                print("❗Item not found in bag")
+                return JsonResponse({'error': 'Item not found'}, status=400)
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
 
     except Exception as e:
-        messages.error(request, f'Error removing item: {e}')
-        return HttpResponse(status=500)
+        print("❌ Error:", str(e))
+        return JsonResponse({'error': str(e)}, status=500)
 
 
 def session_test(request):

@@ -122,33 +122,82 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script>
-    $('.btt-link').click(function(e) {
-        window.scrollTo(0,0)
-    })
-</script>
-{% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
-    // Update quantity on click
-    $('.update-link').click(function (e) {
-        e.preventDefault();
-        var form = $(this).prev('.update-form');
-        form.submit();
+<!-- Remove item from bag (AJAX) -->
+<script>
+$('.remove-item').click(function(e) {
+    e.preventDefault();
+
+    const csrfToken = "{{ csrf_token }}";
+    const itemIdRaw = $(this).attr('id').split('remove_')[1];
+    const itemId = parseInt(itemIdRaw);
+    const size = $(this).data('product_size');
+    const url = `/bag/remove/${itemId}/`;
+    const data = {
+        'csrfmiddlewaretoken': csrfToken,
+        'product_size': size
+    };
+
+    console.log("Removing item:", url, data);
+
+    $.post(url, data)
+        .done(function() {
+            location.reload();
+        })
+        .fail(function(xhr, status, error) {
+            alert("Failed to remove item. Please try again.");
+            console.error("Error:", xhr.responseText);
+        });
+});
+</script>
+
+<!-- Quantity controls and Update logic -->
+<script>
+    // Enable/disable buttons on load
+    function handleEnableDisable(input) {
+        var currentValue = parseInt(input.val());
+        var minusDisabled = currentValue < 2;
+        var plusDisabled = currentValue > 98;
+        input.closest('.input-group').find('.decrement-qty').prop('disabled', minusDisabled);
+        input.closest('.input-group').find('.increment-qty').prop('disabled', plusDisabled);
+    }
+
+    // Loop through all qty inputs and initialize state
+    $('.qty_input').each(function () {
+        handleEnableDisable($(this));
     });
 
-     // Remove item and reload on click
-     $('.remove-item').click(function(e) {
-        var csrfToken = "{{ csrf_token }}";
-        var itemId = $(this).attr('id').split('remove_')[1];
-        var size = $(this).data('product_size');
-        var url = `/bag/remove/${itemId}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+    // Handle manual change
+    $('.qty_input').change(function () {
+        handleEnableDisable($(this));
+    });
 
-        $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
-    })
+    // Increment quantity
+    $('.increment-qty').click(function (e) {
+        e.preventDefault();
+        var input = $(this).closest('.input-group').find('.qty_input');
+        var currentVal = parseInt(input.val());
+        if (currentVal < 99) {
+            input.val(currentVal + 1).change();
+        }
+    });
+
+    // Decrement quantity
+    $('.decrement-qty').click(function (e) {
+        e.preventDefault();
+        var input = $(this).closest('.input-group').find('.qty_input');
+        var currentVal = parseInt(input.val());
+        if (currentVal > 1) {
+            input.val(currentVal - 1).change(); 
+        }
+    });
+
+
+    $('.update-link').click(function (e) {
+        e.preventDefault();
+        var form = $(this).closest('form.update-form');
+        form.submit();
+    });
 </script>
+
 {% endblock %}
