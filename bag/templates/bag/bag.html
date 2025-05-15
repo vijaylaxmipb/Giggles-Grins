@@ -153,7 +153,6 @@ $('.remove-item').click(function(e) {
 
 <!-- Quantity controls and Update logic -->
 <script>
-    // Enable/disable buttons on load
     function handleEnableDisable(input) {
         var currentValue = parseInt(input.val());
         var minusDisabled = currentValue < 2;
@@ -167,32 +166,36 @@ $('.remove-item').click(function(e) {
         handleEnableDisable($(this));
     });
 
-    // Handle manual change
+    // When input changes manually or via buttons, update button states + submit form
     $('.qty_input').change(function () {
         handleEnableDisable($(this));
+
+        // Auto-submit the form on change
+        var form = $(this).closest('form.update-form');
+        form.submit();
     });
 
-    // Increment quantity
+    // Increment quantity and auto-submit
     $('.increment-qty').click(function (e) {
         e.preventDefault();
         var input = $(this).closest('.input-group').find('.qty_input');
         var currentVal = parseInt(input.val());
         if (currentVal < 99) {
-            input.val(currentVal + 1).change();
+            input.val(currentVal + 1).change(); // Triggers form submit
         }
     });
 
-    // Decrement quantity
+    // Decrement quantity and auto-submit
     $('.decrement-qty').click(function (e) {
         e.preventDefault();
         var input = $(this).closest('.input-group').find('.qty_input');
         var currentVal = parseInt(input.val());
         if (currentVal > 1) {
-            input.val(currentVal - 1).change(); 
+            input.val(currentVal - 1).change(); // Triggers form submit
         }
     });
 
-
+    // Optional: still allow manual update
     $('.update-link').click(function (e) {
         e.preventDefault();
         var form = $(this).closest('form.update-form');
