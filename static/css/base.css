@@ -288,7 +288,7 @@ a.category-badge > span.badge:hover {
 .nav-item a {
     display: block;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: .95rem;
     font-weight: bold;
 }
 
@@ -1898,7 +1898,6 @@ header .row,
 @media (max-width: 875px) {
   .navbar-nav {
     flex-wrap: nowrap;
-    overflow-x: auto;
     gap: 10px;
     justify-content: flex-start;
     align-items: center;
